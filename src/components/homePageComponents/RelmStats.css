@@ -1,0 +1,18 @@
+.relm-stats {
+    background: linear-gradient(to bottom, #0f172a, #182130, #0f172a);
+
+    padding: 50px 0px;
+}
+
+.relm-stats-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.relm-stats-card {
+
+    display: grid;
+    grid-template-columns: repeat(4, 4fr);
+
+    div {}
+}
