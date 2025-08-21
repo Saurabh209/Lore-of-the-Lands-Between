@@ -10,10 +10,10 @@ import { Sword, Crown, Shield, BookOpen, MapPin, Users, Skull, Star, Hammer, Wan
 import Bosses from './components/boss/Bosses'
 
 import AllDemigods from './components/demigods/AllDemigods';
-import HomePage from '../Home';
+import HomePage from './Home';
 import EpicBattles from './components/epicBattles/EpicBattles';
 //  images import section
- 
+
 
 
 function App() {
