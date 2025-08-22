@@ -1,5 +1,10 @@
 import React from 'react';
+import { Routes, Route,Link } from 'react-router-dom'
 import { Sword, Crown, Shield, BookOpen, MapPin, Users, Skull, Star, Hammer, Wand2, Target, Zap, Eye, Clock, TrendingUp, Globe, Flame, Moon, Home } from "lucide-react";
+
+
+import RaniPhoto from '/img/RaniPhoto.jpg'
+import Malenia from '/img/malenia5.jpg'
 const AllDemigods = () => {
 
 //   const demigods =
@@ -180,7 +185,7 @@ const demigods= [
         "name": "Malenia, Blade of Miquella",
         "title": "The Severed",
         "description": "Undefeated swordswoman cursed with the Scarlet Rot, twin sister to Miquella.",
-        "image": "https://images.unsplash.com/photo-1504893524553-b855bce32c67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image": Malenia,
         "lore": "Born cursed with the Scarlet Rot, Malenia has never known defeat. Her battle with Radahn in Caelid resulted in the bloom of the Scarlet Rot that devastated the land. She awaits her twin brother Miquella's return in the Haligtree, serving as his blade and protector.",
         "abilities": ["Waterfowl Dance", "Scarlet Aeonia", "Phantom Spirits"],
         "status": "Boss (Optional superboss)",
@@ -322,7 +327,7 @@ const demigods= [
         "name": "Ranni the Witch",
         "title": "Lunar Princess Ranni",
         "description": "Demigod sorceress who orchestrated the Night of Black Knives to escape fate.",
-        "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image":RaniPhoto,
         "lore": "Daughter of Radagon and Rennala who orchestrated the Night of Black Knives to escape the Greater Will's influence. She discarded her physical form and seeks to usher in an Age of Stars, replacing the Golden Order with a thousand-year journey into the cold dark of space.",
         "abilities": ["Dark Moon Magic", "Spirit Summoning", "Fate Manipulation"],
         "status": "NPC (Discarded physical form)",
@@ -410,6 +415,7 @@ const demigods= [
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {demigods.map((character, index) => (
+               <Link key={character.name} to={`/Alldemigods/${character.name.toLowerCase()}`}>
               <div key={index} className="border bg-slate-800/90 border-amber-700/50 rounded-md overflow-hidden hover:border-amber-600 hover:scale-105 transition-all duration-300">
                 <div className="relative h-60    overflow-hidden">
                   <img
@@ -464,6 +470,7 @@ const demigods= [
                   </div>
                 </div>
               </div>
+              </Link>
             ))}
           </div>
         </div>

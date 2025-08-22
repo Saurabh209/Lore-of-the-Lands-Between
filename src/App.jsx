@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
-import { Routes, Route } from 'react-router-dom'
-
+import { Routes, Route,Link } from 'react-router-dom'
+ 
 
 
 import './index.css'
@@ -10,8 +10,11 @@ import { Sword, Crown, Shield, BookOpen, MapPin, Users, Skull, Star, Hammer, Wan
 import Bosses from './components/boss/Bosses'
 
 import AllDemigods from './components/demigods/AllDemigods';
+ 
+
 import HomePage from './Home';
 import EpicBattles from './components/epicBattles/EpicBattles';
+import SingleDemigod from './components/demigods/SingleDemigod';
 //  images import section
 
 
@@ -22,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/AllDemigods" element={<AllDemigods />} />
+        <Route path="/Alldemigods/:bossId" element={<SingleDemigod />} />
         <Route path="/bosses" element={<Bosses />} />
         <Route path="/battles" element={<EpicBattles />} />
       </Routes>
