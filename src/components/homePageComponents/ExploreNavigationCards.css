@@ -1,11 +1,14 @@
 .exploreNavigationCardMainContainer {
-    background: linear-gradient(to bottom, #0f172a, #1e293b, #3b135a);
+    
     padding: 60px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 
 
+}
+.overlayBackground{
+    background: linear-gradient(to bottom, #0f172a, #0000007a, #0000007a, #00000088,#00000088, #0f172a);
 }
 
 .exploreNavigationTop {

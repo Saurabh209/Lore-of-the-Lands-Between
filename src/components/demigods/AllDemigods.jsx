@@ -208,7 +208,7 @@ const demigods= [
       {
         "name": "Starscourge Radahn",
         "title": "The Conqueror of the Stars",
-        "description": "Mightiest of the demigod generals, master of gravity magic and beloved by his soldiers.",
+        "description": "Mightiest demigod general, master of gravity magic and beloved by his soldiers.",
         "image": "https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
         "lore": "Once the mightiest warrior among the demigods, Radahn mastered gravity magic to continue riding his beloved horse Leonard. After the Shattering, he was consumed by Scarlet Rot in his battle with Malenia, losing his sanity but not his strength. He holds back the stars with his gravity magic.",
         "abilities": ["Gravity Magic", "Meteor Strike", "Colossal Greatswords"],
