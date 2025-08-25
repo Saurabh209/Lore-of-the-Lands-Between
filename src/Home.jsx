@@ -95,7 +95,8 @@ const Home = () => {
         // `"Let the record show, I lived in fear... of the fire, but not of man!" — Shabriri`,
         // `"Forgive me... The rhythm of war... it’s in my blood." — Vyke, Knight of the Roundtable`,
         `If you are not dying in every 5 minutes, are you even playing Elden Ring ?`,
-        'A Tarnished of no renown. Cross the fog, to the Lands Between. To stand before the Elden Ring, And become the Elden Lord.'
+        'A Tarnished of no renown. Cross the fog, to the Lands Between. To stand before the Elden Ring, And become the Elden Lord.',
+        '"Thou approaches, Destined Death!"  — Beast Clergyman'
     ];
 
     function getRandomQuote() {
@@ -136,8 +137,8 @@ const Home = () => {
                         </video>
                     </div>
 
-                    <div className="absolute inset-0  bg-black/50" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent" />
+                    <div className="absolute border   inset-0  bg-black/50" />
+                    <div className="absolute   inset-0 bg-gradient-to-t from-[rgb(2,3,12)] via-transparent to-transparent" />
 
 
 

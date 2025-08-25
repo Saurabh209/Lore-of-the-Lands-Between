@@ -4,7 +4,14 @@ import { Sword, Crown, Shield, BookOpen, MapPin, Users, Skull, Star, Hammer, Wan
 
 
 import RaniPhoto from '/img/RaniPhoto.jpg'
-import Malenia from '/img/malenia5.jpg'
+import Malenia from '/img/Malenia1.jpg'
+import Radhan from '/img/Radhan.jpg'
+import Rykard from '/img/Demigod/Rykard.jpg'
+import Godrick from '/img/Demigod/Godrick.jpg'
+import Godwyn from '/img/Demigod/Godwyn.jpg'
+import Miqulla from '/img/Demigod/Miqulla.png'
+import Mohg from '/img/Demigod/Mogh.jpg'
+import Morgott from '/img/Demigod/Morgot.png'
 const AllDemigods = () => {
 
 //   const demigods =
@@ -209,7 +216,7 @@ const demigods= [
         "name": "Starscourge Radahn",
         "title": "The Conqueror of the Stars",
         "description": "Mightiest demigod general, master of gravity magic and beloved by his soldiers.",
-        "image": "https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image": Radhan,
         "lore": "Once the mightiest warrior among the demigods, Radahn mastered gravity magic to continue riding his beloved horse Leonard. After the Shattering, he was consumed by Scarlet Rot in his battle with Malenia, losing his sanity but not his strength. He holds back the stars with his gravity magic.",
         "abilities": ["Gravity Magic", "Meteor Strike", "Colossal Greatswords"],
         "status": "Boss (Infected with Scarlet Rot)",
@@ -233,7 +240,7 @@ const demigods= [
         "name": "Rykard, Lord of Blasphemy",
         "title": "The Serpent",
         "description": "Once lord of Volcano Manor, now merged with the God-Devouring Serpent.",
-        "image": "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image": Rykard,
         "lore": "Seeking power to challenge the Golden Order, Rykard fed himself to the God-Devouring Serpent. Now a blasphemous fusion of man and serpent, he devours champions in his lava-filled domain at Mt. Gelmir, leading the Recusants against the Golden Order.",
         "abilities": ["Serpent's Bite", "Magma Waves", "Rykard's Rancor"],
         "status": "Boss (Fused with serpent)",
@@ -256,7 +263,7 @@ const demigods= [
         "name": "Godrick the Grafted",
         "title": "Lord of Limgrave",
         "description": "The weakest of the demigods, who grafts limbs of champions to gain strength.",
-        "image": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image": Godrick,
         "lore": "The lowliest of Queen Marika's offspring, Godrick's cowardice led him to graft the limbs of defeated warriors onto his body. He rules from Stormveil Castle, clinging to power through his grotesque modifications and claiming lineage to Godfrey.",
         "abilities": ["Dragon Head", "Storm Stomp", "Grafted Arsenal"],
         "status": "Boss (Shardbearer)",
@@ -278,7 +285,7 @@ const demigods= [
         "name": "Morgott, the Omen King",
         "title": "The Grace-Given",
         "description": "An Omen who became Lord of Leyndell, defender of the Erdtree.",
-        "image": "https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image": Morgott,
         "lore": "Born cursed as an Omen, Morgott was imprisoned beneath Leyndell. Despite his curse, he remained loyal to the Golden Order and became its final protector, wielding holy magic against all who would claim the throne. He is the true identity of Margit the Fell Omen.",
         "abilities": ["Holy Blade", "Light Spears", "Cursed Blood"],
         "status": "Boss (Alive until defeated)",
@@ -301,8 +308,8 @@ const demigods= [
       {
         "name": "Mohg, Lord of Blood",
         "title": "The Blood Lord",
-        "description": "Omen twin to Morgott, founder of the Mohgwyn Dynasty.",
-        "image": "https://images.unsplash.com/photo-1504893524553-b855bce32c67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "description":"Omen twin to Morgott, founder of the Mohgwyn Dynasty.",
+        "image": Mohg,
         "lore": "Unlike his twin Morgott, Mohg embraced his Omen curse and founded the Mohgwyn Dynasty. He kidnapped Miquella to become his consort and built his palace from the blood of his followers, serving the Formless Mother and seeking to usher in a new age of blood.",
         "abilities": ["Bloodflame", "Nihil Ritual", "Blood Spears"],
         "status": "Boss (Alive until defeated)",
@@ -351,7 +358,7 @@ const demigods= [
         "name": "Miquella the Unalloyed",
         "title": "Miquella the Kind",
         "description": "Twin brother of Malenia, cursed with eternal youth, creator of Unalloyed Gold.",
-        "image": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image": Miqulla,
         "lore": "Twin brother of Malenia, cursed with eternal youth. Created Unalloyed Gold to cure his sister's rot and built the Haligtree as sanctuary for the unwanted. He was kidnapped by Mohg while in his cocoon, attempting to cure his curse and ascend to godhood.",
         "abilities": ["Unalloyed Gold Creation", "Compelling Charm", "Divine Protection"],
         "status": "Missing (Kidnapped by Mohg)",
@@ -374,7 +381,7 @@ const demigods= [
         "name": "Godwyn the Golden",
         "title": "Prince of Death",
         "description": "First of the demigods to die, his soul was slain while his body lived on.",
-        "image": "https://images.unsplash.com/photo-1519452575417-564c1401ecc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        "image": Godwyn,
         "lore": "Eldest son of Queen Marika and Godfrey, first demigod to die during the Night of Black Knives. His soul was killed while his body lived on, becoming the source of Those Who Live in Death. His corruption spreads throughout the Lands Between as the Prince of Death.",
         "abilities": ["Death Blight", "Undeath Influence", "Golden Lightning (formerly)"],
         "status": "Deceased (Soul Dead, Body Undead)",
@@ -416,14 +423,14 @@ const demigods= [
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {demigods.map((character, index) => (
                <Link key={character.name} to={`/Alldemigods/${character.name.toLowerCase()}`}>
-              <div key={index} className="border bg-slate-800/90 border-amber-700/50 rounded-md overflow-hidden hover:border-amber-600 hover:scale-105 transition-all duration-300">
+              <div key={index} className="border bg-slate-800/90 border-amber-700/50 rounded-md overflow-hidden hover:border-amber-600   transition-all duration-300">
                 <div className="relative h-60    overflow-hidden">
                   <img
                     src={character.image}
                     alt={character.name}
                     className="w-full h-full object-cover opacity-70"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-800 to-transparent" />
+                  <div className="absolute inset-0 border border-white   " style={{background:'linear-gradient(to bottom, #0f172a00,#0f172a00,#0f172a00,  #182130 )'}} />
                   <div className="absolute bottom-4 left-4">
                     <Crown className="h-6 w-6 text-amber-400" />
                   </div>
