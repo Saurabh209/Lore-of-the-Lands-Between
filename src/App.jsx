@@ -16,6 +16,7 @@ import HomePage from './Home';
 import EpicBattles from './components/epicBattles/EpicBattles';
 import SingleDemigod from './components/demigods/SingleDemigod';
 import Lore from './components/lore/Lore';
+import Exploration from './components/Exploration/Exploration';
 //  images import section
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/bosses" element={<Bosses />} />
         <Route path="/battles" element={<EpicBattles />} />
         <Route path='/Lore' element={<Lore/>} /> 
+        <Route path='/exploration' element={<Exploration/>}/>
       </Routes>
 
     </>
