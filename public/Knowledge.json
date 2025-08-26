@@ -2348,6 +2348,443 @@
                 "content": "These massive, spider-like hands serve the Two Fingers, their appearance suggesting that divine messengers can take forms both beautiful and horrifying. Their presence marks areas of particular importance to the Greater Will's plans. They represent the alien nature of divine authority - beings so removed from human understanding that their very form induces revulsion. They embody the uncomfortable truth that cosmic forces care nothing for human comfort or comprehension. "
             }
         ]
+    },
+    {
+        "weapons": {
+            "daggers": [
+                {
+                    "name": "Fire Knight's Shortsword",
+                    "attack": {
+                        "Physical": "75",
+                        "Magic": "0",
+                        "Fire": "22",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "32",
+                        "Magic": "18",
+                        "Fire": "31",
+                        "Lightning": "18",
+                        "Holy": "18",
+                        "Critical": "15"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "D",
+                        "Faith": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "8",
+                        "Dexterity": "13",
+                        "Faith": "12"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Fire Knight's Shortsword is a Dagger in Elden Ring. It is a brand new Dagger in the Shadow of the Erdtree DLC. The Fire Knight's Shortsword scales primarily with Strength, Dexterity and Faith and is a good Weapon for Fire-based builds. This can be dropped by the Fire Knights and comes with the Quickstep skill.",
+                        "location": [
+                            "Has a 4.0% chance to drop by Fire Knights wielding this weapon in Shadow Keep",
+                            "Can be farmed by dropping down and killing the Fire Knight below the Storehouse, Loft site of Grace and the Fire Knight just east of the Storehouse, Seventh Floor site of grace"
+                        ],
+                        "fp": "3",
+                        "weight": "2",
+                        "skill": [
+                            {
+                                "name": "QuickStep",
+                                "description": "Quickstep is a Skill in Elden Ring. Quickstep is an action skill that allows players to reposition themselves in combat to avoid incoming damage and gain a better position to attack the targeted enemy. Quickstep uses Keen Affinity and is usable all melee arnaments.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Main gauche",
+                    "attack": {
+                        "Physical": "79",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "38",
+                        "Magic": "22",
+                        "Fire": "22",
+                        "Lightning": "22",
+                        "Holy": "22",
+                        "Critical": "16"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "C"
+                    },
+                    "requiredStats": {
+                        "Strength": "7",
+                        "Dexterity": "15"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Main-gauche is a Dagger in Elden Ring. It is found in the Shadow of the Erdtree DLC. The Main-gauche scales primarily with Strength and Dexterity and is a good Weapon for performing quick slashes. This weapon comes in left-handed and allows you to stagger and land heavy hits to enemies with the Parry skill.",
+                        "location": [
+                            "Shadow Keep: From the Main Gate Plaza site of grace go west and up the stairs until the soldier ambushes you, then enter that room and on the right there is another doorway. The item is in there protected by two soldiers and a blacksteel knight.",
+                        ],
+                        "fp": "",
+                        "weight": "2",
+                        "skill": [
+                            {
+                                "name": "Parry",
+                                "description": "Parry Skill is a Skill in Elden Ring. Parry Skill is a regular skill that can be found in Ashes of War and applied to compatible shields. Parry Skill has standard affinity and uses daggers, curved swords, thrusting swords, fists, claws, and small and medium shields.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Dagger",
+                    "attack": {
+                        "Physical": "74",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "130"
+                    },
+                    "guard": {
+                        "Physical": "35",
+                        "Magic": "20",
+                        "Fire": "20",
+                        "Lightning": "20",
+                        "Holy": "20",
+                        "Critical": "15"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "C"
+                    },
+                    "requiredStats": {
+                        "Strength": "5",
+                        "Dexterity": "9"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Dagger is the basic Dagger in Elden Ring. The Dagger scales primarily with Strength and Dexterity and is a good Weapon for short-ranged melee combat, and for when you need an extra lightweight utility weapon on hand.",
+                        "location": [
+                            "Can be purchased from Twin Maiden Husks at the Roundtable Hold for runes currency elden ring wiki guide 18 400 Runes.",
+                            "Can be dropped by Highwaymen and different types of Foot Soldiers"
+                        ],
+                        "fp": "3",
+                        "weight": "1.5",
+                        "skill": [
+                            {
+                                "name": "QuickStep",
+                                "description": "Quickstep is a Skill in Elden Ring. Quickstep is an action skill that allows players to reposition themselves in combat to avoid incoming damage and gain a better position to attack the targeted enemy. Quickstep uses Keen Affinity and is usable all melee arnaments.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Parrying Dagger",
+                    "attack": {
+                        "Physical": "75",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "35",
+                        "Magic": "20",
+                        "Fire": "20",
+                        "Lightning": "20",
+                        "Holy": "20",
+                        "Critical": "15"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "C"
+                    },
+                    "requiredStats": {
+                        "Strength": "4",
+                        "Dexterity": "14"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Parrying Dagger is a Dagger in Elden Ring. The Parrying Dagger scales primarily with Dexterity and Strength and is a good Weapon for parrying enemies as its name states. It is accommodated with the Parry skill and can deflect enemy attacks while potentially providing an opening for your next attack. ",
+                        "location": [
+                            "Can be purchased from Twin Maiden Husks at the Roundtable Hold for runes currency elden ring wiki guide 18 400 Runes.",
+                            "Can be dropped by Highwaymen and different types of Foot Soldiers"
+                        ],
+                        "fp": "",
+                        "weight": "1.5",
+                        "skill": [
+                            {
+                                "name": "Parry",
+                                "description": "Parry Skill is a Skill in Elden Ring. Parry Skill is a regular skill that can be found in Ashes of War and applied to compatible shields. Parry Skill has standard affinity and uses daggers, curved swords, thrusting swords, fists, claws, and small and medium shields.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Miséricorde",
+                    "attack": {
+                        "Physical": "92",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "140"
+                    },
+                    "guard": {
+                        "Physical": "36",
+                        "Magic": "21",
+                        "Fire": "21",
+                        "Lightning": "21",
+                        "Holy": "21",
+                        "Critical": "15"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "7",
+                        "Dexterity": "12"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Miséricorde is a Dagger in Elden Ring. The Miséricorde scales primarily with Strength and Dexterity and is a good Weapon for short range melee combat. This dagger is paired with the Quickstep skill to help gain an advantage in position. This potentially can avoid damage while provide an opening to follow up with a combo of attacks. ",
+                        "location": [
+                            "Can be looted off a corpse that can be found in the large armory room, next to the fortress of the Grafted Scion.",
+                            "You will need to use the Stonesword Key on the imp statue to dispel the white fog that's blocking the doorway."
+                        ],
+                        "fp": "3",
+                        "weight": "2",
+                        "skill": [
+                            {
+                                "name": "QuickStep",
+                                "description": "Quickstep is a Skill in Elden Ring. Quickstep is an action skill that allows players to reposition themselves in combat to avoid incoming damage and gain a better position to attack the targeted enemy. Quickstep uses Keen Affinity and is usable all melee arnaments.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Great Knife",
+                    "attack": {
+                        "Physical": "75",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "35",
+                        "Magic": "20",
+                        "Fire": "20",
+                        "Lightning": "20",
+                        "Holy": "20",
+                        "Critical": "15"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "C"
+                    },
+                    "requiredStats": {
+                        "Strength": "6",
+                        "Dexterity": "12"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Miséricorde is a Dagger in Elden Ring. The Miséricorde scales primarily with Strength and Dexterity and is a good Weapon for short range melee combat. This dagger is paired with the Quickstep skill to help gain an advantage in position. This potentially can avoid damage while provide an opening to follow up with a combo of attacks. ",
+                        "location": [
+                            "Can be looted off a corpse that can be found in the large armory room, next to the fortress of the Grafted Scion.",
+                            "You will need to use the Stonesword Key on the imp statue to dispel the white fog that's blocking the doorway."
+                        ],
+                        "fp": "3",
+                        "weight": "1.5",
+                        "skill": [
+                            {
+                                "name": "QuickStep",
+                                "description": "Quickstep is a Skill in Elden Ring. Quickstep is an action skill that allows players to reposition themselves in combat to avoid incoming damage and gain a better position to attack the targeted enemy. Quickstep uses Keen Affinity and is usable all melee arnaments.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Bloodstained Dagger",
+                    "attack": {
+                        "Physical": "81",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "36",
+                        "Magic": "21",
+                        "Fire": "21",
+                        "Lightning": "21",
+                        "Holy": "21",
+                        "Critical": "15"
+                    },
+                    "scaling": {
+                        "Strength": "C",
+                        "Dexterity": "E"
+                    },
+                    "requiredStats": {
+                        "Strength": "9",
+                        "Dexterity": "12"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Bloodstained Dagger is a Dagger in Elden Ring. The Bloodstained Dagger scales primarily with Strength and is a good Weapon for short range melee combat. This dagger is paired with the ´Quickstep' skill to help gain an advantage in position. This potentially can avoid damage while provide an opening to follow up with a combo of attacks. Furthermore this particular dagger passively builds bleed.",
+                        "location": [
+                            "There is a Demi-Human Chief sleeping before the wooden bridge leading to the Minor Erdtree in the weeping peninsula.",
+                            "Rare drop from Demi-Human Chiefs"
+                        ],
+                        "fp": "3",
+                        "weight": "2",
+                        "skill": [
+                            {
+                                "name": "QuickStep",
+                                "description": "Quickstep is a Skill in Elden Ring. Quickstep is an action skill that allows players to reposition themselves in combat to avoid incoming damage and gain a better position to attack the targeted enemy. Quickstep uses Keen Affinity and is usable all melee arnaments.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Bloodstained Dagger",
+                    "attack": {
+                        "Physical": "81",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "36",
+                        "Magic": "21",
+                        "Fire": "21",
+                        "Lightning": "21",
+                        "Holy": "21",
+                        "Critical": "15"
+                    },
+                    "scaling": {
+                        "Strength": "C",
+                        "Dexterity": "E"
+                    },
+                    "requiredStats": {
+                        "Strength": "9",
+                        "Dexterity": "12"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Bloodstained Dagger is a Dagger in Elden Ring. The Bloodstained Dagger scales primarily with Strength and is a good Weapon for short range melee combat. This dagger is paired with the ´Quickstep' skill to help gain an advantage in position. This potentially can avoid damage while provide an opening to follow up with a combo of attacks. Furthermore this particular dagger passively builds bleed.",
+                        "location": [
+                            "There is a Demi-Human Chief sleeping before the wooden bridge leading to the Minor Erdtree in the weeping peninsula.",
+                            "Rare drop from Demi-Human Chiefs"
+                        ],
+                        "fp": "3",
+                        "weight": "2",
+                        "skill": [
+                            {
+                                "name": "QuickStep",
+                                "description": "Quickstep is a Skill in Elden Ring. Quickstep is an action skill that allows players to reposition themselves in combat to avoid incoming damage and gain a better position to attack the targeted enemy. Quickstep uses Keen Affinity and is usable all melee arnaments.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                }
+            ],
+            "straightSwords": [],
+            "greatSwords": [],
+            "colossalSwords ": [],
+            "thrustingSwords": [],
+            "heavythrustingSwords": [],
+            "curveSwords": [],
+            "curveGreatSwords": [],
+            "katanas": [],
+            "twinBlades": [],
+            "Axes": [],
+            "greatAxes": [],
+            "hammers ": [],
+            "flails ": [],
+            "greatHammers": [],
+            "colossalWeapons": [],
+            "spears": [],
+            "greatSpears": [],
+            "halberds": [],
+            "reapers": [],
+            "whips": [],
+            "fists": [],
+            "claws": [],
+            "lightBows": [],
+            "bows": [],
+            "greatBows": [],
+            "crossBows": [],
+            "ballistas": [],
+            "glintstoneStaffs": [],
+            "sacredSeals": [],
+            "Torches": [],
+            "Tools": [],
+            "handToHandArts ": [],
+            "ThrustingShields ": [],
+            "throwingBlades": [],
+            "backhandBlades": [],
+            "perfumeBottles": [],
+            "beastClaws": [],
+            "lightGreatswords": [],
+            "greatKatanas": [],
+        }
     }
-
 ]
