@@ -2697,9 +2697,9 @@
                     }
                 },
                 {
-                    "name": "Bloodstained Dagger",
+                    "name": "Erdsteel Dagger",
                     "attack": {
-                        "Physical": "81",
+                        "Physical": "67",
                         "Magic": "0",
                         "Fire": "0",
                         "Lightning": "0",
@@ -2712,22 +2712,24 @@
                         "Fire": "21",
                         "Lightning": "21",
                         "Holy": "21",
-                        "Critical": "15"
+                        "Boost": "15"
                     },
                     "scaling": {
-                        "Strength": "C",
-                        "Dexterity": "E"
+                        "Strength": "D",
+                        "Dexterity": "D",
+                        "Faith": "D"
                     },
                     "requiredStats": {
-                        "Strength": "9",
-                        "Dexterity": "12"
+                        "Strength": "7",
+                        "Dexterity": "12",
+                        "Faith": "14"
                     },
                     "info": {
                         "image": "",
-                        "description": "Bloodstained Dagger is a Dagger in Elden Ring. The Bloodstained Dagger scales primarily with Strength and is a good Weapon for short range melee combat. This dagger is paired with the ´Quickstep' skill to help gain an advantage in position. This potentially can avoid damage while provide an opening to follow up with a combo of attacks. Furthermore this particular dagger passively builds bleed.",
+                        "description": "Erdsteel Dagger is a Dagger in Elden Ring. The Erdsteel Dagger scales primarily with Strength and Dexterity and is a good Weapon for short range melee combat.",
                         "location": [
-                            "There is a Demi-Human Chief sleeping before the wooden bridge leading to the Minor Erdtree in the weeping peninsula.",
-                            "Rare drop from Demi-Human Chiefs"
+                            "Given by Kenneth Haight as a reward for clearing out Fort Haight. ",
+                            "Found NW of the Avenue Balcony site of Leyndell, Royal Capital. Drop down a pit with a Broken Statue and it will be on a corpse."
                         ],
                         "fp": "3",
                         "weight": "2",
@@ -2744,9 +2746,1639 @@
                             "It contain gameplay video with this with this weapon"
                         ]
                     }
+                },
+                {
+                    "name": "Wakizashi",
+                    "attack": {
+                        "Physical": "94",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "42",
+                        "Magic": "24",
+                        "Fire": "24",
+                        "Lightning": "24",
+                        "Holy": "24",
+                        "Boost": "18"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "9",
+                        "Dexterity": "13"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Wakizashi is a Dagger in Elden Ring. The Wakizashi scales primarily with Strength and Dexterity and is a good Weapon for short range melee combat. It initially starts with the Quickstep skill, which excels at both evasion, and providing openings for follow up attacks. ",
+                        "location": [
+                            "Inside Gaol Cave, found inside one of the locked cells. The player must unlock the cells first. ",
+                        ],
+                        "fp": "3",
+                        "weight": "3",
+                        "skill": [
+                            {
+                                "name": "QuickStep",
+                                "description": "Quickstep is a Skill in Elden Ring. Quickstep is an action skill that allows players to reposition themselves in combat to avoid incoming damage and gain a better position to attack the targeted enemy. Quickstep uses Keen Affinity and is usable all melee arnaments.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Celebrant's Sickle",
+                    "attack": {
+                        "Physical": "79",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "35",
+                        "Magic": "20",
+                        "Fire": "20",
+                        "Lightning": "20",
+                        "Holy": "20",
+                        "Boost": "15"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "C"
+                    },
+                    "requiredStats": {
+                        "Strength": "6",
+                        "Dexterity": "11"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Celebrant's Sickle is a Dagger in Elden Ring. The Celebrant's Sickle scales primarily with Dexterity and is a good Weapon for rune farming.  ",
+                        "location": [
+                            "Rare drop from the Celebrants wielding it at the Windmill Village "
+                        ],
+                        "fp": "3",
+                        "weight": "1.5",
+                        "skill": [
+                            {
+                                "name": "QuickStep",
+                                "description": "Quickstep is a Skill in Elden Ring. Quickstep is an action skill that allows players to reposition themselves in combat to avoid incoming damage and gain a better position to attack the targeted enemy. Quickstep uses Keen Affinity and is usable all melee arnaments.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Ivory Sickle",
+                    "attack": {
+                        "Physical": "60",
+                        "Magic": "60",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "26",
+                        "Magic": "42",
+                        "Fire": "15",
+                        "Lightning": "15",
+                        "Holy": "15",
+                        "Boost": "15"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "C"
+                    },
+                    "requiredStats": {
+                        "Strength": "6",
+                        "Dexterity": "11"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Celebrant's Sickle is a Dagger in Elden Ring. The Celebrant's Sickle scales primarily with Dexterity and is a good Weapon for rune farming.  ",
+                        "location": [
+                            "Rare drop from the Celebrants wielding it at the Windmill Village "
+                        ],
+                        "fp": "3",
+                        "weight": "1.5",
+                        "skill": [
+                            {
+                                "name": "QuickStep",
+                                "description": "Quickstep is a Skill in Elden Ring. Quickstep is an action skill that allows players to reposition themselves in combat to avoid incoming damage and gain a better position to attack the targeted enemy. Quickstep uses Keen Affinity and is usable all melee arnaments.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Crystal Knife",
+                    "attack": {
+                        "Physical": "82",
+                        "Magic": "53",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "32",
+                        "Magic": "31",
+                        "Fire": "18",
+                        "Lightning": "18",
+                        "Holy": "18",
+                        "Boost": "15"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "D",
+                        "Intelligence": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "8",
+                        "Dexterity": "12",
+                        "Intelligence": "9"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Crystal Knife is a Dagger in Elden Ring. The Crystal Knife scales primarily with Intelligence, Strength, and Dexterity, and is a good Weapon for short-range melee combat enhanced with extra Magic Damage.",
+                        "location": [
+                            "Found in a chest inside the Raya Lucaria Crystal Tunnel, in a storage area three levels down, guarded by Marionettes."
+                        ],
+                        "fp": "3",
+                        "weight": "1.5",
+                        "skill": [
+                            {
+                                "name": "QuickStep",
+                                "description": "Quickstep is a Skill in Elden Ring. Quickstep is an action skill that allows players to reposition themselves in combat to avoid incoming damage and gain a better position to attack the targeted enemy. Quickstep uses Keen Affinity and is usable all melee arnaments.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Scorpion's Stinger",
+                    "attack": {
+                        "Physical": "79",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "38",
+                        "Magic": "22",
+                        "Fire": "22",
+                        "Lightning": "22",
+                        "Holy": "22",
+                        "Boost": "16"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "C"
+                    },
+                    "requiredStats": {
+                        "Strength": "6",
+                        "Dexterity": "12"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Scorpion's Stinger is a Dagger in Elden Ring. The Scorpion's Stinger scales primarily with Strength and Dexterity. It is a good Weapon for quickly applying the rot effect and dealing powerful damage-over-time. Particularly great for defeating dragons. ",
+                        "location": [
+                            "Found in the Lake of Rot. Cross the swamp and go through the entrance with large statues on either side to reach the Grand Cloister Site of Grace. Use the ledges to drop down to the bottom, and head straight ahead (westward) and you'll find the dagger in a chest."
+                        ],
+                        "fp": "7",
+                        "weight": "2.5",
+                        "skill": [
+                            {
+                                "name": "Repeating Thrust",
+                                "description": "Repeating Thrust is a Skill in Elden Ring. Repeating Thrust is a regular skill that can be found in Ashes of War and applied to weapons that perform thrusting. It also has a Keen Affinity.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Cinquedea",
+                    "attack": {
+                        "Physical": "98",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "43",
+                        "Magic": "25",
+                        "Fire": "25",
+                        "Lightning": "25",
+                        "Holy": "25",
+                        "Boost": "18"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "E"
+                    },
+                    "requiredStats": {
+                        "Strength": "10",
+                        "Dexterity": "10"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Cinquedea is a Dagger in Elden Ring. The Cinquedea scales primarily with Strength and is a good Weapon for short range melee combat. This dagger is paired with the Quickstep skill to help gain an advantage in position and avoid damage, granting an opening to follow up with a combo of attacks. This dagger also has the unique ability to boost the damage of Bestial Incantations when held. The Cinquedea has extremely high base damage for a dagger while also having good Strength scaling ",
+                        "location": [
+                            "Cinquedea can be found at the bottom of the exterior structure of the Bestial Sanctum, near a broken rat corpse statue."
+                        ],
+                        "fp": "3",
+                        "weight": "3.5",
+                        "skill": [
+                            {
+                                "name": "QuickStep",
+                                "description": "Quickstep is a Skill in Elden Ring. Quickstep is an action skill that allows players to reposition themselves in combat to avoid incoming damage and gain a better position to attack the targeted enemy. Quickstep uses Keen Affinity and is usable all melee arnaments",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Glintstone Kris",
+                    "attack": {
+                        "Physical": "57",
+                        "Magic": "68",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "23",
+                        "Magic": "45",
+                        "Fire": "14",
+                        "Lightning": "14",
+                        "Holy": "14",
+                        "Boost": "15"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "D",
+                        "Intelligence": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "5",
+                        "Dexterity": "12",
+                        "Intelligence": "16"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Glintstone Kris is a Dagger in Elden Ring. The Glintstone Kris scales primarily with Dexterity and Intelligence, with minor scaling in Strength. It is a versatile Weapon that allows its wielder to engage and apply pressure on targets both at short and medium range. ",
+                        "location": [
+                            "Rewarded to players for progressing through the Sorceress Sellen questline and siding with her."
+                        ],
+                        "fp": "10",
+                        "weight": "1.5",
+                        "skill": [
+                            {
+                                "name": "Glintstone Dart",
+                                "description": "Glintstone Dart is a Skill in Elden Ring. Glintstone Dart is a unique skill to the Glintstone Kris dagger, it allows the player to cast Glintstone Pebble and Glintstone Dart as well as a follow-up thrust attack.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Reduvia",
+                    "attack": {
+                        "Physical": "79",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "38",
+                        "Magic": "22",
+                        "Fire": "22",
+                        "Lightning": "22",
+                        "Holy": "22",
+                        "Boost": "16"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "D",
+                        "Arcane": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "5",
+                        "Dexterity": "13",
+                        "Arcane": "13"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Reduvia is a Dagger in Elden Ring. The Reduvia scales with Strength, Dexterity, and Arcane. It is wielded by dynastic servants of the Lord of Blood. It is one of the first weapons the player can acquire that scales with Arcane and is exceptional at inflicting Blood Loss on targets.",
+                        "location": [
+                            "Dropped by Bloody Finger Nerijus.",
+                            "Players can encounter Bloody Finger Nerijus Invades on the ravine leading north-east from Agheel Lake, toward Murkwater Catacombs"
+                        ],
+                        "fp": "6",
+                        "weight": "2.5",
+                        "skill": [
+                            {
+                                "name": "Glintstone Dart",
+                                "description": "Glintstone Dart is a Skill in Elden Ring. Glintstone Dart is a unique skill to the Glintstone Kris dagger, it allows the player to cast Glintstone Pebble and Glintstone Dart as well as a follow-up thrust attack.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Blade of Calling",
+                    "attack": {
+                        "Physical": "71",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "43",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "31",
+                        "Magic": "18",
+                        "Fire": "18",
+                        "Lightning": "18",
+                        "Holy": "30",
+                        "Boost": "15"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "D",
+                        "Faith": "C"
+                    },
+                    "requiredStats": {
+                        "Strength": "6",
+                        "Dexterity": "13",
+                        "Faith": "15"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Blade of Calling is a Dagger in Elden Ring. The Blade of Calling scales with Faith, Strength and Dexterity and is a good Weapon for short range melee combat with additional holy damage. ",
+                        "location": [
+                            "From the Forbidden Lands site of grace, turn back and head towards the elevator. Face west-southwest, then activate the elevator and watch for an opening to jump off into. The Blade of Calling is on the table in the room at the end of this hall."
+                        ],
+                        "fp": "17",
+                        "weight": "1.5",
+                        "skill": [
+                            {
+                                "name": "Blade of Gold",
+                                "description": "Blade of Gold is a Skill in Elden Ring. Blade of Gold is the unique skill for the Blade of Calling that allows the user to jump and fire a golden projectile that deals Holy Damage. It shares an animation with Blade of Death, the unique skill for the Black Knife.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Black Knife",
+                    "attack": {
+                        "Physical": "66",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "65",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "26",
+                        "Magic": "15",
+                        "Fire": "15",
+                        "Lightning": "15",
+                        "Holy": "42",
+                        "Boost": "15"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "D",
+                        "Faith": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "8",
+                        "Dexterity": "12",
+                        "Faith": "18"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Black Knife is a Dagger in Elden Ring. The Black Knife scales primarily with Faith and Dexterity and is a good Weapon for dealing additional Holy Damage and for its Unique Skill, Blade of Death, that allows the user to fire an additional projectile.",
+                        "location": [
+                            "This is a drop from defeating the Black Knife Assassin at the entrance of Sainted Hero's Grave, in Altus Plateau. This boss is directly west of the Rampartside Path site."
+                        ],
+                        "fp": "25",
+                        "weight": "2",
+                        "skill": [
+                            {
+                                "name": "Blade of Death",
+                                "description": "Blade of Death is a Unique skill for the Black Knife. It shares an animation with Blade of Gold, the unique skill for the Blade of Calling. It allows the user to fire a projectile and apply a powerful DOT effect. This also has a unique feature that reduces enemy max HP for a limited time",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
                 }
             ],
-            "straightSwords": [],
+            "straightSwords": [
+                {
+                    "name": "Velvet Sword of St. Trina",
+                    "attack": {
+                        "Physical": "95",
+                        "Magic": "61",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "37",
+                        "Magic": "37",
+                        "Fire": "25",
+                        "Lightning": "25",
+                        "Holy": "25",
+                        "Boost": "27"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "D",
+                        "Faith": "E"
+                    },
+                    "requiredStats": {
+                        "Strength": "10",
+                        "Dexterity": "12",
+                        "Faith": "14"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "It is a brand new Straight Sword in the Shadow of the Erdtree DLC. The Velvet Sword of St Trina scales primarily with Strength, Dexterity and Intelligence and is a good Weapon for players looking for magic damage straight sword. This also has a strong base of physical damage of 95. It produces eternal sleep build-up and a skill named Mists of Eternal Sleep that releases a cloud of purple mist when you perform a slash.",
+                        "location": [
+                            "From the Fissure Cross site of grace, walk immediately north-west to the closest giant coffin that's tilted nearly vertical. Climb down to a ledge that passes underneath the brick platform nearest the site of grace. The sword is in a small cave network there and guarded by several putrescent oozes."
+                        ],
+                        "fp": "23",
+                        "weight": "2.5",
+                        "skill": [
+                            {
+                                "name": "Mist of Eternal Sleep",
+                                "description": "Mists of Eternal Sleep is a Skill in Elden Ring. It was added with the Shadow of the Erdtree DLC. Mists of Eternal Sleep releases a mist in the frontal area of the caster.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Stone-Sheathed Sword",
+                    "attack": {
+                        "Physical": "119",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "54",
+                        "Magic": "33",
+                        "Fire": "33",
+                        "Lightning": "33",
+                        "Holy": "33",
+                        "Boost": "32"
+                    },
+                    "scaling": {
+                        "Strength": "C",
+                        "Dexterity": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "16",
+                        "Dexterity": "8"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": " It is a brand new Straight Sword in the Shadow of the Erdtree DLC. The Stone-Sheathed Sword scales primarily with Strength and Dexterity and can be transformed into the Sword of Darkness or the Sword of Light. It's skill, the Square off, lets you slash upwards or thrust when attacking.",
+                        "location": [
+                            " It is a brand new Straight Sword in the Shadow of the Erdtree DLC. The Stone-Sheathed Sword scales primarily with Strength and Dexterity and can be transformed into the Sword of Darkness or the Sword of Light. It's skill, the Square off, lets you slash upwards or thrust when attacking.",
+                            "Ruins of Unte (behind the inactive Furnace Golem, to the right from the chest that holds Giant Golden Arc)"
+                        ],
+                        "fp": "",
+                        "weight": "5",
+                        "skill": [
+                            {
+                                "name": "Square Off",
+                                "description": "Square Off is a Skill in Elden Ring. Square Off is a regular skill that can be found in Ashes of War and applied to compatible weapons. Square Off has a Quality Affinity and uses straight swords",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Sword of Light",
+                    "attack": {
+                        "Physical": "119",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "54",
+                        "Magic": "33",
+                        "Fire": "33",
+                        "Lightning": "33",
+                        "Holy": "33",
+                        "Boost": "32"
+                    },
+                    "scaling": {
+                        "Strength": "C",
+                        "Dexterity": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "16",
+                        "Dexterity": "8"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": " It is a brand new Straight Sword in the Shadow of the Erdtree DLC. The Stone-Sheathed Sword scales primarily with Strength and Dexterity and can be transformed into the Sword of Darkness or the Sword of Light. It's skill, the Square off, lets you slash upwards or thrust when attacking.",
+                        "location": [
+                            " It is a brand new Straight Sword in the Shadow of the Erdtree DLC. The Stone-Sheathed Sword scales primarily with Strength and Dexterity and can be transformed into the Sword of Darkness or the Sword of Light. It's skill, the Square off, lets you slash upwards or thrust when attacking.",
+                            "Ruins of Unte (behind the inactive Furnace Golem, to the right from the chest that holds Giant Golden Arc)"
+                        ],
+                        "fp": "",
+                        "weight": "5",
+                        "skill": [
+                            {
+                                "name": "Square Off",
+                                "description": "Square Off is a Skill in Elden Ring. Square Off is a regular skill that can be found in Ashes of War and applied to compatible weapons. Square Off has a Quality Affinity and uses straight swords",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Sword of Darkness",
+                    "attack": {
+                        "Physical": "93",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "93",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "26",
+                        "Magic": "15",
+                        "Fire": "15",
+                        "Lightning": "15",
+                        "Holy": "42",
+                        "Boost": "31"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "E",
+                        "Faith": "E"
+                    },
+                    "requiredStats": {
+                        "Strength": "14",
+                        "Dexterity": "11",
+                        "Faith": "24"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": " Sword of Darkness is a Straight Sword in Elden Ring. It is found in the Shadow of the Erdtree DLC. The Sword of Darkness scales primarily with Strength, Dexterity, and Faith and has a counterpart called Sword of Light. This is similar to the sword of light since it also gives 93 holy damage",
+                        "location": [
+                            "Obtained by raising Stone-Sheathed Sword or Sword of Light"
+                        ],
+                        "fp": "30",
+                        "weight": "4",
+                        "skill": [
+                            {
+                                "name": "Darkness",
+                                "description": "Darkness is a Skill in Elden Ring. It was added with the Shadow of the Erdtree DLC. Darkness raises the sword, cleaving the surroundings with Darkness, dealing Holy Damage in the process and temporarily reducing enemy's Holy Damage negation.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Short Sword",
+                    "attack": {
+                        "Physical": "102",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "42",
+                        "Magic": "28",
+                        "Fire": "28",
+                        "Lightning": "28",
+                        "Holy": "42",
+                        "Boost": "28"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "8",
+                        "Dexterity": "10"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": " Short Sword is a Straight Sword in Elden Ring. The Short Sword scales primarily with Strength and Dexterity and is a good Weapon for having a variety of Pierce and standard attacks. ",
+                        "location": [
+                            "Starting Equipment for the Astrologer Class.",
+                            "Can be purchased from the Nomadic Merchant in North Limgrave for er runes 600 Runes",
+                            "Dropped by Highwaymen in Murkwater Cave."
+                        ],
+                        "fp": "",
+                        "weight": "3",
+                        "skill": [
+                            {
+                                "name": "Kick",
+                                "description": "Kick is a Skill in Elden Ring. Kick is a skill that can be equipped with a weapon and can push back enemies during combat. Updated to Patch 1.07. Kick has Heavy Affinity and is usable with all melee weapons.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Long Sword",
+                    "attack": {
+                        "Physical": "110",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "45",
+                        "Magic": "30",
+                        "Fire": "30",
+                        "Lightning": "30",
+                        "Holy": "30",
+                        "Boost": "30"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "10",
+                        "Dexterity": "10"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": " Longsword is a Straight Sword in Elden Ring. The Longsword scales primarily with Strength and is a good Weapon for melee users who want to remain mobile during combat.",
+                        "location": [
+                            "Starting equipment for the Vagabond class.",
+                            "Can be purchased from Twin Maiden Husks at the Roundtable Hold for runes currency elden ring wiki guide 18 1,000 Runes."
+                        ],
+                        "fp": "-",
+                        "weight": "3.5",
+                        "skill": [
+                            {
+                                "name": "Square Off",
+                                "description": "Square Off is a Skill in Elden Ring. Square Off is a regular skill that can be found in Ashes of War and applied to compatible weapons. Square Off has a Quality Affinity and uses straight swords",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Broadsword",
+                    "attack": {
+                        "Physical": "117",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "47",
+                        "Magic": "31",
+                        "Fire": "31",
+                        "Lightning": "31",
+                        "Holy": "31",
+                        "Boost": "31"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "E"
+                    },
+                    "requiredStats": {
+                        "Strength": "10",
+                        "Dexterity": "10"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Broadsword is a Straight Sword in Elden Ring. The Broadsword scales primarily with Strength and Dexterity and is a good Weapon for dealing slashing attacks to enemies. ",
+                        "location": [
+                            "Starting Equipment for the Confessor Class.",
+                            "Can be bought from the Nomadic Merchant for runes currency elden ring wiki guide 1800 Runes. He is located south-east of Coastal Cave."
+                        ],
+                        "fp": "-",
+                        "weight": "4",
+                        "skill": [
+                            {
+                                "name": "Square Off",
+                                "description": "Square Off is a Skill in Elden Ring. Square Off is a regular skill that can be found in Ashes of War and applied to compatible weapons. Square Off has a Quality Affinity and uses straight swords",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Weathered Straight Sword",
+                    "attack": {
+                        "Physical": "103",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "43",
+                        "Magic": "29",
+                        "Fire": "29",
+                        "Lightning": "29",
+                        "Holy": "29",
+                        "Boost": "27"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "7",
+                        "Dexterity": "10"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Weathered Straight Sword is a Straight Sword in Elden Ring. The Weathered Straight Sword scales primarily with Strength and Dexterity and is a good starting Weapon.  ",
+                        "location": [
+                            "Dropped from Commoner enemies in any area.",
+                            "Can be farmed very early on in the Ailing Village in the Weeping Peninsula."
+                        ],
+                        "fp": "-",
+                        "weight": "3",
+                        "skill": [
+                            {
+                                "name": "Square Off",
+                                "description": "Square Off is a Skill in Elden Ring. Square Off is a regular skill that can be found in Ashes of War and applied to compatible weapons. Square Off has a Quality Affinity and uses straight swords",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Lordsworn's Straight Sword",
+                    "attack": {
+                        "Physical": "115",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "45",
+                        "Magic": "30",
+                        "Fire": "30",
+                        "Lightning": "30",
+                        "Holy": "30",
+                        "Boost": "30"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "10",
+                        "Dexterity": "10"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Lordsworn's Straight Sword is a Straight Sword in Elden Ring. The Lordsworn's Straight Sword scales primarily with Strength and Dexterity and is a good Weapon for strong melee combat. With Square Off, characters with this sword will have the ability to deal an upwards slash through enemy guards. ",
+                        "location": [
+                            "May be dropped by Godrick Soldier in Gatefront Ruins",
+                            "Can be dropped by the headless, undead Soldier at Fourth Church of Marika. ",
+                            "The earliest and easiest grinding spot for this is the Gatefront Ruins, not just for this sword, but all of the weapons that the soldiers use excluding their spear."
+                        ],
+                        "fp": "-",
+                        "weight": "3.5",
+                        "skill": [
+                            {
+                                "name": "Square Off",
+                                "description": "Square Off is a Skill in Elden Ring. Square Off is a regular skill that can be found in Ashes of War and applied to compatible weapons. Square Off has a Quality Affinity and uses straight swords",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Noble's Slender Sword",
+                    "attack": {
+                        "Physical": "101",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "43",
+                        "Magic": "29",
+                        "Fire": "29",
+                        "Lightning": "29",
+                        "Holy": "29",
+                        "Boost": "29"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "C"
+                    },
+                    "requiredStats": {
+                        "Strength": "8",
+                        "Dexterity": "11"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Noble's Slender Sword is a Straight Sword in Elden Ring. Noble's Slender Sword scales primarily with Strength and Dexterity, and is a good Weapon for Dexterity builds. It is one of the longest Straight Swords in Elden Ring.",
+                        "location": [
+                            "Dropped by Wandering Nobles around Limgrave and Raya Lucaria Academy.",
+                            "Can be farmed from the group of Wandering Nobles among the Troll-pulled Carriage's caravan to the west of Waypoint Ruins, north of Agheel Lake South Site of Grace."
+                        ],
+                        "fp": "-",
+                        "weight": "3.5",
+                        "skill": [
+                            {
+                                "name": "Square Off",
+                                "description": "Square Off is a Skill in Elden Ring. Square Off is a regular skill that can be found in Ashes of War and applied to compatible weapons. Square Off has a Quality Affinity and uses straight swords",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Cane Sword",
+                    "attack": {
+                        "Physical": "96",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "41",
+                        "Magic": "27",
+                        "Fire": "27",
+                        "Lightning": "27",
+                        "Holy": "27",
+                        "Boost": "27"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "8",
+                        "Dexterity": "11"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Cane Sword is a Straight Sword in Elden Ring. The Cane Sword scales primarily with Strength and Dexterity, and is a sword that has an odd design, resembling a cane. ",
+                        "location": [
+                            "Leyndell, Royal Capital, West Capital Rampart Site of Grace: Go south out of the room with the site of grace and down the flight of stairs to the floor underneath, make a complete U-turn in the room with the stairs to find a corpse with the sword."
+                        ],
+                        "fp": "-",
+                        "weight": "2.5",
+                        "skill": [
+                            {
+                                "name": "Square Off",
+                                "description": "Square Off is a Skill in Elden Ring. Square Off is a regular skill that can be found in Ashes of War and applied to compatible weapons. Square Off has a Quality Affinity and uses straight swords",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Warhawk's Talon",
+                    "attack": {
+                        "Physical": "101",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "42",
+                        "Magic": "28",
+                        "Fire": "28",
+                        "Lightning": "28",
+                        "Holy": "28",
+                        "Boost": "30"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "C"
+                    },
+                    "requiredStats": {
+                        "Strength": "10",
+                        "Dexterity": "16"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Warhawk's Talon is a Straight Sword in Elden Ring. The Warhawk's Talon scales primarily with Strength and Dexterity and is a good Weapon for Dexterity builds.  ",
+                        "location": [
+                            "Can be found in Stormveil Castle as drop by defeating Warhawks. There are four immediately out the door from the Rampart Tower site of grace."
+                        ],
+                        "fp": "6",
+                        "weight": "3",
+                        "skill": [
+                            {
+                                "name": "Spinning Slash",
+                                "description": "Spinning Slash is a Skill in Elden Ring. Spinning Slash is a regular skill that can be found in Ashes of War and applied to compatible weapons. Updated to Patch 1.12. Spinning Slash has Keen Affinity and is usable on swords, axes, and polearms. Excluding colossal weapons.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Lazuli Glintstone Sword",
+                    "attack": {
+                        "Physical": "79",
+                        "Magic": "94",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "30",
+                        "Magic": "55",
+                        "Fire": "25",
+                        "Lightning": "25",
+                        "Holy": "25",
+                        "Boost": "30"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "E",
+                        "Intelligence": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "8",
+                        "Dexterity": "9",
+                        "Intelligence": "13"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Lazuli Glintstone Sword is a Straight Sword in Elden Ring.  The Lazuli Glintstone Sword scales primarily with Strength and Intelligence and is a good Weapon for Intelligence- based builds. ",
+                        "location": [
+                            "Can be found in Stormveil Castle as drop by defeating Warhawks. There are four immediately out the door from the Rampart Tower site of grace."
+                        ],
+                        "fp": "8",
+                        "weight": "3.5",
+                        "skill": [
+                            {
+                                "name": "Glintstone Pebble",
+                                "description": "Glintstone Pebble is a Skill in Elden Ring. Glintstone Pebble is a regular skill that can be found in Ashes of War and can be applied to Swords and Spears capable of thrusting. The skill uses the Glintstone Pebble sorcery, firing projectiles at the enemy with a follow up lunging thrus",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Carian Knight's Sword",
+                    "attack": {
+                        "Physical": "88",
+                        "Magic": "88",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "36",
+                        "Magic": "52",
+                        "Fire": "26",
+                        "Lightning": "26",
+                        "Holy": "26",
+                        "Boost": "31"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "D",
+                        "Intelligence": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "10",
+                        "Dexterity": "10",
+                        "Intelligence": "10"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Carian Knight's Sword is a Straight Sword in Elden Ring. The Carian Knight's Sword scales primarily with Intelligence, Strength and Dexterity and is a good Weapon for dealing Magic Damage from the sorcerous battle skills that it wields. ",
+                        "location": [
+                            "Found in a chest in the back of a Carriage being pulled by two Trolls. Go to the Foot of the Four Belfries site of grace and ride north to encounter the Trolls."
+                        ],
+                        "fp": "26",
+                        "weight": "4",
+                        "skill": [
+                            {
+                                "name": "Carian Grandeur",
+                                "description": "Carian Grandeur is a Skill in Elden Ring. Carian Grandeur is a chargeable skill found on the Carian Knight's Sword. The Carian Knight's Sword with already existing Magic Damage stats is enhanced with this skill that also involved magic by turning this blade into a magical greatsword before the swing. Carian Grandeur has Magic Affinity and is usable on swords",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Crystal Sword",
+                    "attack": {
+                        "Physical": "106",
+                        "Magic": "68",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "44",
+                        "Magic": "44",
+                        "Fire": "30",
+                        "Lightning": "30",
+                        "Holy": "30",
+                        "Boost": "33"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "E",
+                        "Intelligence": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "13",
+                        "Dexterity": "10",
+                        "Intelligence": "15"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Crystal Sword is a Straight Sword in Elden Ring. The Crystal Sword scales primarily with Intelligence, Strength and Dexterity and is a good Weapon for dealing additional Magic Damage complemented by the Spinning Slash Skill that allows the user to spin and deal a follow up attack.",
+                        "location": [
+                            "Can be found at Village of the Albinaurics. Past the well and across the wooden bridge, on a body near the edge."
+                        ],
+                        "fp": "6",
+                        "weight": "4.5",
+                        "skill": [
+                            {
+                                "name": "Spinning Slash",
+                                "description": "Spinning Slash is a Skill in Elden Ring. Spinning Slash is a regular skill that can be found in Ashes of War and applied to compatible weapons. Updated to Patch 1.12. Spinning Slash has Keen Affinity and is usable on swords, axes, and polearms. Excluding colossal weapons.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Rotten Crystal Sword",
+                    "attack": {
+                        "Physical": "102",
+                        "Magic": "66",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "48",
+                        "Magic": "38",
+                        "Fire": "31",
+                        "Lightning": "31",
+                        "Holy": "31",
+                        "Boost": "33"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "E",
+                        "Intelligence": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "13",
+                        "Dexterity": "10",
+                        "Intelligence": "15"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Rotten Crystal Sword is a Straight Sword in Elden Ring. The Rotten Crystal Sword scales primarily with strength and intelligence, with a secondary scaling in dexterity.",
+                        "location": [
+                            "Elphael, Brace of the Haligtree: Found in a chest by the inner wall guarded by 3 Lesser Crystallians. From the Elphael Inner Wall site of grace, head down the steps and jump up on the rubble to your left. You can engage the Lesser Crystallians one by one by luring them over the rubble and into the hallway. "
+                        ],
+                        "fp": "6",
+                        "weight": "4.5",
+                        "skill": [
+                            {
+                                "name": "Spinning Slash",
+                                "description": "Spinning Slash is a Skill in Elden Ring. Spinning Slash is a regular skill that can be found in Ashes of War and applied to compatible weapons. Updated to Patch 1.12. Spinning Slash has Keen Affinity and is usable on swords, axes, and polearms. Excluding colossal weapons.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Miquellan Knight's Sword",
+                    "attack": {
+                        "Physical": "105",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "40",
+                        "Magic": "28",
+                        "Fire": "28",
+                        "Lightning": "28",
+                        "Holy": "40",
+                        "Boost": "30"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "D",
+                        "Faith": "E"
+                    },
+                    "requiredStats": {
+                        "Strength": "11",
+                        "Dexterity": "11",
+                        "Intelligence": "16"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Miquellan Knight's Sword is a Straight Sword in Elden Ring. The Miquellan Knight's Sword scales primarily with Strength, Faith, and Dexterity and is a good Weapon for dealing Physical Damage, but also can deal Holy Damage during combat.",
+                        "location": [
+                            " Found atop a bell tower. From the Prayer Room site of grace, walk forward into the Haligtree. Not far from the Prayer Room, you will see a Haligtree Soldier sitting down. Before the soldier is a ledge to the right you can walk out on, attached to a tower. Walk on this connector all the way to the tower. Drop down on the tower's ledge, and walk this outer rim to the opposite side. There will be a ladder that takes you up to the sword."
+                        ],
+                        "fp": "19",
+                        "weight": "3.5",
+                        "skill": [
+                            {
+                                "name": "Sacred Blade",
+                                "description": "Sacred Blade is a Skill in Elden Ring. Sacred Blade is a regular skill that can be found in Ashes of War that can be used on many melee armaments. Using this skill grants holy essence to the weapon and fires off a golden blade projectile, great to use against Those Who Live in Death.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Ornamental Straight Sword",
+                    "attack": {
+                        "Physical": "101",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "110"
+                    },
+                    "guard": {
+                        "Physical": "42",
+                        "Magic": "28",
+                        "Fire": "28",
+                        "Lightning": "28",
+                        "Holy": "28",
+                        "Boost": "28"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "10",
+                        "Dexterity": "14"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Ornamental Straight Sword is a Straight Sword in Elden Ring. The Ornamental Straight Sword scales primarily with Strength and Dexterity and is a good Weapon for melee combat, especially when accompanied with the skill, Golden Tempering, which allows users to deal dual-wielding combo with a strong attack while in effect.  The Ornamental Straight Sword is one of a few non-Claw/Fist Paired Weapons.",
+                        "location": [
+                            "Dropped by the Grafted Scion at the Chapel of Anticipation. Players can return to this area after tutorial by using the waygate at The Four Belfries."
+                        ],
+                        "fp": "24",
+                        "weight": "3",
+                        "skill": [
+                            {
+                                "name": "Golden Tempering",
+                                "description": "Golden Tempering is a Skill in Elden Ring. Golden Tempering allows the user to transform the strong attack into a combo attack, while the effect of Golden Tempering remains.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Golden Epitaph",
+                    "attack": {
+                        "Physical": "85",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "85",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "25",
+                        "Magic": "15",
+                        "Fire": "15",
+                        "Lightning": "15",
+                        "Holy": "40",
+                        "Boost": "30"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "D",
+                        "Faith": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "12",
+                        "Dexterity": "10",
+                        "Faith": "14"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Golden Epitaph is a Straight Sword in Elden Ring. The Golden Epitaph scales primarily with Strength, Dexterity and Faith. It is a good Weapon for dealing Holy Damage, especially when wielded against Undead",
+                        "location": [
+                            "Auriza Hero's Grave: Found on a corpse in a room locked behind an Imp Statue Seal just past the Site of Grace near the entrance. Use a Stonesword Key to unlock the seal and beware the Basilisk guarding the treasure."
+                        ],
+                        "fp": "25",
+                        "weight": "3.5",
+                        "skill": [
+                            {
+                                "name": "Last Rits",
+                                "description": "Last Rites is a Skill in Elden Ring. Last Rites grants the user and the allies in the vicinity the effect of the Sacred Order.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Sword of St Trina",
+                    "attack": {
+                        "Physical": "107",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "39",
+                        "Magic": "33",
+                        "Fire": "27",
+                        "Lightning": "27",
+                        "Holy": "27",
+                        "Boost": "28"
+                    },
+                    "scaling": {
+                        "Strength": "D",
+                        "Dexterity": "D",
+                        "Intelligence": "E"
+                    },
+                    "requiredStats": {
+                        "Strength": "10",
+                        "Dexterity": "12",
+                        "Intelligence": "14"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "The Sword of St Trina scales primarily with Intelligence, Strength and Dexterity and is a good Weapon for its Unique Skill Mists of Slumber that releases a faint purple mist that spreads across a wide frontwards area. This mist inflicts the sleep ailment upon foes.",
+                        "location": [
+                            "In the Forsaken Ruins, near the Rotview Balcony Site of Grace, behind an Imp Seal requiring one Stonesword Key."
+                        ],
+                        "fp": "20",
+                        "weight": "3",
+                        "skill": [
+                            {
+                                "name": "Mist of Slumber",
+                                "description": "Mists of Slumber is a Skill in Elden Ring. Mists of Slumber is a special skill only available for an individual weapon, and cannot be applied to other weapons via Ashes of War.",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Regalia of Eochaid",
+                    "attack": {
+                        "Physical": "89",
+                        "Magic": "57",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "48",
+                        "Magic": "40",
+                        "Fire": "31",
+                        "Lightning": "31",
+                        "Holy": "31",
+                        "Boost": "33"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity": "D",
+                        "Arcane": "D"
+                    },
+                    "requiredStats": {
+                        "Strength": "12",
+                        "Dexterity": "18",
+                        "Arcane": "15"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Regalia of Eochaid is a Straight Sword in Elden Ring. The Regalia of Eochaid scales primarily with Dexterity and Arcane and is a good Weapon for Arcane Builds.",
+                        "location": [
+                            "Going through the Gaol Cave and reaching the end of the dungeon.",
+                        ],
+                        "fp": "15",
+                        "weight": "5.5",
+                        "skill": [
+                            {
+                                "name": "Eochaid's Dancing Blade",
+                                "description": " Eochaid's Dancing Blade is the unique Skill of the Marais Executioner's Sword and Regalia of Eochaid in Elden Ring. Eochaid's Dancing Blade is a special skill available for certain weapons, it infuses the sword with energy, then allows the player to manipulate the sword and fling it forwards in a corkscrew attack",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Coded Sword",
+                    "attack": {
+                        "Physical": "0",
+                        "Magic": "0",
+                        "Fire": "0",
+                        "Lightning": "0",
+                        "Holy": "85",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "13",
+                        "Magic": "22",
+                        "Fire": "22",
+                        "Lightning": "22",
+                        "Holy": "58",
+                        "Boost": "27"
+                    },
+                    "scaling": {
+                        "Faith": "B"
+                    },
+                    "requiredStats": {
+                        "Faith": "18"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Regalia of Eochaid is a Straight Sword in Elden Ring. The Regalia of Eochaid scales primarily with Dexterity and Arcane and is a good Weapon for Arcane Builds.",
+                        "location": [
+                            "Going through the Gaol Cave and reaching the end of the dungeon.",
+                        ],
+                        "fp": "15",
+                        "weight": "5.5",
+                        "skill": [
+                            {
+                                "name": "Unblockable Blade",
+                                "description": " Unblockable Blade (Coded Sword) is a Skill in Elden Ring. Unblockable Blade (Coded Sword) is a unique skill that cannot be applied to other weapons via Ashes of War. ",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                },
+                {
+                    "name": "Sword of Night and Flame",
+                    "attack": {
+                        "Physical": "87",
+                        "Magic": "56",
+                        "Fire": "56",
+                        "Lightning": "0",
+                        "Holy": "0",
+                        "Critical": "100"
+                    },
+                    "guard": {
+                        "Physical": "36",
+                        "Magic": "42",
+                        "Fire": "42",
+                        "Lightning": "26",
+                        "Holy": "26",
+                        "Boost": "31"
+                    },
+                    "scaling": {
+                        "Strength": "E",
+                        "Dexterity":"E",
+                        "Intelligence":"D",
+                        "Faith":"D"
+                    },
+                    "requiredStats": {
+                         "Strength": "12",
+                        "Dexterity":"12",
+                        "Intelligence":"24",
+                        "Faith":"24"
+                    },
+                    "info": {
+                        "image": "",
+                        "description": "Sword of Night and Flame is a Straight Sword in Elden Ring. The Sword of Night and Flame scales primarily with Strength, Dexterity, Intelligence, and Faith and has a powerful Unique Skill, Night-and-Flame Stance, which allows the user to hold the sword level and follow up with a normal attack to cast the Comet Azur sorcery or a strong attack to sweep forward with a burst of flame causing Fire Damage.",
+                        "location": [
+                            "Found in Caria Manor, east side, in a locked room behind the gardens.",
+                            "From Manor Lower Level Site of Grace, cross the rooftops east, then drop down onto a platform with a ladder.",
+                            "Descend to the room with a chest near a chair — the sword is inside."
+                        ],
+                        "fp": "26-32",
+                        "weight": "4",
+                        "skill": [
+                            {
+                                "name": "Night-and-Flame Stance",
+                                "description": " Night-and-Flame Stance is a Skill in Elden Ring. Night-and-Flame Stance is a unique skill on the Sword of Night and Flame that allows the user to hold the sword level and then have the option to follow up with a normal attack to cast the Comet Azur sorcery or follow up with a sweep flame attack causing Fire Damage",
+                                "playback": [
+                                    "Tt contain weapon skill video"
+                                ]
+                            }
+                        ],
+                        "video": [
+                            "It contain gameplay video with this with this weapon"
+                        ]
+                    }
+                }
+            ],
             "greatSwords": [],
             "colossalSwords ": [],
             "thrustingSwords": [],
