@@ -9,7 +9,7 @@ const EpicBattles = () => {
     subtitle: "Malenia vs. Radahn",
     location: "Caelid",
     description: "The legendary duel that scarred the land forever",
-    image: "https://images.unsplash.com/photo-1504893524553-b855bce32c67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1756479210/battle_of_aeonia_iq3lgt.jpg",
     outcome: "Stalemate - Both defeated",
     casualties: "Massive",
     aftermath: "Caelid became a wasteland of Scarlet Rot",
@@ -26,7 +26,7 @@ const EpicBattles = () => {
     subtitle: "The Capital's Last Stand",
     location: "Leyndell, Royal Capital",
     description: "The final battle for the throne of the Lands Between",
-    image: "https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1756588795/The_Siege_of_Leyndell_ml2dbp_c_crop_ar_3_4_jp8vea.webp",
     outcome: "Varied by Tarnished",
     casualties: "Heavy",
     aftermath: "The capital fell to ash",
@@ -43,7 +43,7 @@ const EpicBattles = () => {
     subtitle: "Godwyn vs. Fortissax",
     location: "Leyndell's Past",
     description: "The conflict that forged an unlikely friendship",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1756588915/The_War_of_Ancient_Dragons_twztra.webp",
     outcome: "Peace Treaty",
     casualties: "Unknown",
     aftermath: "Dragons joined the Golden Order",
@@ -60,7 +60,7 @@ const EpicBattles = () => {
     subtitle: "The Assassination of Godwyn",
     location: "Leyndell",
     description: "The conspiracy that shattered the Golden Order",
-    image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1756589054/The_Night_of_Black_Knives_fgivop.jpg",
     outcome: "Godwyn's Soul Death",
     casualties: "Godwyn the Golden",
     aftermath: "The Shattering begins",
@@ -77,7 +77,7 @@ const EpicBattles = () => {
     subtitle: "Radagon vs. The Academy",
     location: "Raya Lucaria Academy",
     description: "The siege that united sword and sorcery",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1756589179/The_Conquest_of_Raya_Lucaria_rle164.webp",
     outcome: "Golden Order Victory",
     casualties: "Moderate",
     aftermath: "Marriage of Radagon and Rennala",
@@ -94,7 +94,7 @@ const EpicBattles = () => {
     subtitle: "The Carian Royal Family's Rise",
     location: "Liurnia of the Lakes",
     description: "The conflicts that established Carian supremacy",
-    image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1756589506/The_Carian_Royal_Family_s_Rise_ff4c7n.webp",
     outcome: "Carian Victory",
     casualties: "Heavy among rival houses",
     aftermath: "Carian Royal Family unified Liurnia",
@@ -111,7 +111,7 @@ const EpicBattles = () => {
     subtitle: "Marika's Northern Campaign",
     location: "Mountaintops of the Giants",
     description: "The genocide that cursed a race to eternal servitude",
-    image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1756589713/The_Flame_Giant_War_vasl0j.webp",
     outcome: "Golden Order Victory",
     casualties: "Near extinction of Fire Giants",
     aftermath: "The last giant guards the Flame of Ruin",
@@ -128,7 +128,7 @@ const EpicBattles = () => {
     subtitle: "The Omen Twins' Rebellion",
     location: "Leyndell Sewers",
     description: "The forgotten conflict in the depths",
-    image: "https://images.unsplash.com/photo-1520637836862-4d197d17c38a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1756590182/dung_eater_in_sewers_islext.jpg",
     outcome: "Suppressed but never ended",
     casualties: "Countless Omen",
     aftermath: "Mohg's escape and Morgott's exile",
@@ -145,7 +145,7 @@ const EpicBattles = () => {
     subtitle: "Malenia's Southern Campaigns",
     location: "Various Southern Regions",
     description: "The Scarlet Rot's first spread across the lands",
-    image: "https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1756590393/The_Cleanrot_War_xcgarb.webp",
     outcome: "Miquella's Territory Secured",
     casualties: "Heavy on all sides",
     aftermath: "Establishment of Cleanrot Knight order",
@@ -162,7 +162,7 @@ const EpicBattles = () => {
     subtitle: "The Conspiracy of the Primeval Current",
     location: "Raya Lucaria Academy",
     description: "The sorcerers' attempt to transcend the stars",
-    image: "https://images.unsplash.com/photo-1419242902214-272b3f66ee7a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1756590674/Elden-Ring-Raya-Lucaria-Academy_e0wjvd.avif",
     outcome: "Rebellion Crushed",
     casualties: "Many master sorcerers",
     aftermath: "Academy's magical research restricted",
@@ -179,7 +179,7 @@ const EpicBattles = () => {
     subtitle: "The Ancient Order's Last Stand",
     location: "Various Ancient Sites",
     description: "The conflict between old and new divinity",
-    image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1756590767/elden-ring-crucible-knight-crucible-knight-ordovis-boss-fight_fmkvgw.avif",
     outcome: "Golden Order Victory",
     casualties: "Most Crucible Knights",
     aftermath: "Crucible aspects deemed blasphemous",
@@ -196,7 +196,7 @@ const EpicBattles = () => {
     subtitle: "The God-Slaying Apostles",
     location: "Throughout the Lands Between",
     description: "The systematic hunting of demigods",
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1756590538/Godskin_Duo_uzeerb.webp",
     outcome: "Several demigods slain",
     casualties: "Multiple demigods and their followers",
     aftermath: "Godskin cult driven underground",
@@ -230,16 +230,16 @@ const EpicBattles = () => {
       <div className="py-12 px-4">
         <div className="max-w-6xl mx-auto space-y-12">
           {battles.map((battle, index) => (
-            <div key={index} className="bg-slate-800/90 border-red-700/50 overflow-hidden hover:border-red-600 transition-all duration-300">
+            <div key={index} className="bg-slate-800/90 border border-red-700/50 rounded-sm    overflow-hidden hover:border-red-600 transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-2">
                 {/* Image */}
-                <div className="relative h-64 lg:h-auto">
+                <div className="relative h-64 lg:h-auto  ">
                   <img 
                     src={battle.image} 
                     alt={battle.name}
-                    className="w-full h-full object-cover opacity-70"
+                    className=" h-[100%] w-[100%]   object-cover opacity-70  ease-in-out hover:scale-102   transition-all duration-500 "
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-slate-800/80 to-transparent" />
+                  {/* <div className="absolute inset-0 bg-gradient-to-r from-slate-800/80 to-transparent" /> */}
                   <div className="absolute bottom-4 left-4">
                     <Swords className="h-8 w-8 text-red-400" />
                   </div>

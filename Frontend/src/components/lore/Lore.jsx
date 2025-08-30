@@ -621,7 +621,11 @@ They represent the alien nature of divine authority - beings so removed from hum
     ];
 
     return (
-        <div className="min-h-screen bg-fixed bg-center bg-cover"  style={{ backgroundImage: "url('/img/background1.webp')" }}>
+      <div 
+  className="min-h-screen bg-fixed bg-center bg-cover"  
+  style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756592268/loreBg_tqrof5.webp')" }}
+>
+
             {/* Header */}
             <div className="bg-slate-900/80 py-8 px-4">
                 <div className="max-w-6xl mx-auto">

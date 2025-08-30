@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 import { Routes, Route, Link } from 'react-router-dom'
-import axios from 'axios'
+ 
 
 
 
@@ -26,19 +26,7 @@ import Exploration from './components/Exploration/Exploration';
 
 function App() {
 
-
-  const [knowledge, setKnowledge] = useState([]);
-
-  useEffect(() => {
-    axios.get("/lore/knowledge")
-      .then((response) => {
-        setKnowledge(response.data);
-      })
-      .catch((error) => {
-        console.log(error)
-      })
-  },[])
-  console.log(knowledge);
+ 
   return (
     <>
 
@@ -48,7 +36,7 @@ function App() {
         <Route path="/Alldemigods/:bossId" element={<SingleDemigod />} />
         <Route path="/bosses" element={<Bosses />} />
         <Route path="/battles" element={<EpicBattles />} />
-        <Route path='/Lore' element={<Lore />} />
+        <Route path='/lore' element={<Lore />} />
         <Route path='/exploration' element={<Exploration />} />
       </Routes>
 
