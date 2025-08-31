@@ -721,8 +721,8 @@ const Bosses = () => {
       </div>
 
       {/* Boss Cards */}
-      <div className="py-12 px-4">
-        <div className="max-w-6xl mx-auto space-y-8">
+      <div className="py-12 px-4  " >
+        <div className="max-w-6xl mx-auto space-y-8 ">
           {bosses.map((boss, index) => (
             <div key={index} className="bg-slate-800/90 border-purple-700/50 overflow-hidden hover:border-purple-600 transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
