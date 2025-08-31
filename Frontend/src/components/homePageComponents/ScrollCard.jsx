@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 
-const cardsArray = Array.from({ length: 15 }, (_, i) => i + 1)
-const reverseCardsArray = Array.from({ length: 15 }, (_, i) => i + 1)
+const cardsArray = Array.from({ length: 8 }, (_, i) => i + 1)
 
 
 
