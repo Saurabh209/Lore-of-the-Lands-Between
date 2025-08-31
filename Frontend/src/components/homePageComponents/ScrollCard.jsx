@@ -99,7 +99,7 @@ const ScrollCard = () => {
                 style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756638263/bg2_cdwfjx.webp')" }}
             >
 
-                <div className="-rotate-1  h-[calc(33.333%_-_10px)] mb-3  flex items-center justify-center">
+                <div className="rotate-1  h-[calc(33.333%_-_10px)] mb-3  flex items-center justify-center">
                     {/* Your original container with infinite scroll applied */}
                     <div className=" h-[100%]  flex overflow-hidden [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
                         <div
@@ -173,7 +173,7 @@ const ScrollCard = () => {
                         </div>
                     </div>
                 </div>
-                <div className=" -rotate-1 h-[calc(33.333%_-_10px)] mb-3    flex items-center justify-center">
+                <div className=" rotate-1 h-[calc(33.333%_-_10px)] mb-3    flex items-center justify-center">
                     {/* Your original container with infinite scroll applied */}
                     <div className=" h-[100%]  flex overflow-hidden [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
                         <div
