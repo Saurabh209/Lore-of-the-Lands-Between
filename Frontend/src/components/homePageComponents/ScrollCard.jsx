@@ -114,7 +114,7 @@ const ScrollCard = () => {
                                 return (
                                     <div
                                         key={`${card.id}-${index}`}
-                                        className=' overflow-hidden rounded-lg  mr-4  w-auto min-w-[400px] flex justify-center items-center  '
+                                        className=' overflow-hidden rounded-lg    bg-black mr-4  w-auto min-w-[400px] flex justify-center items-center  '
 
 
                                     >
@@ -126,7 +126,7 @@ const ScrollCard = () => {
                                             className="h-[100%] w-auto object-cover"
                                         >
                                             <source
-                                                src="https://res.cloudinary.com/doeiccxm7/video/upload/v1756655410/WhatsApp_Video_2025-08-31_at_21.19.42_ec05825e_ruocul.mp4"
+                                                src=" "
                                                 type="video/mp4"
                                             />
                                             Your browser does not support the video tag.
@@ -152,7 +152,7 @@ const ScrollCard = () => {
                                 return (
                                     <div
                                         key={`reverse-${card.id}-${index}`}
-                                        className='mr-4 overflow-hidden rounded-lg   w-auto   min-w-[400px] flex justify-center items-center '
+                                        className='mr-4 overflow-hidden rounded-lg bg-black  w-auto   min-w-[400px] flex justify-center items-center '
                                     >
                                         <video
                                             autoPlay
@@ -162,7 +162,7 @@ const ScrollCard = () => {
                                             className="h-[100%] w-auto object-cover"
                                         >
                                             <source
-                                                src="https://res.cloudinary.com/doeiccxm7/video/upload/v1756655410/WhatsApp_Video_2025-08-31_at_21.19.42_ec05825e_ruocul.mp4"
+                                                src=" "
                                                 type="video/mp4"
                                             />
                                             Your browser does not support the video tag.
@@ -188,7 +188,7 @@ const ScrollCard = () => {
                                 return (
                                     <div
                                         key={`${card.id}-${index}`}
-                                        className=' mr-4 overflow-hidden rounded-lg   w-auto min-w-[400px] flex justify-center items-center  '
+                                        className=' mr-4 overflow-hidden rounded-lg bg-black  w-auto min-w-[400px] flex justify-center items-center  '
                                     >
                                         <video
                                             autoPlay
@@ -198,7 +198,7 @@ const ScrollCard = () => {
                                             className="h-[100%] w-auto object-cover"
                                         >
                                             <source
-                                                src="https://res.cloudinary.com/doeiccxm7/video/upload/v1756655410/WhatsApp_Video_2025-08-31_at_21.19.42_ec05825e_ruocul.mp4"
+                                                src=""
                                                 type="video/mp4"
                                             />
                                             Your browser does not support the video tag.
