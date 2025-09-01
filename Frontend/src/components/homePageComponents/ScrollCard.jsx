@@ -42,8 +42,8 @@ const ScrollCard = () => {
                                 return (
                                     <div
                                         key={`${card.id}-${index}`}
-                                        className=' overflow-hidden rounded-lg bg-black mr-4  w-auto min-w-[400px] flex justify-center items-center  '
-                                        style={{ transform: `translateX(${scrollY * -0.5}px)` }}
+                                        className=' overflow-hidden rounded-lg  mr-4 bg-center bg-cover w-auto min-w-[400px] flex justify-center items-center  '
+                                        style={{ transform: `translateX(${scrollY * -0.5}px)`, backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756638263/bg2_cdwfjx.webp" }}
 
 
                                     >
@@ -52,10 +52,12 @@ const ScrollCard = () => {
                                             muted
                                             loop
                                             playsInline
-                                            className="h-[100%] w-auto object-cover"
+                                            className="h-[100%] w-[100%] object-cover"
                                         >
                                             <source
-                                                src=""
+                                                src="
+                                               // https://res.cloudinary.com/doeiccxm7/video/upload/v1756738157/scrollVid4compressed_kauhqo.mp4
+                                                "
                                                 type="video/mp4"
                                             />
                                             Your browser does not support the video tag.
@@ -78,8 +80,8 @@ const ScrollCard = () => {
                                 return (
                                     <div
                                         key={`${card.id}-${index}`}
-                                        className=' overflow-hidden rounded-lg bg-black mr-4  w-auto min-w-[400px] flex justify-center items-center  '
-                                        style={{ transform: `translateX(${scrollY * 0.5}px)` }}
+                                        className=' overflow-hidden rounded-lg  mr-4 bg-center bg-cover w-auto min-w-[400px] flex justify-center items-center  '
+                                        style={{ transform: `translateX(${scrollY * 0.5}px)`, backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756638263/bg2_cdwfjx.webp" }}
 
                                     >
                                         <video
@@ -87,10 +89,12 @@ const ScrollCard = () => {
                                             muted
                                             loop
                                             playsInline
-                                            className="h-[100%] w-auto object-cover"
+                                            className="h-[100%] w-[100%] object-cover"
                                         >
                                             <source
-                                                src=""
+                                                src="
+                                               // https://res.cloudinary.com/doeiccxm7/video/upload/v1756738405/scrollVid1Compressed_nclhq0.mp4
+                                                "
                                                 type="video/mp4"
                                             />
                                             Your browser does not support the video tag.
@@ -113,8 +117,8 @@ const ScrollCard = () => {
                                 return (
                                     <div
                                         key={`${card.id}-${index}`}
-                                        className=' overflow-hidden rounded-lg  mr-4 bg-black w-auto min-w-[400px] flex justify-center items-center  '
-                                        style={{ transform: `translateX(${scrollY * -0.8}px)` }}
+                                        className=' overflow-hidden rounded-lg  mr-4   bg-center bg-cover w-auto min-w-[400px] flex justify-center items-center  '
+                                        style={{ transform: `translateX(${scrollY * -0.8}px)`, backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756638263/bg2_cdwfjx.webp" }}
 
                                     >
                                         <video
@@ -122,10 +126,12 @@ const ScrollCard = () => {
                                             muted
                                             loop
                                             playsInline
-                                            className="h-[100%] w-auto object-cover"
+                                            className="h-[100%] object-cover"
                                         >
                                             <source
-                                                src=""
+                                                src="
+                                                // https://res.cloudinary.com/doeiccxm7/video/upload/v1756738643/ScrollVid3Compressed_empbe9.mp4
+                                                "
                                                 type="video/mp4"
                                             />
                                             Your browser does not support the video tag.
@@ -139,7 +145,7 @@ const ScrollCard = () => {
 
 
             </div>
-            <div className="absolute   inset-0 bg-gradient-to-t from-[rgb(2,3,12)] via-transparent to-[#0f172a]" />
+            <div className="absolute   inset-0 bg-gradient-to-t from-[rgb(2,3,12)] via-transparent to-[rgb(2,3,12)]" />
 
         </div>
     );

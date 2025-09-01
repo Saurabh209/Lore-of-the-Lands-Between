@@ -9,7 +9,7 @@ import Radhan from '/img/Radhan.jpg'
 import Rykard from '/img/Demigod/Rykard.jpg'
 import Godrick from '/img/Demigod/Godrick.jpg'
 import Godwyn from '/img/Demigod/Godwyn.jpg'
-import Miqulla from '/img/Demigod/Miqulla.png'
+import Miqulla from '/img/Demigod/Miquella.jpg'
 import Mohg from '/img/Demigod/Mogh.jpg'
 import Morgott from '/img/Demigod/Morgot.png'
 const AllDemigods = () => {
