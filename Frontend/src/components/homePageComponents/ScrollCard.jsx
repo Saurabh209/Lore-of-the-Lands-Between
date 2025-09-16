@@ -56,7 +56,7 @@ const ScrollCard = () => {
                                         >
                                             <source
                                                 src="
-                                               // https://res.cloudinary.com/doeiccxm7/video/upload/v1756738157/scrollVid4compressed_kauhqo.mp4
+                                                https://res.cloudinary.com/doeiccxm7/video/upload/v1756738157/scrollVid4compressed_kauhqo.mp4
                                                 "
                                                 type="video/mp4"
                                             />
@@ -93,7 +93,7 @@ const ScrollCard = () => {
                                         >
                                             <source
                                                 src="
-                                               // https://res.cloudinary.com/doeiccxm7/video/upload/v1756738405/scrollVid1Compressed_nclhq0.mp4
+                                                https://res.cloudinary.com/doeiccxm7/video/upload/v1756738405/scrollVid1Compressed_nclhq0.mp4
                                                 "
                                                 type="video/mp4"
                                             />
@@ -130,7 +130,7 @@ const ScrollCard = () => {
                                         >
                                             <source
                                                 src="
-                                                // https://res.cloudinary.com/doeiccxm7/video/upload/v1756738643/ScrollVid3Compressed_empbe9.mp4
+                                                 https://res.cloudinary.com/doeiccxm7/video/upload/v1756738643/ScrollVid3Compressed_empbe9.mp4
                                                 "
                                                 type="video/mp4"
                                             />

@@ -27,8 +27,8 @@ const ExploreNavigationCards = () => {
 
 
     return (
-        <div className='exploreNavigationCardMainContainer relative bg-fixed bg-center bg-cover ' style={{ backgroundImage: "url('/img//backgroundCollection/bg1.png')" }}>
-            <div className='w-[80%] m-auto my-12 z-2' style={{
+        <div className='exploreNavigationCardMainContainer  relative bg-fixed bg-center bg-cover ' style={{ backgroundImage: "url('/img//backgroundCollection/bg1.png')" }}>
+            <div className='w-[80%] m-auto my-22 z-2' style={{
                 // transform: `translateY(${scrollY * -0.1}px)`
             }}>
                 <div className='exploreNavigationTop   mb-5  '>
