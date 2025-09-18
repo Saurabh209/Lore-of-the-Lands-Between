@@ -55,18 +55,15 @@ const EldenInfo = () => {
 
                 <div className='scrollwallpapercards  flex overflow-scroll z-2'>
 
-                    <div className=' rounded-lg  mr-4 bg-center bg-cover w-auto  flex justify-center items-center   sm:min-w-[300px]  md:min-w-[400px] lg:min-w-[500px]'
-                    >
+                    <div className=' rounded-lg  mr-4 bg-center bg-cover w-auto  flex justify-center items-center  '>
                         <img src="https://res.cloudinary.com/doeiccxm7/image/upload/v1758017431/ER-Tarnished-Edition-Key-Feature-Screenshot-1_mtkng1.webp" alt="" />
 
                     </div>
-                    <div className=' rounded-lg  mr-4 bg-center bg-cover w-auto  flex justify-center items-center   sm:min-w-[300px]  md:min-w-[400px] lg:min-w-[500px]'
-                    >
+                    <div className=' rounded-lg  mr-4 bg-center bg-cover w-auto  flex justify-center items-center  '>
                         <img src="https://res.cloudinary.com/doeiccxm7/image/upload/v1758017432/ER-Tarnished-Edition-Key-Feature-Screenshot-2_ncsga8.webp" alt="" />
 
                     </div>
-                    <div className=' rounded-lg  mr-4 bg-center bg-cover w-auto  flex justify-center items-center   sm:min-w-[300px]  md:min-w-[400px] lg:min-w-[500px]'
-                    >
+                    <div className=' rounded-lg  mr-4 bg-center bg-cover w-auto  flex justify-center items-center  '>
                         <img src="https://res.cloudinary.com/doeiccxm7/image/upload/v1758017430/ER-Tarnished-Edition-Key-Feature-Screenshot-3_zo2u98.webp" alt="" />
 
                     </div>
