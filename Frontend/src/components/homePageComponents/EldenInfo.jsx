@@ -25,7 +25,7 @@ const EldenInfo = () => {
 
     ]
     return (
-        <div className='  relative bg-fixed bg-center bg-cover py-40  ' style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756638263/bg2_cdwfjx.webp')" }}>
+        <div className='  relative bg-fixed bg-center bg-cover pt-40 pb-20  ' style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756638263/bg2_cdwfjx.webp')" }}>
             <div className='  m-auto    z-2' style={{
                 // transform: `translateY(${scrollY * -0.1}px)`
             }}>

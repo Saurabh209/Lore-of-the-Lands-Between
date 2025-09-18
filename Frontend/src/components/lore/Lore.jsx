@@ -1,5 +1,5 @@
 import React from 'react';
-import {Sparkles, Scale, Beaker, Diamond,  Package,  Music, Snowflake,  Bug, Cookie,  Lock, Shirt, CloudRain, EyeOff,  Orbit, Copy,Heart,   Brain, Frown, MoonStar,  Ghost,  Home, Gem, Hand, Scroll, Fingerprint, Lightbulb, TreeDeciduous,  Biohazard, Castle, TreePine, Angry, Bird, Stars, Waves, Mountain, Sun, Sword, Flower,Flower2, Crown,Droplets, Shield,Axe,Circle, BookOpen, MapPin, Users, Skull, Star, Hammer, Wand2, Target, Zap, Eye, Clock, TrendingUp, Globe, Flame, Moon, Flower2Icon } from "lucide-react";
+import { Sparkles, Scale, Beaker, Diamond, Package, Music, Snowflake, Bug, Cookie, Lock, Shirt, CloudRain, EyeOff, Orbit, Copy, Heart, Brain, Frown, MoonStar, Ghost, Home, Gem, Hand, Scroll, Fingerprint, Lightbulb, TreeDeciduous, Biohazard, Castle, TreePine, Angry, Bird, Stars, Waves, Mountain, Sun, Sword, Flower, Flower2, Crown, Droplets, Shield, Axe, Circle, BookOpen, MapPin, Users, Skull, Star, Hammer, Wand2, Target, Zap, Eye, Clock, TrendingUp, Globe, Flame, Moon, Flower2Icon } from "lucide-react";
 
 const Lore = () => {
 
@@ -349,7 +349,7 @@ These incantations represent power drawn from suffering - both the caster's will
         // ENDINGS & COSMIC CONSEQUENCES  
         {
             title: "Age of Order",
-            icon:  Scale,
+            icon: Scale,
             description: "The perfect order sought by Goldmask",
             content: `The Age of Order represents Goldmask's vision of a perfected Golden Order, stripped of the gods' capricious whims and governed by pure, immutable law. This ending removes divine personality from cosmic governance, creating a system based solely on logical principles.
 While this eliminates the gods' capacity for favoritism and cruelty, it also removes their capacity for mercy and growth. Perfect order may mean perfect justice, but it also means perfect stagnation - a cosmos that can never adapt or change.`
@@ -621,10 +621,10 @@ They represent the alien nature of divine authority - beings so removed from hum
     ];
 
     return (
-      <div 
-  className="min-h-screen bg-fixed bg-center bg-cover"  
-  style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756592268/loreBg_tqrof5.webp')" }}
->
+        <div
+            className="min-h-screen bg-fixed bg-center bg-cover"
+            style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756592268/loreBg_tqrof5.webp')" }}
+        >
 
             {/* Header */}
             <div className="bg-slate-900/80 py-8 px-4">
