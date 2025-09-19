@@ -1,8 +1,10 @@
-import React from 'react';
-
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './AllArsenal.css'
+import { Sword, Crown, Shield, BookOpen, MapPin, Users, Skull, Star, Hammer, Wand2, Target, Zap, Eye, Clock, TrendingUp, Globe, Flame, Moon } from "lucide-react";
 
 const weapons = [
+
     {
         "daggers": [
             {
@@ -12337,10 +12339,30 @@ const weapons = [
 
 
 const AllArsenal = () => {
+
+    const [knowledge, setKnowledge] = useState();
+
+    useEffect(() => {
+        const fetchWeapons = async () => {
+            try {
+                const response = await fetch('https://lore-of-the-lands-between.onrender.com/api/knowledge');
+                const data = await response.json();
+                setKnowledge(data);
+            
+            } catch (error) {
+                console.error('Error fetching weapons:', error);
+            }
+        };
+
+        fetchWeapons();
+    }, []);
+
+
+    console.log(knowledge)
     return (
         <div
             className="min-h-screen bg-fixed bg-center bg-cover"
-            style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756739634/jar_wymgrc.jpg')" }}
+            style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1758264525/hidden_city_crxxkg.jpg')" }}
         >
 
             <div className="bg-slate-900/80 py-8 px-4">
@@ -12362,17 +12384,42 @@ const AllArsenal = () => {
                     {weapons.map((categoryObj, i) =>
                         Object.keys(categoryObj).map(category => (
 
-                            <div
-                                className="border bg-[#000000d9] flex justify-center items-center  rounded-2xl   bg-center bg-contain min-h-[200px] p-4 m-2"
-                                key={i}
-                                style={{
-                                    backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1758190139/misericorde_dagger_weapon_elden_ring_wiki_guide_200px_uqfmjw.png')",
-                                    backgroundRepeat: "no-repeat"
-                                }}
-                            >
-                                {category === "daggers" && console.log(categoryObj)}
-                                <h2  className='text-white'>{category}</h2>
+                            <div key={i} className="bg-slate-800/90 border rounded-lg p-4 m-2 border-blue-700/50 hover:border-blue-600 transition-all duration-500 hover-scale animate-fade-in group" style={{ animationDelay: `${i * 0.1}s` }}>
+                                <div className='mb-4 flex flex-col gap-2'>
+                                    <div className="flex items-center gap-3 ">
+                                        <Sword className="h-8 w-8 text-blue-400 group-hover:scale-110 transition-transform duration-300" />
+                                        <div>
+                                            <p className="text-blue-300 text-2xl">{category}</p>
+                                            {/* <div className="border border-white  w-fit px-2  bg-white text-black rounded-xl text-xs mt-1">
+                                                {category?.length} items
+                                            </div> */}
+                                        </div>
+                                    </div>
+                                    <div className="   text-slate-400">
+                                        <p>This is small description</p>
+                                    </div>
+                               
+                                </div>
+                                <div>
+                                    <Link to="/exploration">
+                                    <div asChild variant="outline" className="w-full border border-blue-600 text-blue-400 bg-[#1b1b1b89] rounded-sm text-center p-2 hover:bg-blue-600 hover:text-white transition-all duration-300">
+                                       <p> View Catalog</p>
+                                    </div>
+                                    </Link>
+                                </div>
                             </div>
+
+                            // <div
+                            //     className="border bg-[#000000d9] flex justify-center items-center  rounded-2xl   bg-center bg-contain min-h-[200px] p-4 m-2"
+                            //     key={i}
+                            //     style={{
+                            //         // backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1758192733/download_iy4tit.png')",
+                            //         // backgroundRepeat: "no-repeat"
+                            //     }}
+                            // >
+
+                            //     <h2 className='text-white'>{category}</h2>
+                            // </div>
 
                         ))
                     )}
