@@ -16,6 +16,7 @@ import RelmStats from './components/homePageComponents/RelmStats';
 // import HomePageBgImage from ' ./public/img/eldenRingBg.jpg';
 import EldenRingLogo from '/img/eldenRingLogo.png'
 import ScrollCard from './components/homePageComponents/ScrollCard';
+import EldenInfo from './components/homePageComponents/EldenInfo';
 
 const Home = () => {
 
@@ -169,8 +170,9 @@ const Home = () => {
             <RelmStats />
             <ExploreNavigationCards />
             <ScrollCard/>
-            <ExploreNavigationCards />
-            <ExploreNavigationCards />
+            <EldenInfo/>
+      
+ 
 
 
 

@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 import { Routes, Route, Link } from 'react-router-dom'
- 
+
 
 
 
@@ -18,6 +18,8 @@ import EpicBattles from './components/epicBattles/EpicBattles';
 import SingleDemigod from './components/demigods/SingleDemigod';
 import Lore from './components/lore/Lore';
 import Exploration from './components/Exploration/Exploration';
+import AllArsenal from './components/Arsenal/AllArsenal';
+import Faq from './components/Faq/Faq';
 //  images import section
 
 
@@ -26,7 +28,7 @@ import Exploration from './components/Exploration/Exploration';
 
 function App() {
 
- 
+
   return (
     <>
 
@@ -38,6 +40,9 @@ function App() {
         <Route path="/battles" element={<EpicBattles />} />
         <Route path='/lore' element={<Lore />} />
         <Route path='/exploration' element={<Exploration />} />
+        <Route path='/AllArsenal' element={<AllArsenal />} />
+        <Route path='/faq' element={<Faq />} />
+
       </Routes>
 
     </>

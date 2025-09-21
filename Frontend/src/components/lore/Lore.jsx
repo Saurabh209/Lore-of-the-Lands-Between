@@ -1,7 +1,18 @@
-import React from 'react';
-import {Sparkles, Scale, Beaker, Diamond,  Package,  Music, Snowflake,  Bug, Cookie,  Lock, Shirt, CloudRain, EyeOff,  Orbit, Copy,Heart,   Brain, Frown, MoonStar,  Ghost,  Home, Gem, Hand, Scroll, Fingerprint, Lightbulb, TreeDeciduous,  Biohazard, Castle, TreePine, Angry, Bird, Stars, Waves, Mountain, Sun, Sword, Flower,Flower2, Crown,Droplets, Shield,Axe,Circle, BookOpen, MapPin, Users, Skull, Star, Hammer, Wand2, Target, Zap, Eye, Clock, TrendingUp, Globe, Flame, Moon, Flower2Icon } from "lucide-react";
+import * as React from 'react';
+import { Sparkles, Scale, Beaker, Diamond, Package, Music, Snowflake, Bug, Cookie, Lock, Shirt, CloudRain, EyeOff, Orbit, Copy, Heart, Brain, Frown, MoonStar, Ghost, Home, Gem, Hand, Scroll, Fingerprint, Lightbulb, TreeDeciduous, Biohazard, Castle, TreePine, Angry, Bird, Stars, Waves, Mountain, Sun, Sword, Flower, Flower2, Crown, Droplets, Shield, Axe, Circle, BookOpen, MapPin, Users, Skull, Star, Hammer, Wand2, Target, Zap, Eye, Clock, TrendingUp, Globe, Flame, Moon, Flower2Icon } from "lucide-react";
+import Accordion from '@mui/material/Accordion';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import Typography from '@mui/material/Typography';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Lore = () => {
+
+    const [expanded, setExpanded] = React.useState(false);
+
+    const handleChange = (panel) => (event, isExpanded) => {
+        setExpanded(isExpanded ? panel : false);
+    };
 
 
     const loreTopics = [
@@ -349,7 +360,7 @@ These incantations represent power drawn from suffering - both the caster's will
         // ENDINGS & COSMIC CONSEQUENCES  
         {
             title: "Age of Order",
-            icon:  Scale,
+            icon: Scale,
             description: "The perfect order sought by Goldmask",
             content: `The Age of Order represents Goldmask's vision of a perfected Golden Order, stripped of the gods' capricious whims and governed by pure, immutable law. This ending removes divine personality from cosmic governance, creating a system based solely on logical principles.
 While this eliminates the gods' capacity for favoritism and cruelty, it also removes their capacity for mercy and growth. Perfect order may mean perfect justice, but it also means perfect stagnation - a cosmos that can never adapt or change.`
@@ -621,10 +632,10 @@ They represent the alien nature of divine authority - beings so removed from hum
     ];
 
     return (
-      <div 
-  className="min-h-screen bg-fixed bg-center bg-cover"  
-  style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756592268/loreBg_tqrof5.webp')" }}
->
+        <div
+            className="min-h-screen bg-fixed bg-center bg-cover "
+            style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756592268/loreBg_tqrof5.webp')" }}
+        >
 
             {/* Header */}
             <div className="bg-slate-900/80 py-8 px-4">
@@ -669,13 +680,13 @@ They represent the alien nature of divine authority - beings so removed from hum
             </div>
 
             {/* Timeline */}
-            <div className="py-12 px-4 bg-slate-800/30">
+            <div className="py-32 px-4 bg-slate-800/30">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl font-bold text-blue-400 mb-8">Timeline of Ages</h2>
 
-                    <div className="space-y-8">
+                    <div className="space-y-8 ">
                         {timelines.map((timeline, index) => (
-                            <div key={index} className="bg-slate-800/90 border-blue-700/50">
+                            <div key={index} className="bg-slate-800/90 border rounded-lg p-8 border-blue-700/50">
                                 <div>
                                     <div className="text-blue-300 text-xl">{timeline.era}</div>
                                 </div>
@@ -696,9 +707,173 @@ They represent the alien nature of divine authority - beings so removed from hum
             </div>
 
             {/* Mysteries */}
-            <div className="py-12 px-4">
-                <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl font-bold text-blue-400 mb-8">Unsolved Mysteries</h2>
+            <div className=" relative py-32 px-4 bg-fixed  bg-center bg-cover bg-slate-900/100"
+                style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756589179/The_Conquest_of_Raya_Lucaria_rle164.webp')" }}
+            >
+                <div className="overlayBackground absolute    bg-black  inset-0  "></div>
+                <div className="max-w-6xl mx-auto  ">
+                    <h2 className="text-6xl font-bold text-blue-500 mb-8">Unsolved Mysteries</h2>
+
+
+                    <Accordion
+                        expanded={expanded === "panel1"}
+                        onChange={handleChange("panel1")}
+                        sx={{
+                            bgcolor: "#00000000", // semi-transparent
+                            backdropFilter: "blur(12px)", // frosted glass effect
+                            border: "1px solid #60a5fa", // Tailwind blue-600 hex
+                            backdropFilter: "blur(2px)",  // blur amount in px
+                            borderRadius: 2,
+                            boxShadow: "0 4px 30px rgba(0,0,0,0.1)",
+                            mb: 2, // margin bottom
+                        }}
+                    >
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon sx={{ color: "#60a5fa" }} />}
+                            sx={{
+                                bgcolor: "transparent", // make sure summary is transparent
+                                color: "#fff",
+                            }}
+                        >
+                            <Typography className='text-[#60a5fa]' sx={{ flexShrink: 0 }}>
+                                Who orchestrated the Night of Black Knives?
+                            </Typography>
+                        </AccordionSummary>
+
+                        <AccordionDetails
+                            sx={{
+                                bgcolor: "transparent", // make sure summary is transparent
+                                color: "#fff",
+                            }}
+                        >
+                            <Typography>
+                                While Ranni was the mastermind, evidence suggests Queen Marika herself
+                                may have been complicit, having her own reasons to see Godwyn dead
+                                and the Golden Order challenged.
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+
+
+                    <Accordion
+                        expanded={expanded === "panel2"}
+                        onChange={handleChange("panel2")}
+                        sx={{
+                            bgcolor: "#00000000", // semi-transparent
+                            backdropFilter: "blur(12px)", // frosted glass effect
+                            border: "1px solid #60a5fa", // Tailwind blue-600 hex
+                            backdropFilter: "blur(2px)",  // blur amount in px
+                            borderRadius: 2,
+                            boxShadow: "0 4px 30px rgba(0,0,0,0.1)",
+                            mb: 2, // margin bottom
+                        }}
+                    >
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon sx={{ color: "#60a5fa" }} />}
+                            sx={{
+                                bgcolor: "transparent", // make sure summary is transparent
+                                color: "#fff",
+                            }}
+                        >
+                            <Typography className='text-[#60a5fa]' sx={{ flexShrink: 0 }}>
+                               What is the true nature of the Outer Gods?
+                            </Typography>
+                        </AccordionSummary>
+
+                        <AccordionDetails
+                            sx={{
+                                bgcolor: "transparent", // make sure summary is transparent
+                                color: "#fff",
+                            }}
+                        >
+                            <Typography>
+                               The Outer Gods appear to be cosmic entities that exist beyond the physical realm, each representing different fundamental forces or concepts. They compete for influence over the world through mortal vessels.
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+
+
+                    <Accordion
+                        expanded={expanded === "panel3"}
+                        onChange={handleChange("panel3")}
+                        sx={{
+                            bgcolor: "#00000000", // semi-transparent
+                            backdropFilter: "blur(12px)", // frosted glass effect
+                            border: "1px solid #60a5fa", // Tailwind blue-600 hex
+                            backdropFilter: "blur(2px)",  // blur amount in px
+                            borderRadius: 2,
+                            boxShadow: "0 4px 30px rgba(0,0,0,0.1)",
+                            mb: 2, // margin bottom
+                        }}
+                    >
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon sx={{ color: "#60a5fa" }} />}
+                            sx={{
+                                bgcolor: "transparent", // make sure summary is transparent
+                                color: "#fff",
+                            }}
+                        >
+                            <Typography className='text-[#60a5fa]' sx={{ flexShrink: 0 }}>
+                                Why did Queen Marika shatter the Elden Ring?
+                            </Typography>
+                        </AccordionSummary>
+
+                        <AccordionDetails
+                            sx={{
+                                bgcolor: "transparent", // make sure summary is transparent
+                                color: "#fff",
+                            }}
+                        >
+                            <Typography>
+                               Grief over Godwyn's death, rage at the Greater Will's callousness, and perhaps a desire to free herself and her world from the constraints of absolute order.
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+
+
+                    <Accordion
+                        expanded={expanded === "panel4"}
+                        onChange={handleChange("panel4")}
+                        sx={{
+                            bgcolor: "#00000000", // semi-transparent
+                            backdropFilter: "blur(12px)", // frosted glass effect
+                            border: "1px solid #60a5fa", // Tailwind blue-600 hex
+                            backdropFilter: "blur(2px)",  // blur amount in px
+                            borderRadius: 2,
+                            boxShadow: "0 4px 30px rgba(0,0,0,0.1)",
+                            mb: 2, // margin bottom
+                        }}
+                    >
+                        <AccordionSummary
+                            expandIcon={<ExpandMoreIcon sx={{ color: "#60a5fa" }} />}
+                            sx={{
+                                bgcolor: "transparent", // make sure summary is transparent
+                                color: "#fff",
+                            }}
+                        >
+                            <Typography className='text-[#60a5fa]' sx={{ flexShrink: 0 }}>
+                               What happened to the other Lands Beyond the Fog?
+                            </Typography>
+                        </AccordionSummary>
+
+                        <AccordionDetails
+                            sx={{
+                                bgcolor: "transparent", // make sure summary is transparent
+                                color: "#fff",
+                            }}
+                        >
+                            <Typography>
+                               The Lands Between may be just one region in a larger world. The fog that surrounds it suggests other lands exist, but their fate remains unknown.
+                            </Typography>
+                        </AccordionDetails>
+                    </Accordion>
+
+
+
+
+
+
+
 
                     {/* <Accordion type="single" collapsible className="space-y-4">
             {mysteries.map((mystery, index) => (
@@ -717,17 +892,29 @@ They represent the alien nature of divine authority - beings so removed from hum
             ))}
           </Accordion> */}
                 </div>
+
+
+
             </div>
 
             {/* Quote */}
-            <div className="py-12 px-4 bg-slate-900/50">
+            {/* <div className="py-12 px-4 relative ">
                 <div className="max-w-4xl mx-auto text-center">
                     <blockquote className="text-2xl italic text-blue-300 mb-4">
                         "The Golden Order was created by confining Destined Death. Thus, this new Order will be one not of gold, but of stars and moon and chill night."
                     </blockquote>
                     <cite className="text-slate-400">— Ranni the Witch</cite>
                 </div>
-            </div>
+                <div
+                    style={{
+                        background: "linear-gradient(to bottom, rgba(15, 23, 42, 0.1),rgba(15, 23, 42, 0.1), #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, rgb(2,3,12))"
+                    }}
+                    className="  absolute   inset-0"
+                />
+
+            </div> */}
+
+
         </div>
     );
 };
