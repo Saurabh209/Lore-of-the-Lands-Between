@@ -5,6 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 const Lore = () => {
 
     const [expanded, setExpanded] = React.useState(false);
@@ -632,7 +633,7 @@ They represent the alien nature of divine authority - beings so removed from hum
 
     return (
         <div
-            className="min-h-screen bg-fixed bg-center bg-cover"
+            className="min-h-screen bg-fixed bg-center bg-cover "
             style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756592268/loreBg_tqrof5.webp')" }}
         >
 
@@ -679,13 +680,13 @@ They represent the alien nature of divine authority - beings so removed from hum
             </div>
 
             {/* Timeline */}
-            <div className="py-12 px-4 bg-slate-800/30">
+            <div className="py-32 px-4 bg-slate-800/30">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl font-bold text-blue-400 mb-8">Timeline of Ages</h2>
 
-                    <div className="space-y-8">
+                    <div className="space-y-8 ">
                         {timelines.map((timeline, index) => (
-                            <div key={index} className="bg-slate-800/90 border-blue-700/50">
+                            <div key={index} className="bg-slate-800/90 border rounded-lg p-8 border-blue-700/50">
                                 <div>
                                     <div className="text-blue-300 text-xl">{timeline.era}</div>
                                 </div>
@@ -706,16 +707,21 @@ They represent the alien nature of divine authority - beings so removed from hum
             </div>
 
             {/* Mysteries */}
-            <div className="py-12 px-4">
-                <div className="max-w-6xl mx-auto">
-                    <h2 className="text-3xl font-bold text-blue-400 mb-8">Unsolved Mysteries</h2>
+            <div className=" relative py-32 px-4 bg-fixed  bg-center bg-cover bg-slate-900/100"
+                style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756589179/The_Conquest_of_Raya_Lucaria_rle164.webp')" }}
+            >
+                <div className="overlayBackground absolute    bg-black  inset-0  "></div>
+                <div className="max-w-6xl mx-auto  ">
+                    <h2 className="text-6xl font-bold text-blue-500 mb-8">Unsolved Mysteries</h2>
+
+
                     <Accordion
                         expanded={expanded === "panel1"}
                         onChange={handleChange("panel1")}
                         sx={{
                             bgcolor: "#00000000", // semi-transparent
                             backdropFilter: "blur(12px)", // frosted glass effect
-                          
+                            border: "1px solid #60a5fa", // Tailwind blue-600 hex
                             backdropFilter: "blur(2px)",  // blur amount in px
                             borderRadius: 2,
                             boxShadow: "0 4px 30px rgba(0,0,0,0.1)",
@@ -723,7 +729,7 @@ They represent the alien nature of divine authority - beings so removed from hum
                         }}
                     >
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
+                            expandIcon={<ExpandMoreIcon sx={{ color: "#60a5fa" }} />}
                             sx={{
                                 bgcolor: "transparent", // make sure summary is transparent
                                 color: "#fff",
@@ -748,6 +754,7 @@ They represent the alien nature of divine authority - beings so removed from hum
                         </AccordionDetails>
                     </Accordion>
 
+
                     <Accordion
                         expanded={expanded === "panel2"}
                         onChange={handleChange("panel2")}
@@ -755,21 +762,21 @@ They represent the alien nature of divine authority - beings so removed from hum
                             bgcolor: "#00000000", // semi-transparent
                             backdropFilter: "blur(12px)", // frosted glass effect
                             border: "1px solid #60a5fa", // Tailwind blue-600 hex
-                            backdropFilter: "blur(4px)",  // blur amount in px
+                            backdropFilter: "blur(2px)",  // blur amount in px
                             borderRadius: 2,
                             boxShadow: "0 4px 30px rgba(0,0,0,0.1)",
                             mb: 2, // margin bottom
                         }}
                     >
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
+                            expandIcon={<ExpandMoreIcon sx={{ color: "#60a5fa" }} />}
                             sx={{
                                 bgcolor: "transparent", // make sure summary is transparent
                                 color: "#fff",
                             }}
                         >
-                            <Typography className='text-[#bfdbfe]' sx={{ flexShrink: 0 }}>
-                                What is the true nature of the Outer Gods?
+                            <Typography className='text-[#60a5fa]' sx={{ flexShrink: 0 }}>
+                               What is the true nature of the Outer Gods?
                             </Typography>
                         </AccordionSummary>
 
@@ -780,10 +787,11 @@ They represent the alien nature of divine authority - beings so removed from hum
                             }}
                         >
                             <Typography>
-                                The Outer Gods appear to be cosmic entities that exist beyond the physical realm, each representing different fundamental forces or concepts. They compete for influence over the world through mortal vessels.
+                               The Outer Gods appear to be cosmic entities that exist beyond the physical realm, each representing different fundamental forces or concepts. They compete for influence over the world through mortal vessels.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
+
 
                     <Accordion
                         expanded={expanded === "panel3"}
@@ -792,21 +800,21 @@ They represent the alien nature of divine authority - beings so removed from hum
                             bgcolor: "#00000000", // semi-transparent
                             backdropFilter: "blur(12px)", // frosted glass effect
                             border: "1px solid #60a5fa", // Tailwind blue-600 hex
-                            backdropFilter: "blur(4px)",  // blur amount in px
+                            backdropFilter: "blur(2px)",  // blur amount in px
                             borderRadius: 2,
                             boxShadow: "0 4px 30px rgba(0,0,0,0.1)",
                             mb: 2, // margin bottom
                         }}
                     >
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
+                            expandIcon={<ExpandMoreIcon sx={{ color: "#60a5fa" }} />}
                             sx={{
                                 bgcolor: "transparent", // make sure summary is transparent
                                 color: "#fff",
                             }}
                         >
-                            <Typography className='text-[#bfdbfe]' sx={{ flexShrink: 0 }}>
-                               Why did Queen Marika shatter the Elden Ring?
+                            <Typography className='text-[#60a5fa]' sx={{ flexShrink: 0 }}>
+                                Why did Queen Marika shatter the Elden Ring?
                             </Typography>
                         </AccordionSummary>
 
@@ -822,6 +830,7 @@ They represent the alien nature of divine authority - beings so removed from hum
                         </AccordionDetails>
                     </Accordion>
 
+
                     <Accordion
                         expanded={expanded === "panel4"}
                         onChange={handleChange("panel4")}
@@ -829,60 +838,20 @@ They represent the alien nature of divine authority - beings so removed from hum
                             bgcolor: "#00000000", // semi-transparent
                             backdropFilter: "blur(12px)", // frosted glass effect
                             border: "1px solid #60a5fa", // Tailwind blue-600 hex
-                            backdropFilter: "blur(4px)",  // blur amount in px
+                            backdropFilter: "blur(2px)",  // blur amount in px
                             borderRadius: 2,
                             boxShadow: "0 4px 30px rgba(0,0,0,0.1)",
                             mb: 2, // margin bottom
                         }}
                     >
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
+                            expandIcon={<ExpandMoreIcon sx={{ color: "#60a5fa" }} />}
                             sx={{
                                 bgcolor: "transparent", // make sure summary is transparent
                                 color: "#fff",
                             }}
                         >
-                            <Typography className='text-[#bfdbfe]' sx={{ flexShrink: 0 }}>
-                                Who orchestrated the Night of Black Knives?
-                            </Typography>
-                        </AccordionSummary>
-
-                        <AccordionDetails
-                            sx={{
-                                bgcolor: "transparent", // make sure summary is transparent
-                                color: "#fff",
-                            }}
-                        >
-                            <Typography>
-                                While Ranni was the mastermind, evidence suggests Queen Marika herself
-                                may have been complicit, having her own reasons to see Godwyn dead
-                                and the Golden Order challenged.
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
-
-
-                    <Accordion
-                        expanded={expanded === "panel5"}
-                        onChange={handleChange("panel5")}
-                        sx={{
-                            bgcolor: "#00000000", // semi-transparent
-                            backdropFilter: "blur(12px)", // frosted glass effect
-                            border: "1px solid #60a5fa", // Tailwind blue-600 hex
-                            backdropFilter: "blur(4px)",  // blur amount in px
-                            borderRadius: 2,
-                            boxShadow: "0 4px 30px rgba(0,0,0,0.1)",
-                            mb: 2, // margin bottom
-                        }}
-                    >
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon sx={{ color: "#fff" }} />}
-                            sx={{
-                                bgcolor: "transparent", // make sure summary is transparent
-                                color: "#fff",
-                            }}
-                        >
-                            <Typography className='text-[#bfdbfe]' sx={{ flexShrink: 0 }}>
+                            <Typography className='text-[#60a5fa]' sx={{ flexShrink: 0 }}>
                                What happened to the other Lands Beyond the Fog?
                             </Typography>
                         </AccordionSummary>
@@ -894,10 +863,12 @@ They represent the alien nature of divine authority - beings so removed from hum
                             }}
                         >
                             <Typography>
-                              The Lands Between may be just one region in a larger world. The fog that surrounds it suggests other lands exist, but their fate remains unknown.
+                               The Lands Between may be just one region in a larger world. The fog that surrounds it suggests other lands exist, but their fate remains unknown.
                             </Typography>
                         </AccordionDetails>
                     </Accordion>
+
+
 
 
 
@@ -921,17 +892,29 @@ They represent the alien nature of divine authority - beings so removed from hum
             ))}
           </Accordion> */}
                 </div>
+
+
+
             </div>
 
             {/* Quote */}
-            <div className="py-12 px-4 bg-slate-900/50">
+            {/* <div className="py-12 px-4 relative ">
                 <div className="max-w-4xl mx-auto text-center">
                     <blockquote className="text-2xl italic text-blue-300 mb-4">
                         "The Golden Order was created by confining Destined Death. Thus, this new Order will be one not of gold, but of stars and moon and chill night."
                     </blockquote>
                     <cite className="text-slate-400">— Ranni the Witch</cite>
                 </div>
-            </div>
+                <div
+                    style={{
+                        background: "linear-gradient(to bottom, rgba(15, 23, 42, 0.1),rgba(15, 23, 42, 0.1), #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, #00000000, rgb(2,3,12))"
+                    }}
+                    className="  absolute   inset-0"
+                />
+
+            </div> */}
+
+
         </div>
     );
 };
