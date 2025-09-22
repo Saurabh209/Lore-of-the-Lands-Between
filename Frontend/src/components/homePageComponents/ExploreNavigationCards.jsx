@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link } from 'lucide-react';
 import './ExploreNavigationCards.css'
@@ -11,7 +12,7 @@ const exploreNavigationCard = [
     { icon: BookOpen, title: "Lore Archives", desc: "Uncover the deep mysteries and hidden truths", link: "/lore", color: "text-cyan-400", baseBorderColor: 'border-cyan-400', hoveredColor: 'hover:border-cyan-500/50', hoveredBg: 'hover:bg-cyan-200' },
     { icon: MapPin, title: "Exploration", desc: "Navigate the vast landscapes and hidden locations", link: "/exploration", color: "text-green-400", baseBorderColor: 'border-green-400', hoveredColor: 'hover:border-green-500/50', hoveredBg: 'hover:bg-green-300' },
     { icon: Users, title: "FAQ", desc: "Find answers to your burning questions", link: "/faq", color: "text-orange-400", baseBorderColor: 'border-orange-400', hoveredColor: 'hover:border-orange-500/50', hoveredBg: 'hover:bg-orange-300' },
-
+    { icon: Users, title: "Testing Page", desc: "This page is only for testing new things", link: "/testing", color: "text-red-400", baseBorderColor: 'border-red-400', hoveredColor: 'hover:border-red-500/50', hoveredBg: 'hover:bg-red-300' },
 ]
 
 
@@ -22,6 +23,8 @@ const exploreNavigationCard = [
 
 
 const ExploreNavigationCards = () => {
+
+   
 
     const [scrollY, setScrollY] = useState(0);
 
@@ -51,8 +54,8 @@ const ExploreNavigationCards = () => {
                             <div key={index} className={`group border border-white/1  bg-[#16223e73] hover:bg-[#0f172ac2] backdrop-blur-[4px] ${hoverBorder} hover:scale-103     exploreNavigationSingleCard  `} style={{ animationDelay: `${index * 0.1}s` }}>
                                 <div >
                                     <IconComponent className={`h-8 w-8  ${item?.color}  group-hover:scale-110 transition-transform duration-300`} />
-                                    <h3 className={` ${item?.color} `}>{item?.title}</h3>
-                                </div>
+                                    <h3  className={` ${item?.color} `}>{item?.title}</h3>
+                                </div> 
                                 <div>
                                     <p>{item?.desc}</p>
                                 </div>

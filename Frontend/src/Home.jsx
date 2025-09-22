@@ -173,6 +173,7 @@ const Home = () => {
             {/* <ScrollCard/> */}
             <ScrollCard11/>
             <EldenInfo/>
+            
       
  
 

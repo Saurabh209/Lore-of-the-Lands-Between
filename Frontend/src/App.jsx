@@ -20,6 +20,7 @@ import Lore from './components/lore/Lore';
 import Exploration from './components/Exploration/Exploration';
 import AllArsenal from './components/Arsenal/AllArsenal';
 import Faq from './components/Faq/Faq';
+import Testing from './components/Testing/Testing';
 //  images import section
 
 
@@ -42,7 +43,7 @@ function App() {
         <Route path='/exploration' element={<Exploration />} />
         <Route path='/AllArsenal' element={<AllArsenal />} />
         <Route path='/faq' element={<Faq />} />
-
+        <Route path='/testing' element={<Testing />} />
       </Routes>
 
     </>
