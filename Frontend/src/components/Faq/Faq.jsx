@@ -174,11 +174,26 @@ export default function Faq() {
                 <h2 className="text-3xl font-bold text-indigo-400">{category.title}</h2>
               </div>
               {category.questions.map((faq, faqIndex) => (
-                <Accordion type="single" collapsible className="space-y-4"
+                <Accordion
+                  sx={{
+                    bgcolor: "#00000000", // semi-transparent
+                    backdropFilter: "blur(12px)", // frosted glass effect
+                    border: "1px solid #60a5fa", // Tailwind blue-600 hex
+                    backdropFilter: "blur(2px)",  // blur amount in px
+                    borderRadius: 2,
+                    boxShadow: "0 4px 30px rgba(0,0,0,0.1)",
+                    mb: 2, // margin bottom
+                  }}
+                  type="single" collapsible className="space-y-4"
                   expanded={expanded === `${faq.id}`}
                   onChange={handleChange(`${faq.id}`)} >
 
                   <AccordionSummary
+                    expandIcon={<ExpandMoreIcon sx={{ color: "#60a5fa" }} />}
+                    sx={{
+                      bgcolor: "transparent", // make sure summary is transparent
+                      color: "#fff",
+                    }}
                     key={faqIndex}
                     value={`${categoryIndex}-${faqIndex}`}
                     className="bg-slate-800/90 border-indigo-700/50 rounded-lg px-4"
@@ -206,12 +221,13 @@ export default function Faq() {
       <div className="py-12 px-4 bg-slate-800/30">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-indigo-400 mb-8 text-center">Still Need Help?</h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-slate-800/90 border-indigo-700/50 text-center">
+
+            <div className="bg-slate-800/90 border rounded-lg p-6 border-blue-700/50 hover:border-blue-600   transition duration-300 text-center">
               <div>
                 <Crown className="h-8 w-8 text-indigo-400 mx-auto mb-2" />
-                <div className="text-indigo-300 text-lg">Character Builds</div>
+                <div className="text-indigo-300 p-2 text-lg">Character Builds</div>
               </div>
               <div>
                 <p className="text-slate-400 text-sm">
@@ -220,10 +236,10 @@ export default function Faq() {
               </div>
             </div>
 
-            <div className="bg-slate-800/90 border-indigo-700/50 text-center">
+            <div className="bg-slate-800/90 border rounded-lg p-6 border-blue-700/50 hover:border-blue-600   transition duration-300 text-center">
               <div>
                 <Sword className="h-8 w-8 text-indigo-400 mx-auto mb-2" />
-                <div className="text-indigo-300 text-lg">Boss Strategies</div>
+                <div className="text-indigo-300 p-2 text-lg">Boss Strategies</div>
               </div>
               <div>
                 <p className="text-slate-400 text-sm">
@@ -232,10 +248,10 @@ export default function Faq() {
               </div>
             </div>
 
-            <div className="bg-slate-800/90 border-indigo-700/50 text-center">
+            <div className="bg-slate-800/90 border rounded-lg p-6  border-blue-700/50 hover:border-blue-600   transition duration-300 text-center">
               <div>
                 <Map className="h-8 w-8 text-indigo-400 mx-auto mb-2" />
-                <div className="text-indigo-300 text-lg">Interactive Maps</div>
+                <div className="text-indigo-300 p-2 text-lg">Interactive Maps</div>
               </div>
               <div>
                 <p className="text-slate-400 text-sm">
@@ -244,10 +260,10 @@ export default function Faq() {
               </div>
             </div>
 
-            <div className="bg-slate-800/90 border-indigo-700/50 text-center">
+            <div className="bg-slate-800/90 border rounded-lg p-6  border-blue-700/50 hover:border-blue-600   transition duration-300 text-center">
               <div>
                 <BookOpen className="h-8 w-8 text-indigo-400 mx-auto mb-2" />
-                <div className="text-indigo-300 text-lg">Lore Deep Dives</div>
+                <div className="text-indigo-300 p-2 text-lg">Lore Deep Dives</div>
               </div>
               <div>
                 <p className="text-slate-400 text-sm">
@@ -265,7 +281,7 @@ export default function Faq() {
           <blockquote className="text-2xl italic text-indigo-300 mb-4">
             "A Tarnished of no renown. Cross the fog, to the Lands Between. To stand before the Elden Ring. And become the Elden Lord."
           </blockquote>
-          <cite className="text-slate-400">— Unknown Narattor</cite>
+          <cite className="text-slate-400">— Unknown Narator</cite>
         </div>
       </div>
     </div>
