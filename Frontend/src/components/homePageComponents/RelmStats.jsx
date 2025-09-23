@@ -47,7 +47,7 @@ const RelmStats = () => {
                     }}>
                         Realm Statistics
                     </h3>
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6" style={{
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3" style={{
                         transform: `translateY(${scrollY * -0.1}px)`
                     }}>
                         {gameStats.map((stat, index) => {
@@ -55,9 +55,12 @@ const RelmStats = () => {
                             let hoveredBorder = ` hover:border-amber-400`
                             return (
                                 <div key={index} className={`    border border-transparent    rounded-lg  hover:scale-103 ${hoveredBorder} transition-all duration-500 hover-scale hover:backdrop-blur-[2px] animate-fade-in`} style={{ animationDelay: `${index * 0.3}s` }}>
-                                    <div className="p-6 text-center">
-                                        <IconComponent className="h-8 w-8 text-amber-400 mx-auto mb-3 transition-all duration-500 group-hover:h-10 group-hover:w-10" />
-                                        <div className="text-2xl font-bold text-amber-300 mb-1">{stat.value}</div>
+                                    <div className="p-4 text-center">
+                                        <div className='  flex justify-center    gap-2'>
+                                            <div className='   flex justify-center items-center'> <IconComponent className="  h-8 w-8 text-amber-400 mx-auto mb-3 transition-all duration-500 group-hover:h-10 group-hover:w-10" /></div>
+                                            <div className="text-2xl   font-bold text-amber-300 mb-1">{stat.value}</div>
+                                        </div>
+
                                         <div className="text-slate-400 text-sm">{stat.label}</div>
                                     </div>
                                 </div>

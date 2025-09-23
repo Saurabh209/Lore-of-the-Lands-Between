@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'lucide-react';
 import './EldenInfo.css'
 import { Sword, Crown, Shield, BookOpen, MapPin, Users, Skull, Star, Hammer, Wand2, Target, Zap, Eye, Clock, TrendingUp, Globe, Flame, Moon } from "lucide-react";
-
+import KeyFeature from './KeyFeature';
 
 const EldenInfo = () => {
 
@@ -29,6 +29,7 @@ const EldenInfo = () => {
             <div className='  m-auto    z-2' style={{
                 // transform: `translateY(${scrollY * -0.1}px)`
             }}>
+                <KeyFeature/>
                 {/* upper golden leaf  */}
                 <div className=' w-[90%] mb-4 m-auto      md:w-[80%] md:mb-8 lg:w-[50%] '>
                     <img src="https://res.cloudinary.com/doeiccxm7/image/upload/v1758017414/elden-ring-border-leaf_fend9k.png" alt="golden-leaf" />

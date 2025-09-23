@@ -157,7 +157,7 @@ const Home = () => {
                         <h2 className="text-2xl md:text-5xl text-amber-200 mb-8 font-light font-crimson animate-fade-in" style={{ animationDelay: '0.3s' }}>
                             The Lore of the Lands Between
                         </h2>
-                        <p className="text-lg h-[56px] text-slate-300 mb-2 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
+                        <p className="text-lg h-[56px] text-slate-300 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
                             {quote}
                         </p>
                         <img src={EldenRingLogo} alt="" />
