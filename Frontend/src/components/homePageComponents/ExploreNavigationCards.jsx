@@ -37,11 +37,11 @@ const ExploreNavigationCards = () => {
 
     return (
         <div className='exploreNavigationCardMainContainer  relative bg-fixed bg-center bg-cover ' style={{ backgroundImage: "url('/img//backgroundCollection/bg1.png')" }}>
-            <div className='w-[80%] m-auto my-22 z-2' style={{
+            <div className='w-[90%] m-auto my-22 z-2 sm:w-[80%]' style={{
                 // transform: `translateY(${scrollY * -0.1}px)`
             }}>
                 <div className='exploreNavigationTop   mb-5  '>
-                    <h3 className='text-4xl text-amber-300 font-medium  font-crimson  mb-3  '>EXPLORE THE LANDS BETWEEN</h3>
+                    <h3 className=' text-amber-300 font-medium  font-crimson  mb-3  text-2xl sm:text-3xl md:text-4xl '>EXPLORE THE LANDS BETWEEN</h3>
                     <p>Choose your path through the shattered realm</p>
                 </div>
                 <div className={`    exploreNavigationAllCardContainer   grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6  `}>
@@ -51,7 +51,7 @@ const ExploreNavigationCards = () => {
                         const hovereBg = `${item?.hoveredBg}`
 
                         return (
-                            <div key={index} className={`group border border-white/1  bg-[#16223e73] hover:bg-[#0f172ac2] backdrop-blur-[4px] ${hoverBorder} hover:scale-103     exploreNavigationSingleCard  `} style={{ animationDelay: `${index * 0.1}s` }}>
+                            <div key={index} className={`group border border-white/1  bg-[#16223e73] hover:bg-[#0f172ac2] backdrop-blur-[4px] ${hoverBorder} hover:scale-103     exploreNavigationSingleCard   `} style={{ animationDelay: `${index * 0.1}s` }}>
                                 <div >
                                     <IconComponent className={`h-8 w-8  ${item?.color}  group-hover:scale-110 transition-transform duration-300`} />
                                     <h3  className={` ${item?.color} `}>{item?.title}</h3>

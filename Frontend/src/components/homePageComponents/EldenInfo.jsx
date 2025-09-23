@@ -87,7 +87,6 @@ const EldenInfo = () => {
                     <p className='text-xs leading-tight sm:text-sm'>And yes, you may die.</p>
                     <p className='text-xs leading-tight sm:text-sm'>But you will return to fight again.</p>
                     <p className='text-xs leading-tight sm:text-sm'>For that is how a champion – or a Lord – is born.</p>
-
                 </div>
 
                 <div className=' w-[60%] mt-8 mb-8  m-auto      md:w-[80%]  lg:w-[50%] '>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect, useRef } from 'react';
 
-const cardsArray = Array.from({ length: 8 }, (_, i) => i + 1)
+const cardsArray = Array.from({ length: 12 }, (_, i) => i + 1)
 
 
 
@@ -47,7 +47,7 @@ const ScrollCard = () => {
 
 
                                     >
-                                        <video
+                                        {/* <video
                                             autoPlay
                                             muted
                                             loop
@@ -61,7 +61,7 @@ const ScrollCard = () => {
                                                 type="video/mp4"
                                             />
                                             Your browser does not support the video tag.
-                                        </video>
+                                        </video> */}
                                     </div>
                                 );
                             })}
@@ -84,7 +84,7 @@ const ScrollCard = () => {
                                         style={{ transform: `translateX(${scrollY * 0.5}px)`, backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756638263/bg2_cdwfjx.webp" }}
 
                                     >
-                                        <video
+                                        {/* <video
                                             autoPlay
                                             muted
                                             loop
@@ -98,7 +98,7 @@ const ScrollCard = () => {
                                                 type="video/mp4"
                                             />
                                             Your browser does not support the video tag.
-                                        </video>
+                                        </video> */}
                                     </div>
                                 );
                             })}
@@ -121,7 +121,7 @@ const ScrollCard = () => {
                                         style={{ transform: `translateX(${scrollY * -0.8}px)`, backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756638263/bg2_cdwfjx.webp" }}
 
                                     >
-                                        <video
+                                        {/* <video
                                             autoPlay
                                             muted
                                             loop
@@ -135,7 +135,7 @@ const ScrollCard = () => {
                                                 type="video/mp4"
                                             />
                                             Your browser does not support the video tag.
-                                        </video>
+                                        </video> */}
                                     </div>
                                 );
                             })}
