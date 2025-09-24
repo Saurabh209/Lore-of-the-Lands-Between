@@ -115,13 +115,13 @@ const KeyFeature = () => {
                         <h3 className='text-black   w-fit bg-amber-200 ps-16 pe-8 py-1    sm:text-xl' style={{
                             transform: `translateY(${(scrollY - 3400) * -0.3}px) translateX(-100px)`,
                             boxShadow: "0 1px 3px rgba(0,0,0,0.12)"
-                        }}>A New Fantasy World</h3>
+                        }}>Genre-Defining Gameplay</h3>
                         <p style={{
                             transform: `translateY(${(scrollY - 3600) * -0.2}px)`
-                        }} className='text-white text-xs leading-tight sm:leading-relaxed  sm:text-sm  '>Journey through the Lands Between, a new fantasy world created by Hidetaka Miyazaki, creator of the influential DARK SOULS video game series, and George R. R. Martin, author of The New York Times best-selling fantasy series, A Song of Ice and Fire. </p>
+                        }} className='text-white text-xs leading-tight sm:leading-relaxed  sm:text-sm  '>Create your character in FromSoftware's refined action-RPG and define your playstyle by experimenting with a wide variety of weapons, magical abilities, and skills found throughout the world.</p>
                         <p style={{
                             transform: `translateY(${(scrollY - 3600) * -0.2}px)`
-                        }} className='text-white text-xs leading-tight sm:leading-relaxed sm:text-sm    '>Unravel the mysteries of the Elden Ring’s power. Encounter adversaries with profound backgrounds, characters with their own unique motivations for helping or hindering your progress, and fearsome creatures. </p>
+                        }} className='text-white text-xs leading-tight sm:leading-relaxed sm:text-sm    '>Charge into battle, pick off enemies one-by-one using stealth, or even call upon allies for aid. Many options are at your disposal as you decide how to approach exploration and combat. </p>
                     </div>
 
 
