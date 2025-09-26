@@ -21,6 +21,8 @@ import Exploration from './components/Exploration/Exploration';
 import AllArsenal from './components/Arsenal/AllArsenal';
 import Faq from './components/Faq/Faq';
 import Testing from './components/Testing/Testing';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 //  images import section
 
 
@@ -33,6 +35,8 @@ function App() {
   return (
     <>
 
+
+      {/* <Navbar /> */}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/AllDemigods" element={<AllDemigods />} />
@@ -45,6 +49,8 @@ function App() {
         <Route path='/faq' element={<Faq />} />
         <Route path='/testing' element={<Testing />} />
       </Routes>
+
+      <Footer />
 
     </>
 

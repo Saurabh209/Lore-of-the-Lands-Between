@@ -12345,7 +12345,7 @@ const AllArsenal = () => {
     useEffect(() => {
         const fetchWeapons = async () => {
             try {
-                const response = await fetch('https://lore-of-the-lands-between.onrender.com/api/knowledge');
+                const response = await fetch('https://lore-of-the-lands-between.onrender.com/api/knowledge/exploration');
                 const data = await response.json();
                 setKnowledge(data);
             
@@ -12356,6 +12356,7 @@ const AllArsenal = () => {
 
         fetchWeapons();
     }, []);
+
 
 
     console.log(knowledge)
