@@ -15,7 +15,7 @@ export default function Navbar() {
       setScrollY(currentScrollY);
 
       // Show navbar after scrolling down 100px
-      if (currentScrollY > 600) {
+      if (currentScrollY > 400) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
