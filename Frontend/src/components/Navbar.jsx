@@ -3,11 +3,19 @@ import { Crown, Sword, Shield, Menu, X, Flame, Star } from 'lucide-react';
 
 import NavbarLogo from '/img/navbarLogo.png'
 import NavbarLogoText from '/img/eldenRingLogo.png'
+import { Navigate, useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
+
+  const navigate = useNavigate();
   const [isVisible, setIsVisible] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
+
+  const HandleLogoClick = ()=>{
+    navigate("/"),
+     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,7 +74,7 @@ export default function Navbar() {
                 <img src={NavbarLogo} alt="Logo" className="w-12 h-12 drop-shadow-lg" />
                 <div className="  absolute left-[13px] top-[16px] inset-0 w-5 h-5 bg-amber-400 opacity-1 blur-sm rounded-full animate-pulse"></div>
               </div>
-              <div className="relative">
+              <div className="relative" onClick={() =>HandleLogoClick() }   >
                 <img src={NavbarLogoText} alt="Logo" className="w-auto h-12 drop-shadow-lg" />
                 <div className="  absolute left-[13px] top-[16px] inset-0 w-5 h-5 bg-amber-400 opacity-1 blur-sm rounded-full animate-pulse"></div>
               </div>

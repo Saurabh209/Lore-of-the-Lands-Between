@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 
 import { Routes, Route, Link } from 'react-router-dom'
-
+import { useDispatch, useSelector } from "react-redux";
+import { getKnowledge } from './features/knowledgeSlice';
 
 
 
@@ -31,6 +32,15 @@ import Navbar from './components/Navbar';
 
 function App() {
 
+  const dispatch = useDispatch();
+  const { knowledge, loading, error } = useSelector((state) => state.app);
+
+  useEffect(() => {
+    dispatch(getKnowledge()); // runs once on mount
+  }, [dispatch]);
+
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error}</p>;
 
   return (
     <>

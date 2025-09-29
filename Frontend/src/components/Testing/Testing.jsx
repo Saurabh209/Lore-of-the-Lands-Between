@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from 'react';
+import { useSelector } from 'react-redux';
 import BossCard from './BossCard';
 import { motion, useScroll } from 'framer-motion'
 
@@ -13,6 +14,10 @@ const Testing = () => {
         target: container,
         offset: ['start start', 'end end']
     })
+    const knowledge = useSelector((state)=>{
+        return state.app;
+    })
+    console.log("data", knowledge.knowledge[0])
 
     useEffect(() => {
         scrollYProgress.on('change', e => console.log(scrollYProgress.current))

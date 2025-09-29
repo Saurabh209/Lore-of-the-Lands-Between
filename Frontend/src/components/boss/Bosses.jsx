@@ -732,7 +732,7 @@ useEffect(() => {
 
   return (
     <div  className="min-h-screen 
-     /bg-gradient-to-b from-slate-900 via-slate-800 to-purple-900
+     bg-gradient-to-b from-slate-900 via-slate-800 to-purple-900
     
     ">
       {/* Header */}
@@ -757,7 +757,7 @@ useEffect(() => {
         ref={container}
         className="max-w-6xl mx-auto space-y-8 ">
           {bosses.map((boss, index) => (
-            <div  key={index} className="sticky top-[100px] bg-slate-800 border-purple-700/50 overflow-hidden hover:border-purple-600 transition-all duration-300">
+            <div  key={index} className="  bg-slate-800 border-purple-700/50 overflow-hidden hover:border-purple-600 transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
                 {/* Boss Image and Basic Info */}
                 <div className="space-y-4">
