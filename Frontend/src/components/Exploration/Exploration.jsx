@@ -455,13 +455,23 @@ const Exploration = () => {
                 <div className="max-w-6xl mx-auto space-y-12">
                     {regions.map((region, index) => (
                         <div key={index} className="bg-slate-800/90 border border-green-700/50 overflow-hidden hover:border-green-600 transition-all duration-300">
-                            <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
+                            <div
+                                className=" grid grid-cols-1 lg:grid-cols-5   w-full h-full"
+                                style={{
+                                    backgroundImage: `url(${region.image})`,
+                                    backgroundSize: "cover",      
+                                    backgroundPosition: "center",  
+                                    backgroundRepeat: "no-repeat"  
+                                }}
+
+
+                            >
                                 {/* Image */}
                                 <div className="lg:col-span-2 relative h-64 lg:h-auto">
                                     <img
                                         src={region.image}
                                         alt={region.name}
-                                        className="w-full h-full object-cover opacity-80"
+                                        className="block lg:hidden w-full h-full object-cover opacity-80"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-r from-slate-800/60 to-transparent" />
                                     <div className="absolute top-4 left-4">
@@ -475,7 +485,7 @@ const Exploration = () => {
                                 </div>
 
                                 {/* Content */}
-                                <div className="lg:col-span-3 p-6 space-y-4">
+                                <div className="lg:col-span-3 p-6 space-y-4 bg-[#171717f9] lg:bg-[#171717c4] ">
                                     <div>
                                         <h3 className="text-2xl font-bold text-green-300 mb-1">{region.name}</h3>
                                         <p className="text-green-500 font-medium mb-2">{region.subtitle}</p>

@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Crown, Sword, Shield, Menu, X, Flame, Star } from 'lucide-react';
 
+import NavbarLogo from '/img/navbarLogo.png'
+import NavbarLogoText from '/img/eldenRingLogo.png'
+
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,9 +13,9 @@ export default function Navbar() {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       setScrollY(currentScrollY);
-      
+
       // Show navbar after scrolling down 100px
-      if (currentScrollY > 100) {
+      if (currentScrollY > 600) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -37,13 +40,15 @@ export default function Navbar() {
       {/* Navbar */}
       <nav className={`
         fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out
-        ${isVisible 
-          ? 'translate-y-0 opacity-100' 
-          : '-translate-y-full opacity-0'
+        ${isVisible
+          ? 'translate-y-0  '
+          : '-translate-y-full  '
         }
       `}>
         {/* Background with blur and gradient */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-gray-900/95 to-black/90 backdrop-blur-md border-b border-amber-400/20">
+        <div className="absolute inset-0 
+        //bg-gradient-to-r from-black/90 via-gray-900/95 to-black/90 
+        backdrop-blur-[90px] border-b border-amber-400/20">
           {/* Subtle glow effect */}
           <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-amber-400/50 to-transparent"></div>
           {/* Floating particles */}
@@ -54,20 +59,24 @@ export default function Navbar() {
         {/* Content */}
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            
+
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <div className="relative">
-                <Crown className="w-8 h-8 text-amber-400 drop-shadow-lg" />
-                <div className="absolute inset-0 w-8 h-8 bg-amber-400 opacity-20 blur-sm rounded-full animate-pulse"></div>
+                <img src={NavbarLogo} alt="Logo" className="w-12 h-12 drop-shadow-lg" />
+                <div className="  absolute left-[13px] top-[16px] inset-0 w-5 h-5 bg-amber-400 opacity-1 blur-sm rounded-full animate-pulse"></div>
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400 bg-clip-text text-transparent">
+              <div className="relative">
+                <img src={NavbarLogoText} alt="Logo" className="w-auto h-12 drop-shadow-lg" />
+                <div className="  absolute left-[13px] top-[16px] inset-0 w-5 h-5 bg-amber-400 opacity-1 blur-sm rounded-full animate-pulse"></div>
+              </div>
+              {/* <span className="text-xl font-bold bg-gradient-to-r from-amber-400 via-yellow-300 to-amber-400 bg-clip-text text-transparent">
                 ELDEN RING
-              </span>
+              </span> */}
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-8">
+            {/* <div className="hidden md:flex items-center space-x-8">
               {navItems.map((item, index) => {
                 const IconComponent = item.icon;
                 return (
@@ -82,7 +91,7 @@ export default function Navbar() {
                   </a>
                 );
               })}
-            </div>
+            </div> */}
 
             {/* Call to Action Button */}
             <div className="hidden md:block">
@@ -114,16 +123,16 @@ export default function Navbar() {
       <div className={`
         fixed inset-0 z-40 transition-all duration-300 ease-in-out md:hidden
         ${isMobileMenuOpen && isVisible
-          ? 'opacity-100 pointer-events-auto' 
+          ? 'opacity-100 pointer-events-auto'
           : 'opacity-0 pointer-events-none'
         }
       `}>
         {/* Backdrop */}
-        <div 
+        <div
           className="absolute inset-0 bg-black/70 backdrop-blur-sm"
           onClick={() => setIsMobileMenuOpen(false)}
         ></div>
-        
+
         {/* Menu Content */}
         <div className={`
           absolute top-16 left-0 right-0 bg-gradient-to-b from-gray-900/98 to-black/98 border-b border-amber-400/20 transition-transform duration-300
@@ -144,7 +153,7 @@ export default function Navbar() {
                 </a>
               );
             })}
-            
+
             {/* Mobile CTA */}
             <div className="pt-4 border-t border-amber-400/20">
               <button className="w-full px-6 py-3 bg-gradient-to-r from-amber-600 to-yellow-600 text-black font-semibold rounded-lg flex items-center justify-center space-x-2 hover:shadow-lg hover:shadow-amber-400/25 transition-all duration-300">

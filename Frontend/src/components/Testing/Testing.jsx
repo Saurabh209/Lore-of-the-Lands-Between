@@ -92,7 +92,7 @@ const Testing = () => {
     ]
 
     return (
-        <main ref={container}>
+        <main ref={container} className='bg-white'>
             {data.map((project, i) => {
                 const targetScale = 1-((data.length-i)*0.05)
 

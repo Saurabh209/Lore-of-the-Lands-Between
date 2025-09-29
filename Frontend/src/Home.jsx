@@ -12,6 +12,7 @@ import Bosses from './components/boss/Bosses';
 import ExploreNavigationCards from './components/homePageComponents/ExploreNavigationCards';
 import AllDemigods from './components/demigods/AllDemigods';
 import RelmStats from './components/homePageComponents/RelmStats';
+import Testing from '../src/components/Testing/Testing'
 
 // import HomePageBgImage from ' ./public/img/eldenRingBg.jpg';
 import EldenRingLogo from '/img/eldenRingLogo.png'
@@ -171,9 +172,11 @@ const Home = () => {
             <RelmStats />
             <ExploreNavigationCards />
             <ScrollCard/>
+            
             {/* <ScrollCard11/> */}
             <EldenInfo/>
-            
+            {/* <Testing/>
+             */}
       
  
 
