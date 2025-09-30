@@ -1,7 +1,7 @@
 
-import { useRef,useEffect } from "react";
+import { useRef, useEffect } from "react";
 import { ArrowLeft, Shield, Sword, Heart, Zap, AlertTriangle } from "lucide-react";
-import {useScroll, useTransform, motion} from 'framer-motion';
+import { useScroll, useTransform, motion } from 'framer-motion';
 
 
 
@@ -720,21 +720,24 @@ const Bosses = () => {
 
   const scale = useTransform(scrollYProgress, [0, 1], [2, 1]);
 
-useEffect(() => {
-  // subscribe to changes
-  const unsubscribe = scrollYProgress.on("change", (latest) => {
-    console.log("scrollYProgress:", latest); // 0 → 1
-  });
+  useEffect(() => {
+    // subscribe to changes
+    const unsubscribe = scrollYProgress.on("change", (latest) => {
+      console.log("scrollYProgress:", latest); // 0 → 1
+    });
 
-  return () => unsubscribe(); // cleanup
-}, [scrollYProgress]);
+    return () => unsubscribe(); // cleanup
+  }, [scrollYProgress]);
 
 
   return (
-    <div  className="min-h-screen 
-     bg-gradient-to-b from-slate-900 via-slate-800 to-purple-900
+    <div className="min-h-screen relative pb-80 bg-fixed bg-center bg-cover
+    //bg-gradient-to-b from-slate-900 via-slate-800 to-purple-900
     
-    ">
+     "  style={{
+        backgroundImage: `url("https://res.cloudinary.com/doeiccxm7/image/upload/v1756739634/jar_wymgrc.jpg")`
+      }}>
+        <div className="bg-[linear-gradient(to_bottom,#0000007a,#0000007a,#00000088,#00000088,#0000007a,#0000007a,#00000088,#0000007a,#0000007a,#00000088,rgb(2,3,12))] absolute    bborder border-white    inset-0  "></div>
       {/* Header */}
       <div className="bg-slate-900/80 py-8 px-4">
         <div className="max-w-6xl mx-auto">
@@ -751,13 +754,15 @@ useEffect(() => {
 
       {/* Boss Cards */}
       <div
-       
-      className="py-12 px-4  " >
+
+        className="py-12 px-4  " >
         <div
-        ref={container}
-        className="max-w-6xl mx-auto space-y-8 ">
+          ref={container}
+          className="max-w-6xl mx-auto space-y-8 ">
           {bosses.map((boss, index) => (
-            <div  key={index} className="  bg-slate-800 border-purple-700/50 overflow-hidden hover:border-purple-600 transition-all duration-300">
+            <div key={index}
+             
+              className=" backdrop-blur-[5px]  bg-slate-800/97 border-purple-700/50 overflow-hidden hover:border-purple-600 transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
                 {/* Boss Image and Basic Info */}
                 <div className="space-y-4">
