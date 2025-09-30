@@ -1,11 +1,11 @@
 .relm-stats {
-    background: linear-gradient(to bottom, rgb(2,3,12), rgba(0, 0, 0, 0),rgba(0, 0, 0, 0) ,rgba(0, 0, 0, 0), rgb(2,3,12));
- 
-   
+    background: linear-gradient(to bottom, rgb(2, 3, 12), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0), rgb(2, 3, 12));
+
+
 }
 
 .relm-stats-container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -14,5 +14,12 @@
     display: grid;
     grid-template-columns: repeat(4, 4fr);
 
-    
+
+}
+
+@media(min-width:768px) {
+    .relm-stats-container {
+        width: 80%;
+
+    }
 }

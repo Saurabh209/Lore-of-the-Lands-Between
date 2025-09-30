@@ -12,11 +12,13 @@ import Bosses from './components/boss/Bosses';
 import ExploreNavigationCards from './components/homePageComponents/ExploreNavigationCards';
 import AllDemigods from './components/demigods/AllDemigods';
 import RelmStats from './components/homePageComponents/RelmStats';
+import Testing from '../src/components/Testing/Testing'
 
 // import HomePageBgImage from ' ./public/img/eldenRingBg.jpg';
 import EldenRingLogo from '/img/eldenRingLogo.png'
 import ScrollCard from './components/homePageComponents/ScrollCard';
 import EldenInfo from './components/homePageComponents/EldenInfo';
+import ScrollCard11 from './components/homePageComponents/ScrollCard11';
 
 const Home = () => {
 
@@ -153,10 +155,10 @@ const Home = () => {
                         {/* <h1 className="text-6xl md:text-8xl font-bold text-amber-400 mb-6 tracking-wider font-cinzel animate-scale-in">
             ELDEN RING
           </h1> */}
-                        <h2 className="text-2xl md:text-5xl text-amber-200 mb-8 font-light font-crimson animate-fade-in" style={{ animationDelay: '0.3s' }}>
+                        <h2 className="text-2xl md:text-5xl text-amber-200 mb-8  font-crimson animate-fade-in" style={{ animationDelay: '0.3s' }}>
                             The Lore of the Lands Between
                         </h2>
-                        <p className="text-lg h-[56px] text-slate-300 mb-2 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
+                        <p className="text-lg h-[56px] text-slate-300 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
                             {quote}
                         </p>
                         <img src={EldenRingLogo} alt="" />
@@ -170,7 +172,11 @@ const Home = () => {
             <RelmStats />
             <ExploreNavigationCards />
             <ScrollCard/>
+            
+            {/* <ScrollCard11/> */}
             <EldenInfo/>
+            {/* <Testing/>
+             */}
       
  
 

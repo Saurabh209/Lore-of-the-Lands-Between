@@ -1,13 +1,20 @@
 
-
+import { useRef, useEffect } from "react";
 import { ArrowLeft, Shield, Sword, Heart, Zap, AlertTriangle } from "lucide-react";
+import { useScroll, useTransform, motion } from 'framer-motion';
+
+
+
+
 import MaleniaPhoto from '/img/MaleniaPhoto.jpg'
 import RadhanPhoto from '/img/RadhanPhoto.jpg'
 import MoghPhoto from '/img/MoghPhoto.jpg'
 import MalekithPhoto from '/img/MalekithPhoto.jpg'
 
 
-import { useRef } from "react";
+
+
+
 
 const Bosses = () => {
   const timerRef = useRef(null);
@@ -33,7 +40,7 @@ const Bosses = () => {
       type: "Demigod",
       difficulty: "Extreme",
       health: "33,251 HP",
-      image: MaleniaPhoto,
+      image: `https://res.cloudinary.com/doeiccxm7/image/upload/v1758816909/boss_malenia_pughlk.jpg`,
       weaknesses: ["Frost", "Fire", "Bleed Resistance"],
       resistances: ["Scarlet Rot (Immune)", "Holy"],
       moves: [
@@ -149,7 +156,7 @@ const Bosses = () => {
       type: "Crucible Knight",
       difficulty: "Medium",
       health: "4,227 HP",
-      image: "https://images.unsplash.com/photo-1504893524553-b855bce32c67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758818866/boss_Crucible_Knight_Ordovis_jhdwai.jpg",
       weaknesses: ["Strike damage", "Lightning"],
       resistances: ["Holy", "Fire"],
       moves: [
@@ -180,7 +187,7 @@ const Bosses = () => {
       type: "Omen",
       difficulty: "Medium",
       health: "4,174 HP",
-      image: "https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758818673/boss_Margit_mbvbyd.jpg",
       weaknesses: ["Bleed", "Margit's Shackle"],
       resistances: ["Holy", "Physical"],
       moves: [
@@ -211,7 +218,7 @@ const Bosses = () => {
       type: "Demigod",
       difficulty: "Medium",
       health: "6,080 HP",
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758818673/boss_Godrick_the_Grafted_ylhsjq.jpg",
       weaknesses: ["Fire", "Bleed"],
       resistances: ["Holy", "Lightning"],
       moves: [
@@ -242,7 +249,7 @@ const Bosses = () => {
       type: "Demigod",
       difficulty: "Medium",
       health: "3,309 HP",
-      image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758818673/boss_rennala_rab87g.jpg",
       weaknesses: ["Physical", "Strike damage"],
       resistances: ["Magic (Immune)", "Lightning"],
       moves: [
@@ -273,7 +280,7 @@ const Bosses = () => {
       type: "Omen",
       difficulty: "High",
       health: "10,396 HP",
-      image: "https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758818673/boss_Morgott_yig7vn.jpg",
       weaknesses: ["Bleed", "Frost"],
       resistances: ["Holy", "Physical"],
       moves: [
@@ -305,7 +312,7 @@ const Bosses = () => {
       type: "Giant",
       difficulty: "High",
       health: "17,013 HP",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758819132/boss_Fire_Giant_edud0z.jpg",
       weaknesses: ["Lightning", "Frostbite"],
       resistances: ["Fire (Immune)", "Physical"],
       moves: [
@@ -337,7 +344,7 @@ const Bosses = () => {
       type: "Demigod/Serpent",
       difficulty: "High",
       health: "89,500 HP",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758818675/boss_Rykard_qveszx.jpg",
       weaknesses: ["Serpent-Hunter (Weapon)", "Physical"],
       resistances: ["Fire", "Magic"],
       moves: [
@@ -369,7 +376,7 @@ const Bosses = () => {
       type: "Godskin",
       difficulty: "Very High",
       health: "27,564 HP",
-      image: "https://images.unsplash.com/photo-1504893524553-b855bce32c67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758818675/noss___God_Skin_Duo_zia3uv.jpg",
       weaknesses: ["Sleep", "Bleed"],
       resistances: ["Fire", "Black Flame"],
       moves: [
@@ -401,7 +408,7 @@ const Bosses = () => {
       type: "God",
       difficulty: "Very High",
       health: "13,805 HP",
-      image: "https://images.unsplash.com/photo-1519452575417-564c1401ecc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758818674/boss_Radagon_cg2csz.jpg",
       weaknesses: ["Physical", "Strike damage"],
       resistances: ["Holy", "Lightning"],
       moves: [
@@ -433,7 +440,7 @@ const Bosses = () => {
       type: "Outer God",
       difficulty: "Very High",
       health: "22,127 HP",
-      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758818674/boss_Elden_Beast_onvz7r.jpg",
       weaknesses: ["Physical", "Strike damage"],
       resistances: ["Holy (Immune)", "All Status Effects"],
       moves: [
@@ -465,7 +472,7 @@ const Bosses = () => {
       type: "Ancient Dragon",
       difficulty: "Extreme",
       health: "26,651 HP",
-      image: "https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758819426/boss_Dragonlord_Placidusax_cog0ms.jpg",
       weaknesses: ["Physical", "Bleed"],
       resistances: ["Lightning", "Holy"],
       moves: [
@@ -497,7 +504,7 @@ const Bosses = () => {
       type: "Knight",
       difficulty: "Medium",
       health: "3,123 HP",
-      image: "https://images.unsplash.com/photo-1519452575417-564c1401ecc0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758819565/boss_Tree_Sentinel_dcgixr.jpg",
       weaknesses: ["Poison", "Rot"],
       resistances: ["Holy", "Physical"],
       moves: [
@@ -529,7 +536,7 @@ const Bosses = () => {
       type: "Dragon",
       difficulty: "Medium",
       health: "3,188 HP",
-      image: "https://images.unsplash.com/photo-1458668383970-8ddd3927deed?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758819704/boss_Flying_Dragon_Agheel_id8mqt.jpg",
       weaknesses: ["Lightning", "Magic"],
       resistances: ["Fire", "Physical"],
       moves: [
@@ -561,7 +568,7 @@ const Bosses = () => {
       type: "Crucible Knight",
       difficulty: "High",
       health: "2,914 HP",
-      image: "https://images.unsplash.com/photo-1504893524553-b855bce32c67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758819798/boss_Crucible_Knight_qmsz4w.jpg",
       weaknesses: ["Strike damage", "Guard counters"],
       resistances: ["Slash", "Pierce"],
       moves: [
@@ -593,7 +600,7 @@ const Bosses = () => {
       type: "Bloodhound Knight",
       difficulty: "Medium",
       health: "1,940 HP",
-      image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758818674/boss_Bloodhound_Knight_fhjzin.jpg",
       weaknesses: ["Magic", "Holy"],
       resistances: ["Physical", "Bleed"],
       moves: [
@@ -625,7 +632,7 @@ const Bosses = () => {
       type: "Spectral Knight",
       difficulty: "Medium",
       health: "2,436 HP",
-      image: "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758819921/boss_night_s_cavalry_zrsvwd.jpg",
       weaknesses: ["Holy", "Fire"],
       resistances: ["Physical", "Magic"],
       moves: [
@@ -657,7 +664,7 @@ const Bosses = () => {
       type: "Assassin",
       difficulty: "High",
       health: "4,494 HP",
-      image: "https://images.unsplash.com/photo-1504893524553-b855bce32c67?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "https://res.cloudinary.com/doeiccxm7/image/upload/v1758818674/boss_bell_bearing_hunter_apyzmm.jpg",
       weaknesses: ["Magic", "Lightning"],
       resistances: ["Physical", "Holy"],
       moves: [
@@ -704,8 +711,33 @@ const Bosses = () => {
     }
   };
 
+  const container = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: container,
+    offset: ['start end', 'start start']
+  });
+
+  const scale = useTransform(scrollYProgress, [0, 1], [2, 1]);
+
+  useEffect(() => {
+    // subscribe to changes
+    const unsubscribe = scrollYProgress.on("change", (latest) => {
+      console.log("scrollYProgress:", latest); // 0 → 1
+    });
+
+    return () => unsubscribe(); // cleanup
+  }, [scrollYProgress]);
+
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-purple-900">
+    <div className="min-h-screen relative pb-80 bg-fixed bg-center bg-cover
+    //bg-gradient-to-b from-slate-900 via-slate-800 to-purple-900
+    
+     "  style={{
+        backgroundImage: `url("https://res.cloudinary.com/doeiccxm7/image/upload/v1756739634/jar_wymgrc.jpg")`
+      }}>
+        <div className="bg-[linear-gradient(to_bottom,#0000007a,#0000007a,#00000088,#00000088,#0000007a,#0000007a,#00000088,#0000007a,#0000007a,#00000088,rgb(2,3,12))] absolute    bborder border-white    inset-0  "></div>
       {/* Header */}
       <div className="bg-slate-900/80 py-8 px-4">
         <div className="max-w-6xl mx-auto">
@@ -721,14 +753,20 @@ const Bosses = () => {
       </div>
 
       {/* Boss Cards */}
-      <div className="py-12 px-4  " >
-        <div className="max-w-6xl mx-auto space-y-8 ">
+      <div
+
+        className="py-12 px-4  " >
+        <div
+          ref={container}
+          className="max-w-6xl mx-auto space-y-8 ">
           {bosses.map((boss, index) => (
-            <div key={index} className="bg-slate-800/90 border-purple-700/50 overflow-hidden hover:border-purple-600 transition-all duration-300">
+            <div key={index}
+             
+              className=" backdrop-blur-[5px]  bg-slate-800/97 border-purple-700/50 overflow-hidden hover:border-purple-600 transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
                 {/* Boss Image and Basic Info */}
                 <div className="space-y-4">
-                  <div className="relative h-55 overflow-hidden rounded-lg group"    onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                  <div className="relative h-55 overflow-hidden rounded-lg group" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <img
                       src={boss.image}
                       alt={boss.name}
