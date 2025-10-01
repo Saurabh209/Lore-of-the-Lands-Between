@@ -124,7 +124,7 @@ const Home = () => {
             <div className="min-h-screen  overflow-hidden">
                 <div className="relative h-screen flex   justify-center">
                     {/* Parallax Background Layers */}
-                    <div className="absolute inset-0 overflow-hidden">
+                    <div className="absolute inset-0 overflow-hidden bg-black">
                         <video
                             autoPlay
                             muted

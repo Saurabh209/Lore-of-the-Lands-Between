@@ -42,7 +42,7 @@ function App() {
     dispatch(getKnowledge()); // runs once on mount
   }, [dispatch]);
 
-  if (loading) return <p>Loading...</p>;
+  // if (loading) return <p>Loading...</p>;
   // if (error) return <p>Error: {error}</p>;
 
 

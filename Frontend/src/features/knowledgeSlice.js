@@ -14,7 +14,7 @@ export const knowledgeSlice = createSlice({
     loading: false,
     error: null,
   },
-  reducers: {}, 
+  reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(getKnowledge.pending, (state) => {
@@ -26,7 +26,7 @@ export const knowledgeSlice = createSlice({
       })
       .addCase(getKnowledge.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.error.message; 
+        state.error = action.error.message;
       });
   },
 });
