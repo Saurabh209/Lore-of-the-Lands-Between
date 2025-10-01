@@ -10,7 +10,7 @@ const Footer = () => {
                     muted
                     loop
                     playsInline
-                    className="w-full h-full object-cover"
+                    className="w-full h-full  object-cover"
                     style={{
                         transform: `translateY(${scrollY * 0.3}px)`
                     }}

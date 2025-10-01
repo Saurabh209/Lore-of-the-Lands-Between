@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { Routes, Route, Link } from 'react-router-dom'
 import { useDispatch, useSelector } from "react-redux";
 import { getKnowledge } from './features/knowledgeSlice';
+import LoadingScreen from './components/other/LoadingScreen';
 
 
 
@@ -22,8 +23,8 @@ import Exploration from './components/Exploration/Exploration';
 import AllArsenal from './components/Arsenal/AllArsenal';
 import Faq from './components/Faq/Faq';
 import Testing from './components/Testing/Testing';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import Footer from './components/other/Footer';
+import Navbar from './components/other/Navbar';
 //  images import section
 
 
@@ -31,6 +32,8 @@ import Navbar from './components/Navbar';
 
 
 function App() {
+
+
 
   const dispatch = useDispatch();
   const { knowledge, loading, error } = useSelector((state) => state.app);
@@ -40,11 +43,12 @@ function App() {
   }, [dispatch]);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error}</p>;
+  // if (error) return <p>Error: {error}</p>;
+
+
 
   return (
     <>
-
 
       <Navbar />
       <Routes>
