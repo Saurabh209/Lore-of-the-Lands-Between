@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
+import { useSelector } from 'react-redux';
 import { ArrowLeft, MapPin, Mountain, Castle, TreePine, Skull, Crown } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -430,6 +431,15 @@ const Exploration = () => {
             default: return 'text-gray-400 bg-gray-900/30 border-gray-700';
         }
     };
+
+    const exploration = useSelector((state)=>state.app)
+    const [explorationData, setExplorationData] = useState()
+
+
+    useEffect(()=>{
+        setExplorationData(exploration?.knowledge[0])
+        console.log(explorationData)
+    },[exploration])
 
 
 
