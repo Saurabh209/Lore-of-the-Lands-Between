@@ -36,7 +36,7 @@ const ExploreNavigationCards = () => {
 
 
     return (
-        <div className='exploreNavigationCardMainContainer  relative bg-fixed bg-center bg-cover ' style={{ backgroundImage: "url('/img//backgroundCollection/bg1.png')" }}>
+        <div className='exploreNavigationCardMainContainer  relative bg-fixed bg-center bg-cover ' style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1759655677/bg1_hnhadn.png')" }}>
             <div className='w-[90%] m-auto my-22 z-2 sm:w-[80%]' style={{
                 // transform: `translateY(${scrollY * -0.1}px)`
             }}>
