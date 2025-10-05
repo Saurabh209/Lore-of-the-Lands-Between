@@ -1,7 +1,8 @@
 
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { ArrowLeft, Shield, Sword, Heart, Zap, AlertTriangle } from "lucide-react";
 import { useScroll, useTransform, motion } from 'framer-motion';
+import { useSelector } from "react-redux";
 
 
 
@@ -10,10 +11,6 @@ import MaleniaPhoto from '/img/MaleniaPhoto.jpg'
 import RadhanPhoto from '/img/RadhanPhoto.jpg'
 import MoghPhoto from '/img/MoghPhoto.jpg'
 import MalekithPhoto from '/img/MalekithPhoto.jpg'
-
-
-
-
 
 
 const Bosses = () => {
@@ -28,6 +25,14 @@ const Bosses = () => {
   const handleMouseLeave = () => {
     clearTimeout(timerRef.current);
   };
+
+  const [allBosses, setAllBosses] = useState();
+  const bossesData = useSelector((state) => state.app);
+
+  useEffect(() => {
+    setAllBosses(bossesData?.knowledge[3])
+    console.log(allBosses?.bosses)
+  }, [bossesData])
 
 
 
@@ -737,7 +742,7 @@ const Bosses = () => {
      "  style={{
         backgroundImage: `url("https://res.cloudinary.com/doeiccxm7/image/upload/v1756739634/jar_wymgrc.jpg")`
       }}>
-        <div className="bg-[linear-gradient(to_bottom,#0000007a,#0000007a,#00000088,#00000088,#0000007a,#0000007a,#00000088,#0000007a,#0000007a,#00000088,rgb(2,3,12))] absolute    bborder border-white    inset-0  "></div>
+      <div className="bg-[linear-gradient(to_bottom,#0000007a,#0000007a,#00000088,#00000088,#0000007a,#0000007a,#00000088,#0000007a,#0000007a,#00000088,rgb(2,3,12))] absolute    bborder border-white    inset-0  "></div>
       {/* Header */}
       <div className="bg-slate-900/80 py-8 px-4">
         <div className="max-w-6xl mx-auto">
@@ -759,9 +764,9 @@ const Bosses = () => {
         <div
           ref={container}
           className="max-w-6xl mx-auto space-y-8 ">
-          {bosses.map((boss, index) => (
+          {allBosses?.bosses?.map((boss, index) => (
             <div key={index}
-             
+
               className=" backdrop-blur-[5px]  bg-slate-800/97 border-purple-700/50 overflow-hidden hover:border-purple-600 transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
                 {/* Boss Image and Basic Info */}
