@@ -8,34 +8,54 @@
 } */
 
 .skltnLoader {
-    /* border: 1px solid rgb(29, 29, 29); */
-    /* background-color: rgb(36, 36, 36); */
-    animation: greyPulse 3s ease-in-out infinite;
+  /* border: 1px solid rgb(29, 29, 29); */
+  /* background-color: rgb(36, 36, 36); */
+  animation: greyPulse 3s ease-in-out infinite;
+}
+
+.animate-breath-opacity {
+  animation: breath-opacity 2.8s ease-in-out infinite;
 }
 
 @keyframes greyPulse {
-    0% {
-        background-color: rgb(29, 29, 29);
-    }
+  0% {
+    background-color: rgb(29, 29, 29);
+  }
 
-    50% {
-        background-color: rgb(80, 80, 80);
-    }
+  50% {
+    background-color: rgb(80, 80, 80);
+  }
 
-    100% {
-        background-color: rgb(29, 29, 29);
-    }
+  100% {
+    background-color: rgb(29, 29, 29);
+  }
 }
 
 @keyframes breath-opacity {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0.3;
   }
+
   50% {
     opacity: 1;
   }
 }
 
-.animate-breath-opacity {
-  animation: breath-opacity 2.8s ease-in-out infinite;
+.pulse-image {
+  animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(.6);
+  }
+
+  50% {
+    transform: scale(1.85);
+ 
+  }
 }

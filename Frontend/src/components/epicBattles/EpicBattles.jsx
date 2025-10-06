@@ -81,7 +81,7 @@ const EpicBattles = () => {
                       <img
                         src="https://res.cloudinary.com/doeiccxm7/image/upload/v1759750608/eldenRing_logo_loader_jf17wg.png"
                         alt="default-image"
-                        className="h-[70%] w-[70%] object-cover   animate-breath-opacity"
+                        className="h-[70%] w-[70%] object-contain   animate-breath-opacity"
                       />
                       {/* <div className="absolute inset-0 bg-gradient-to-r from-slate-800/80 to-transparent" /> */}
                       <div className="absolute bottom-4 left-4">
@@ -101,7 +101,7 @@ const EpicBattles = () => {
                       </div>
 
                       {/* Battle Info */}
-                      <div className="grid grid-cols-2 gap-4 py-4 border-t border-slate-700">
+                      <div className="grid grid-cols-2 gap-4 py-6 border-t border-slate-700">
                         <div className="flex items-center gap-2">
                           <div className={`h-[30px] w-[30px] rounded-full bg-[#1d1d1d] ${loaderContainer?.four && "skltnLoader"} `}></div>
                           <div className={`bg-[#1d1d1d] w-4/12 h-[15px] ${loaderContainer?.four && "skltnLoader"}`}> </div>
@@ -117,7 +117,7 @@ const EpicBattles = () => {
                         <div className={`bg-[#1d1d1d] w-30/30 h-[15px] mb-2 ${loaderContainer?.five && "skltnLoader"} `}></div>
                         <div className={`bg-[#1d1d1d] w-28/30 h-[15px] mb-2  ${loaderContainer?.six && "skltnLoader"}`}></div>
                         <div className={`bg-[#1d1d1d] w-29/30 h-[15px] mb-2  ${loaderContainer?.seven && "skltnLoader"}`}></div>
-                        <div className={`bg-[#1d1d1d] w-8/12 h-[15px] mb-2  ${loaderContainer?.eight && "skltnLoader"}`}></div>
+                        <div className={`bg-[#1d1d1d] w-8/12 h-[15px] mb-7  ${loaderContainer?.eight && "skltnLoader"}`}></div>
                       </div>
 
                       {/* Key Moments */}

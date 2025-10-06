@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getKnowledge } from './features/knowledgeSlice';
 import LoadingScreen from './components/other/LoadingScreen';
 
-
+import isDataAvailable from '/img/navbarLogo.png'
 
 import './index.css'
 import { Sword, Crown, Shield, BookOpen, MapPin, Users, Skull, Star, Hammer, Wand2, Target, Zap, Eye, Clock, TrendingUp, Globe, Flame, Moon, Home } from "lucide-react";
@@ -65,6 +65,12 @@ function App() {
       </Routes>
 
       <Footer />
+
+      {loading &&
+        <img className='pulse-image fixed bottom-[26px] left-[20px] h-[100px] w-auto z-100' src={isDataAvailable} alt="" />
+      }
+
+
 
     </>
 
