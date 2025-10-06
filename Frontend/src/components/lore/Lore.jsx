@@ -145,16 +145,16 @@ const Lore = () => {
         {
             allLore?.loading &&
                 setTimeout(() => { setLogoTitle(true) }, 100);
-            setTimeout(() => { setDescrip(true) }, 500);
-            setTimeout(() => { setOne(true) }, 900);
-            setTimeout(() => { setTwo(true) }, 1300);
-            setTimeout(() => { setThree(true) }, 1700);
-            setTimeout(() => { setFour(true) }, 2100);
-            setTimeout(() => { setFive(true) }, 2500);
-            setTimeout(() => { setSix(true) }, 2900);
-            setTimeout(() => { setSeven(true) }, 3300);
-            setTimeout(() => { setEight(true) }, 3700);
-            setTimeout(() => { setNine(true) }, 4100);
+            setTimeout(() => { setDescrip(true) }, 300);
+            setTimeout(() => { setOne(true) }, 500);
+            setTimeout(() => { setTwo(true) }, 700);
+            setTimeout(() => { setThree(true) }, 900);
+            setTimeout(() => { setFour(true) }, 1100);
+            setTimeout(() => { setFive(true) }, 1300);
+            setTimeout(() => { setSix(true) }, 1500);
+            setTimeout(() => { setSeven(true) }, 1700);
+            setTimeout(() => { setEight(true) }, 1900);
+            setTimeout(() => { setNine(true) }, 2100);
 
         }
     })
@@ -187,7 +187,7 @@ const Lore = () => {
                     {/* <h2 className="text-3xl font-bold text-blue-400 mb-8">Core Concepts</h2> */}
 
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                        {allLore?.loading ? <>
+                        {!allLore?.loading ? <>
 
                             {[1, 2, 3, 4, 5, 6].map((topic, index) => {
 
@@ -210,7 +210,7 @@ const Lore = () => {
                                                 <p className={`bg-[#1d1d1d] w-12/12 h-[20px] ${one && "skltnLoader"}`}></p>
                                                 <p className={`bg-[#1d1d1d]   w-11/12  h-[20px] ${two && "skltnLoader"} `}></p>
                                                 <p className={`bg-[#1d1d1d]    w-12/12 h-[20px] ${three && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]   w-9/12 h-[20px] ${four && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]   w-10/12 h-[20px] ${four && "skltnLoader"}`}></p>
                                                 <p className={` bg-[#1d1d1d]   w-11/12 h-[20px] ${five && "skltnLoader"}`}></p>
                                                 <p className={` bg-[#1d1d1d]   w-12/12 h-[20px] ${six && "skltnLoader"}`}></p>
                                                 <p className={` bg-[#1d1d1d]    w-11/12 h-[20px] ${seven && "skltnLoader"}`}></p>
