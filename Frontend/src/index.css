@@ -3,6 +3,26 @@
 
 
 
-*{
-    /* border: 1px solid red; */
+/* *{
+    border: 1px solid red;
+} */
+
+.skltnLoader {
+    /* border: 1px solid rgb(29, 29, 29); */
+    /* background-color: rgb(36, 36, 36); */
+    animation: greyPulse 4.5s ease-in-out infinite;
+}
+
+@keyframes greyPulse {
+    0% {
+        background-color: rgb(29, 29, 29);
+    }
+
+    50% {
+        background-color: rgb(80, 80, 80);
+    }
+
+    100% {
+        background-color: rgb(29, 29, 29);
+    }
 }

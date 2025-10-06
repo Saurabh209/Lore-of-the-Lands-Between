@@ -9,6 +9,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const Lore = () => {
 
+
     const [expanded, setExpanded] = useState(false);
 
     const handleChange = (panel) => (event, isExpanded) => {
@@ -128,6 +129,38 @@ const Lore = () => {
     }, [allLore])
 
 
+    const [logoTitle, setLogoTitle] = useState(false)
+    const [descrip, setDescrip] = useState(false);
+    const [one, setOne] = useState(false);
+    const [two, setTwo] = useState(false);
+    const [three, setThree] = useState(false);
+    const [four, setFour] = useState(false);
+    const [five, setFive] = useState(false);
+    const [six, setSix] = useState(false);
+    const [seven, setSeven] = useState(false);
+    const [eight, setEight] = useState(false);
+    const [nine, setNine] = useState(false);
+
+    useEffect(() => {
+        {
+            allLore?.loading &&
+                setTimeout(() => { setLogoTitle(true) }, 100);
+            setTimeout(() => { setDescrip(true) }, 500);
+            setTimeout(() => { setOne(true) }, 900);
+            setTimeout(() => { setTwo(true) }, 1300);
+            setTimeout(() => { setThree(true) }, 1700);
+            setTimeout(() => { setFour(true) }, 2100);
+            setTimeout(() => { setFive(true) }, 2500);
+            setTimeout(() => { setSix(true) }, 2900);
+            setTimeout(() => { setSeven(true) }, 3300);
+            setTimeout(() => { setEight(true) }, 3700);
+            setTimeout(() => { setNine(true) }, 4100);
+
+        }
+    })
+
+
+
     return (
         <div
             className="min-h-screen bg-fixed bg-center bg-cover "
@@ -149,39 +182,82 @@ const Lore = () => {
             </div>
 
             {/* Core Lore Topics */}
-            <div className="py-12 px-4">
+            <div className="py-12 px-4 min-h-[90vh]">
                 <div className="max-w-6xl mx-auto space-y-8">
                     {/* <h2 className="text-3xl font-bold text-blue-400 mb-8">Core Concepts</h2> */}
 
                     <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-                        {loreData?.lore?.map((topic, index) => {
-                            const Icon = iconMap[topic?.icon]
-                            console.log(Icon)
-                            return (
-                                <div key={index} className=" border p-5 cursor-default rounded-lg border-blue-700/50 hover:border-blue-600 backdrop-blur-[2px]   hover:bg-slate-800/90 transition-all duration-300">
-                                    <div className='mb-8'>
-                                        <div className="   flex items-center gap-3 mb-4">
-                                            {Icon ? <Icon className="h-6 w-6 text-blue-400" /> : null}
-                                            <h2 className="text-blue-300 text-2xl">{topic.title}</h2>
+                        {allLore?.loading ? <>
+
+                            {[1, 2, 3, 4, 5, 6].map((topic, index) => {
+
+
+                                return (
+                                    <div key={index} className="  border p-5 cursor-default rounded-lg border-gray-700/50 hover:border-gray-600 backdrop-blur-[2px]     transition-all duration-300">
+                                        <div className='mb-8'>
+                                            <div className="   flex items-center gap-3 mb-4">
+                                                <div className={`h-[40px] w-[40px] rounded-full bg-[#1d1d1d] ${logoTitle && "skltnLoader"}`}></div>
+                                                <div className={`w-6/12 bg-[#1d1d1d] h-[15px] ${logoTitle && "skltnLoader"}`}> </div>
+                                            </div>
+                                            <div className=" flex flex-col gap-2   text-slate-400">
+                                                <p className={` bg-[#1d1d1d] w-12/12 h-[15px] ${descrip && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d] w-5/12 h-[15px] ${descrip && "skltnLoader"}`}></p>
+
+                                            </div>
                                         </div>
-                                        <div className="    text-slate-400">
-                                            {topic.description}
+                                        <div className='   '>
+                                            <p className="text-slate-300 text-sm leading-[28px] flex flex-col gap-4 ">
+                                                <p className={`bg-[#1d1d1d] w-12/12 h-[20px] ${one && "skltnLoader"}`}></p>
+                                                <p className={`bg-[#1d1d1d]   w-11/12  h-[20px] ${two && "skltnLoader"} `}></p>
+                                                <p className={`bg-[#1d1d1d]    w-12/12 h-[20px] ${three && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]   w-9/12 h-[20px] ${four && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]   w-11/12 h-[20px] ${five && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]   w-12/12 h-[20px] ${six && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]    w-11/12 h-[20px] ${seven && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]    w-11/12 h-[20px] ${eight && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]   w-7/12 h-[20px] ${nine && "skltnLoader"}`}></p>
+                                            </p>
                                         </div>
                                     </div>
-                                    <div className='   '>
-                                        <p className="text-slate-300 text-sm leading-[28px]">
-                                            {topic.content}
-                                        </p>
+                                )
+                            })}
+
+
+
+
+
+
+
+                        </> : <>
+                            {loreData?.lore?.map((topic, index) => {
+                                const Icon = iconMap[topic?.icon]
+                                console.log(Icon)
+                                return (
+                                    <div key={index} className="border p-5 cursor-default rounded-lg border-blue-700/50 hover:border-blue-600 backdrop-blur-[2px]   hover:bg-slate-800/90 transition-all duration-300">
+                                        <div className='mb-8'>
+                                            <div className="   flex items-center gap-3 mb-4">
+                                                {Icon ? <Icon className="h-6 w-6 text-blue-400" /> : null}
+                                                <h2 className="text-blue-300 text-2xl">{topic.title}</h2>
+                                            </div>
+                                            <div className="    text-slate-400">
+                                                {topic.description}
+                                            </div>
+                                        </div>
+                                        <div className='   '>
+                                            <p className="text-slate-300 text-sm leading-[28px]">
+                                                {topic.content}
+                                            </p>
+                                        </div>
                                     </div>
-                                </div>
-                            )
-                        })}
+                                )
+                            })}
+                        </>}
                     </div>
                 </div>
             </div>
 
             {/* Timeline */}
-            <div className="py-32 px-4 bg-slate-800/30">
+            {/* <div className="py-32 px-4 bg-slate-800/30">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl font-bold text-blue-400 mb-8">Timeline of Ages</h2>
 
@@ -205,10 +281,10 @@ const Lore = () => {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             {/* Mysteries */}
-            <div className=" relative py-32 px-4 bg-fixed  bg-center bg-cover bg-slate-900/100"
+            {/* <div className=" relative py-32 px-4 bg-fixed  bg-center bg-cover bg-slate-900/100"
                 style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756589179/The_Conquest_of_Raya_Lucaria_rle164.webp')" }}
             >
                 <div className="overlayBackground absolute    bg-black  inset-0  "></div>
@@ -376,27 +452,11 @@ const Lore = () => {
 
 
 
-                    {/* <Accordion type="single" collapsible className="space-y-4">
-            {mysteries.map((mystery, index) => (
-              <AccordionItem 
-                key={index} 
-                value={`item-${index}`}
-                className="bg-slate-800/90 border-blue-700/50 rounded-lg px-4"
-              >
-                <AccordionTrigger className="text-blue-300 hover:text-blue-200">
-                  {mystery.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-slate-300 text-sm leading-relaxed pt-4">
-                  {mystery.answer}
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion> */}
                 </div>
 
 
 
-            </div>
+            </div> */}
 
             {/* Quote */}
             {/* <div className="py-12 px-4 relative ">
