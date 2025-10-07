@@ -16,6 +16,7 @@ import MalekithPhoto from '/img/MalekithPhoto.jpg'
 const Bosses = () => {
   const timerRef = useRef(null);
 
+
   const handleMouseEnter = () => {
     timerRef.current = setTimeout(() => {
       console.log("🔥 Event Triggered after 2s hover!");
@@ -78,6 +79,45 @@ const Bosses = () => {
   }, [scrollYProgress]);
 
 
+
+  const playbackDisplayTimer = useRef(null)
+
+  const [firstPlayback, setFirstPlayback] = useState(false)
+  const [secondPlayback, setSecondPlayback] = useState(false)
+  const [thirdPlayback, setThirdPlayback] = useState(false)
+
+  const HandleCurrentMove = (index) => {
+    playbackDisplayTimer.current = setTimeout(() => {
+      if (index === 0) {
+        console.log("clicked")
+        setThirdPlayback(false)
+        setSecondPlayback(false)
+        setFirstPlayback(true)
+      } else if (index === 1) {
+        console.log("clicked")
+        setThirdPlayback(false)
+        setFirstPlayback(false)
+        setSecondPlayback(true)
+      } else if (index === 2) {
+        console.log("clicked")
+        setFirstPlayback(false)
+        setSecondPlayback(false)
+        setThirdPlayback(true)
+      }
+    }, 1000);
+  }
+  const HandleCurrentMoveLeave = () => {
+    clearTimeout(playbackDisplayTimer.current);
+
+    playbackDisplayTimer.current = setTimeout(() => {
+      setFirstPlayback(false);
+      setSecondPlayback(false);
+      setThirdPlayback(false);
+      console.log("removed")
+    }, 1000);
+  };
+
+
   return (
     <div className="min-h-screen relative pb-80 bg-fixed bg-center bg-cover
     //bg-gradient-to-b from-slate-900 via-slate-800 to-purple-900
@@ -103,17 +143,17 @@ const Bosses = () => {
       {/* Boss Cards */}
       <div
 
-        className="py-12 px-4  " >
+        className="py-12 px-4 " >
         <div
           ref={container}
           className="max-w-6xl mx-auto space-y-8 ">
           {allBosses?.bosses?.map((boss, index) => (
             <div key={index}
 
-              className=" backdrop-blur-[5px]  bg-slate-800/97 border-purple-700/50 overflow-hidden hover:border-purple-600 transition-all duration-300">
+              className=" border   backdrop-blur-[5px]  bg-slate-800/97 border-purple-700/50 overflow-hidden hover:border-purple-600 transition-all duration-300">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
                 {/* Boss Image and Basic Info */}
-                <div className="space-y-4">
+                <div className="space-y-4  ">
                   <div className="relative h-55 overflow-hidden rounded-lg group" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
                     <img
                       src={boss.image}
@@ -167,14 +207,14 @@ const Bosses = () => {
                 </div>
 
                 {/* Moves */}
-                <div>
-                  <h4 className="text-purple-400 font-semibold mb-3 flex items-center gap-2">
+                <div className=" ">
+                  <h4 className=" text-purple-400 font-semibold mb-3 flex items-center gap-2">
                     <Sword className="h-4 w-4" />
                     Signature Moves
                   </h4>
                   <div className="space-y-3 ">
                     {boss.moves.map((move, idx) => (
-                      <div key={idx} className={`p-3 rounded border hover:scale-102 transition-transform duration-300  ${getDangerColor(move.danger)}`}>
+                      <div key={idx} onMouseEnter={() => { HandleCurrentMove(idx) }} onMouseLeave={HandleCurrentMoveLeave} className={`p-3 cursor-pointer rounded border hover:scale-102 transition-transform duration-300  ${getDangerColor(move.danger)}`}>
                         <div className="flex items-center justify-between mb-1">
                           <h5 className="font-semibold text-sm">{move.name}</h5>
                           <span className="text-xs px-2 py-1 rounded bg-slate-700/50">
@@ -190,31 +230,93 @@ const Bosses = () => {
                 </div>
 
                 {/* Strategy and Rewards */}
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="text-purple-400 font-semibold mb-2 flex items-center gap-2">
-                      <Zap className="h-4 w-4" />
-                      Strategy
-                    </h4>
-                    <p className="text-slate-300 text-sm leading-relaxed bg-slate-700/30 p-3 rounded">
-                      {boss.strategy}
-                    </p>
-                  </div>
+                <div className="space-y-4 flex flex-col justify-between  ">
 
-                  <div>
-                    <h4 className="text-purple-400 font-semibold mb-2 flex items-center gap-2">
-                      <Heart className="h-4 w-4" />
-                      Rewards
-                    </h4>
-                    <div className="space-y-1">
-                      {boss.rewards.map((reward, idx) => (
-                        <div key={idx} className="flex items-center gap-2">
-                          <div className="w-1 h-1 bg-purple-400 rounded-full" />
-                          <span className="text-slate-300 text-sm">{reward}</span>
-                        </div>
-                      ))}
+                  <div className="flex flex-col justify-between">
+
+                    <div className="  ">
+                      <h4 className="text-purple-400 font-semibold mb-2 flex items-center gap-2">
+                        <Zap className="h-4 w-4" />
+                        Strategy
+                      </h4>
+                      <p className="text-slate-300 text-sm leading-relaxed bg-slate-700/30 p-3 rounded">
+                        {boss.strategy}
+                      </p>
+                    </div>
+
+                    <div className=" ">
+                      <h4 className="text-purple-400 font-semibold mb-2 flex items-center gap-2">
+                        <Heart className="h-4 w-4" />
+                        Rewards
+                      </h4>
+                      <div className="space-y-1">
+                        {boss.rewards.map((reward, idx) => (
+                          <div key={idx} className="flex items-center gap-2">
+                            <div className="w-1 h-1 bg-purple-400 rounded-full" />
+                            <span className="text-slate-300 text-sm">{reward}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
+
+                  {firstPlayback && <>
+                    <div className=" relative transition-all duration-300 ease-in-out ">
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover"
+
+                      >
+                        <source src={boss?.moves[0]?.playback} type="video/mp4" />
+
+                        Your browser does not support the video tag.
+                      </video>
+                     <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                      <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                    </div>
+                  </>}
+                  {secondPlayback && <>
+                    <div className=" relative  transition-all duration-300 ease-in-out">
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover "
+
+                      >
+                        <source src={boss?.moves[1]?.playback} type="video/mp4" />
+
+                        Your browser does not support the video tag.
+                      </video>
+                      <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                      <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                      
+                    </div>
+                  </>}
+                  {thirdPlayback && <>
+                    <div className=" relative  transition-all duration-300 ease-in-out">
+                      <video
+                        autoPlay
+                        muted
+                        loop
+                        playsInline
+                        className="w-full h-full object-cover"
+
+                      >
+                        <source src={boss?.moves[2]?.playback} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                      <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                      <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                    </div>
+                  </>}
+
+
+
                 </div>
               </div>
             </div>

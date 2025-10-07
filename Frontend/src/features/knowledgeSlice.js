@@ -18,7 +18,7 @@ export const knowledgeSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(getKnowledge.pending, (state) => {
- 
+
       })
       .addCase(getKnowledge.fulfilled, (state, action) => {
         state.loading = false;
