@@ -71,7 +71,7 @@ const EpicBattles = () => {
       {/* Battles */}
       <div className="py-12 px-4">
         <div className="max-w-6xl mx-auto space-y-12 min-h-[100vh]">
-          {!appState?.loading ?
+          {appState?.loading ?
 
             <>
               {[1, 2, 3].map((battle, index) => (

@@ -11,21 +11,20 @@ export const knowledgeSlice = createSlice({
   name: "knowledgeSlice",
   initialState: {
     knowledge: [],
-    loading: false,
+    loading: true,
     error: null,
   },
   reducers: {},
   extraReducers: (builder) => {
     builder
       .addCase(getKnowledge.pending, (state) => {
-        state.loading = true;
+ 
       })
       .addCase(getKnowledge.fulfilled, (state, action) => {
         state.loading = false;
         state.knowledge = action.payload;
       })
       .addCase(getKnowledge.rejected, (state, action) => {
-        state.loading = false;
         state.error = action.error.message;
       });
   },
