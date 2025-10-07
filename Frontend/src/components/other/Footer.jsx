@@ -11,9 +11,7 @@ const Footer = () => {
                     loop
                     playsInline
                     className="w-full h-full  object-cover"
-                    style={{
-                        transform: `translateY(${scrollY * 0.3}px)`
-                    }}
+
                 >
                     <source src="https://res.cloudinary.com/doeiccxm7/video/upload/v1758810962/lore-of-the-lands-between_footer_video_gqqxoz.mp4" type="video/mp4" />
                     Your browser does not support the video tag.

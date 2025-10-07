@@ -168,7 +168,7 @@ const Lore = () => {
         >
 
             {/* Header */}
-            <div className="bg-slate-900/80 py-8 px-4">
+            <div className="py-8 px-4">
                 <div className="max-w-6xl mx-auto">
 
                     <h1 className="text-4xl md:text-6xl font-bold text-blue-400 mb-4">
@@ -254,6 +254,9 @@ const Lore = () => {
                         </>}
                     </div>
                 </div>
+            </div>
+            <div className='relative min-h-[250px]'>
+                <div className="bg-[linear-gradient(to_bottom,#00000000,#00000000,#00000000,#00000088,rgb(2,3,12))] absolute       inset-0  "></div>
             </div>
 
             {/* Timeline */}
