@@ -40,7 +40,7 @@ const AllDemigods = () => {
     eight: false,
     nine: false,
     ten: false,
- 
+
   })
 
   useEffect(() => {
@@ -56,7 +56,7 @@ const AllDemigods = () => {
       setTimeout(() => { setloadercontainer((prev) => ({ ...prev, eight: true, })); }, 1500);
       setTimeout(() => { setloadercontainer((prev) => ({ ...prev, nine: true, })); }, 1700);
       setTimeout(() => { setloadercontainer((prev) => ({ ...prev, ten: true, })); }, 1900);
- 
+
     }
   })
 
@@ -66,9 +66,9 @@ const AllDemigods = () => {
 
 
   return (
-    <div className="all-demigods bg-fixed bg-center bg-cover "  style={{
-        backgroundImage: `url("https://res.cloudinary.com/doeiccxm7/image/upload/v1756638263/bg2_cdwfjx.webp")`
-      }}>
+    <div className="all-demigods bg-fixed bg-center bg-cover " style={{
+      backgroundImage: `url("https://res.cloudinary.com/doeiccxm7/image/upload/v1756638263/bg2_cdwfjx.webp")`
+    }}>
       <div className="      py-8 px-4">
         <div className="max-w-6xl mx-auto">
 
@@ -85,7 +85,7 @@ const AllDemigods = () => {
       <div className="py-12 px-4  ">
         <div className="max-w-6xl mx-auto min-h-[100vh]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {!demiGodStatus?.loading ? <>
+            {demiGodStatus?.loading ? <>
               {[1, 2, 3, 4, 5, 6, 7, 8].map((character, index) => (
 
                 <div key={index} className="border bg-[#173632] border-gray-700/50 rounded-md overflow-hidden hover:border-gray-600   transition-all duration-300">
@@ -206,6 +206,9 @@ const AllDemigods = () => {
 
           </div>
         </div>
+      </div>
+      <div className='relative min-h-[250px]'>
+        <div className="bg-[linear-gradient(to_bottom,#00000000,#00000000,#00000000,#00000088,rgb(2,3,12))] absolute       inset-0  "></div>
       </div>
     </div>
 

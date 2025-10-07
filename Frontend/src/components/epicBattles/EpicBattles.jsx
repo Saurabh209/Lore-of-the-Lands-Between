@@ -37,7 +37,7 @@ const EpicBattles = () => {
         setTimeout(() => { setloadercontainer((prev) => ({ ...prev, one: true, })); }, 100);
       setTimeout(() => { setloadercontainer((prev) => ({ ...prev, two: true, })); }, 300);
       setTimeout(() => { setloadercontainer((prev) => ({ ...prev, three: true, })); }, 500);
-      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, four: true, })); },700);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, four: true, })); }, 700);
       setTimeout(() => { setloadercontainer((prev) => ({ ...prev, five: true, })); }, 900);
       setTimeout(() => { setloadercontainer((prev) => ({ ...prev, six: true, })); }, 1100);
       setTimeout(() => { setloadercontainer((prev) => ({ ...prev, seven: true, })); }, 1300);
@@ -52,9 +52,10 @@ const EpicBattles = () => {
 
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-red-900">
+    <div className="min-h-screen bg-fixed bg-center bg-cover " style={{ backgroundImage: "url(' https://res.cloudinary.com/doeiccxm7/image/upload/v1758293378/Subterranean_Shunning-Grounds_vzvzyw.avif')" }}>
+
       {/* Header */}
-      <div className="bg-slate-900/80 py-8 px-4">
+      <div className="  py-8 px-4">
         <div className="max-w-6xl mx-auto">
 
           <h1 className="text-4xl md:text-6xl font-bold text-red-400 mb-4">
@@ -74,7 +75,7 @@ const EpicBattles = () => {
 
             <>
               {[1, 2, 3].map((battle, index) => (
-                <div key={index} className="bg-slate-800/90 border border-gray-700/50 rounded-sm    overflow-hidden hover:border-gray-600 transition-all duration-300">
+                <div key={index} className="bg-[#00000057] backdrop-blur-[20px] border border-gray-700/50 rounded-sm    overflow-hidden hover:border-gray-600 transition-all duration-300">
                   <div className="grid grid-cols-1 lg:grid-cols-2">
                     {/* Image */}
                     <div className="relative h-64 lg:h-auto flex items-center justify-center ">
@@ -222,7 +223,9 @@ const EpicBattles = () => {
 
         </div>
       </div>
-
+            <div className='relative min-h-[250px]'>
+                <div className="bg-[linear-gradient(to_bottom,#00000000,#00000000,#00000000,#00000088,rgb(2,3,12))] absolute       inset-0  "></div>
+            </div>
 
     </div>
   );
