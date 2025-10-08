@@ -59,7 +59,15 @@ const Bosses = () => {
       default: return 'text-green-400 bg-green-900/30 border-green-700';
     }
   };
-
+  const getDangerMove = (danger) => {
+    console.log("fxnCalled")
+    switch (danger.toLowerCase()) {
+      case 'extreme': return 'text-red-400  ';
+      case 'high': return 'text-orange-400  ';
+      case 'medium': return 'text-yellow-400  ';
+      default: return 'text-green-400  ';
+    }
+  };
   const container = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -85,6 +93,7 @@ const Bosses = () => {
   const [firstPlayback, setFirstPlayback] = useState(false)
   const [secondPlayback, setSecondPlayback] = useState(false)
   const [thirdPlayback, setThirdPlayback] = useState(false)
+  const [cutScene, setCutScene] = useState(true)
 
   const HandleCurrentMove = (index) => {
     playbackDisplayTimer.current = setTimeout(() => {
@@ -92,16 +101,19 @@ const Bosses = () => {
         console.log("clicked")
         setThirdPlayback(false)
         setSecondPlayback(false)
+        setCutScene(false)
         setFirstPlayback(true)
       } else if (index === 1) {
         console.log("clicked")
         setThirdPlayback(false)
         setFirstPlayback(false)
+        setCutScene(false)
         setSecondPlayback(true)
       } else if (index === 2) {
         console.log("clicked")
         setFirstPlayback(false)
         setSecondPlayback(false)
+        setCutScene(false)
         setThirdPlayback(true)
       }
     }, 1000);
@@ -113,6 +125,8 @@ const Bosses = () => {
       setFirstPlayback(false);
       setSecondPlayback(false);
       setThirdPlayback(false);
+      setCutScene(true);
+
       console.log("removed")
     }, 1000);
   };
@@ -146,181 +160,383 @@ const Bosses = () => {
         className="py-12 px-4 " >
         <div
           ref={container}
-          className="max-w-6xl mx-auto space-y-8 ">
-          {allBosses?.bosses?.map((boss, index) => (
-            <div key={index}
+          className="max-w-6xl mx-auto space-y-16 ">
+          {!bossesData?.loading ? <>
+            {[1,2,3].map((boss, index) => (
+              <div
 
-              className=" border   backdrop-blur-[5px]  bg-slate-800/97 border-purple-700/50 overflow-hidden hover:border-purple-600 transition-all duration-300">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
-                {/* Boss Image and Basic Info */}
-                <div className="space-y-4  ">
-                  <div className="relative h-55 overflow-hidden rounded-lg group" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-                    <img
-                      src={boss.image}
-                      alt={boss.name}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-800 to-transparent transition-all duration-500 group-hover:opacity-0 pointer-events-none" />
-                  </div>
-
-
-
-                  <div>
-                    <h3 className="text-xl font-bold text-purple-300 mb-1">{boss.name}</h3>
-                    <p className="text-purple-500 text-sm mb-2">{boss.type}</p>
-                    <p className={`font-semibold ${getDifficultyColor(boss.difficulty)}`}>
-                      Difficulty: {boss.difficulty}
-                    </p>
-                    <p className="text-slate-400 text-sm">{boss.health}</p>
-                    <p className="text-slate-400 text-sm">Phases: {boss.phases}</p>
-                  </div>
-
-                  {/* Weaknesses and Resistances */}
-                  <div className="space-y-2">
-                    <div>
-                      <h4 className="text-green-400 font-semibold text-sm mb-1 flex items-center gap-1">
-                        <Shield className="h-3 w-3" />
-                        Weaknesses
-                      </h4>
-                      <div className="flex flex-wrap gap-1">
-                        {boss.weaknesses.map((weakness, idx) => (
-                          <span key={idx} className="bg-green-600/20 text-green-300 px-2 py-1 rounded text-xs border border-green-600/30">
-                            {weakness}
-                          </span>
-                        ))}
-                      </div>
+                className=" border   backdrop-blur-[5px]  bg-slate-800/97 border-gray-700/50 overflow-hidden hover:border-gray-600 transition-all duration-300">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
+                  {/* Boss Image and Basic Info */}
+                  <div className="space-y-4  ">
+                    <div className="relative flex items-center justify-center h-55 overflow-hidden rounded-lg group" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                      <img
+                        src="https://res.cloudinary.com/doeiccxm7/image/upload/v1759750608/eldenRing_logo_loader_jf17wg.png"
+                        alt="default-image"
+                        className="h-[70%] w-[70%] object-contain   animate-breath-opacity"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-slate-800 to-transparent transition-all duration-500 group-hover:opacity-0 pointer-events-none" />
                     </div>
-                    <div>
-                      <h4 className="text-red-400 font-semibold text-sm mb-1 flex items-center gap-1">
-                        <AlertTriangle className="h-3 w-3" />
-                        Resistances
-                      </h4>
-                      <div className="flex flex-wrap gap-1">
-                        {boss.resistances.map((resistance, idx) => (
-                          <span key={idx} className="bg-red-600/20 text-red-300 px-2 py-1 rounded text-xs border border-red-600/30">
-                            {resistance}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                {/* Moves */}
-                <div className=" ">
-                  <h4 className=" text-purple-400 font-semibold mb-3 flex items-center gap-2">
-                    <Sword className="h-4 w-4" />
-                    Signature Moves
-                  </h4>
-                  <div className="space-y-3 ">
-                    {boss.moves.map((move, idx) => (
-                      <div key={idx} onMouseEnter={() => { HandleCurrentMove(idx) }} onMouseLeave={HandleCurrentMoveLeave} className={`p-3 cursor-pointer rounded border hover:scale-102 transition-transform duration-300  ${getDangerColor(move.danger)}`}>
-                        <div className="flex items-center justify-between mb-1">
-                          <h5 className="font-semibold text-sm">{move.name}</h5>
-                          <span className="text-xs px-2 py-1 rounded bg-slate-700/50">
-                            {move.danger}
-                          </span>
+
+
+                    <div>
+                      <div className={`w-9/12 bg-[#1d1d1d] h-[20px] mb-[8px] `}> </div>
+                      <div className={`w-4/12 bg-[#1d1d1d] h-[10px] mb-[8px] `}> </div>
+                      <div className={`w-8/12 bg-[#1d1d1d] h-[15px] mb-[8px] `}> </div>
+                      <div className={`w-4/12 bg-[#1d1d1d] h-[12px] mb-[8px] `}> </div>
+                      <div className={`w-4/12 bg-[#1d1d1d] h-[12px] mb-[8px] `}> </div>
+                    </div>
+
+                    {/* Weaknesses and Resistances */}
+                    <div className="space-y-2">
+                      <div>
+                        <div className="  mb-[4px] flex items-center gap-1 ">
+                          <div className={`h-[20px] w-[20px] rounded-full bg-[#1d1d1d]  `}></div>
+                          <div className={`w-4/12 bg-[#1d1d1d] h-[12px]  `}> </div>
                         </div>
-                        <p className="text-xs text-slate-300 leading-relaxed">
-                          {move.description}
-                        </p>
+                        <div className="flex flex-wrap gap-3">
+
+                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]   `}> </div>
+                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+
+                        </div>
                       </div>
-                    ))}
-                  </div>
-                </div>
+                      <div>
+                        <div>
+                          <div className="  mb-[4px] flex items-center gap-1 ">
+                            <div className={`h-[20px] w-[20px] rounded-full bg-[#1d1d1d]  `}></div>
+                            <div className={`w-4/12 bg-[#1d1d1d] h-[12px]  `}> </div>
+                          </div>
+                          <div className="flex flex-wrap gap-3">
 
-                {/* Strategy and Rewards */}
-                <div className="space-y-4 flex flex-col justify-between  ">
+                            <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                            <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]   `}> </div>
+                            <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
 
-                  <div className="flex flex-col justify-between">
-
-                    <div className="  ">
-                      <h4 className="text-purple-400 font-semibold mb-2 flex items-center gap-2">
-                        <Zap className="h-4 w-4" />
-                        Strategy
-                      </h4>
-                      <p className="text-slate-300 text-sm leading-relaxed bg-slate-700/30 p-3 rounded">
-                        {boss.strategy}
-                      </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+
+                  {/* Moves */}
+                  <div className=" ">
+                    <div className="  mb-[4px] flex items-center gap-1 pb-3">
+                      <div className={`h-[25px] w-[25px] rounded-full bg-[#1d1d1d]  `}></div>
+                      <div className={`w-4/12 bg-[#1d1d1d] h-[15px]  `}> </div>
+                    </div>
+                    <div className="space-y-3 ">
+
+                      <div className={`p-3 bg-slate-700/30 cursor-pointer rounded   `}>
+                        <div className="flex items-center justify-between mb-2">
+                          <div className={`w-6/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                        </div>
+                        <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
+                        <div className={`w-7/12 bg-[#1d1d1d] rounded-sm h-[15px]  `}> </div>
+                      </div>
+
+                      <div className={`p-3 bg-slate-700/30  cursor-pointer rounded   `}>
+                        <div className="flex items-center justify-between mb-2">
+                          <div className={`w-6/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                        </div>
+                        <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
+                        <div className={`w-7/12 bg-[#1d1d1d] rounded-sm h-[15px]  `}> </div>
+                      </div>
+                      <div className={`p-3 bg-slate-700/30  cursor-pointer rounded  `}>
+                        <div className="flex items-center justify-between mb-2">
+                          <div className={`w-6/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                        </div>
+                        <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
+                        <div className={`w-7/12 bg-[#1d1d1d] rounded-sm h-[15px]  `}> </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Strategy and Rewards */}
+                  <div className="space-y-4 flex flex-col-reverse justify-between lg-flex-col ">
+
+                    <div className="flex flex-col justify-between">
+
+                      <div className="   pb-4 ">
+                        <div className="   flex items-center gap-1 pb-3">
+                          <div className={`h-[25px] w-[25px] rounded-full bg-[#1d1d1d]  `}></div>
+                          <div className={`w-4/12 bg-[#1d1d1d] h-[15px]  `}> </div>
+                        </div>
+                        <div className="text-slate-300   text-sm leading-relaxed bg-slate-700/30 p-3 rounded">
+                          <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
+
+                          <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
+
+                          <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px]   `}> </div>
+
+                        </div>
+                      </div>
+
+                      <div className=" ">
+                        <div className="    flex items-center gap-1 pb-3  ">
+                          <div className={`h-[25px] w-[25px] rounded-full bg-[#1d1d1d]  `}></div>
+                          <div className={`w-4/12 bg-[#1d1d1d] h-[15px]  `}> </div>
+                        </div>
+                        <div className="space-y-1">
+
+                          <div className={`w-8/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
+                          <div className={`w-6/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
+                          <div className={`w-9/12 bg-[#1d1d1d] rounded-sm h-[15px]   `}> </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+
 
                     <div className=" ">
-                      <h4 className="text-purple-400 font-semibold mb-2 flex items-center gap-2">
-                        <Heart className="h-4 w-4" />
-                        Rewards
+                      <div className="    flex items-center gap-1 pb-3  ">
+                        <div className={`h-[25px] w-[25px] rounded-full bg-[#1d1d1d]  `}></div>
+                        <div className={`w-4/12 bg-[#1d1d1d] h-[15px]  `}> </div>
+                      </div>
+                      <div className="bg-slate-700/30 min-h-[170px] relative transition-all duration-300 ease-in-out ">
+
+                        <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                        <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                      </div>
+                    </div>
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            ))}
+          </> :
+            <>
+              {allBosses?.bosses?.map((boss, index) => (
+                <div key={index}
+
+                  className=" border   backdrop-blur-[5px]  bg-slate-800/97 border-purple-700/50 overflow-hidden hover:border-purple-600 transition-all duration-300">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
+                    {/* Boss Image and Basic Info */}
+                    <div className="space-y-4  ">
+                      <div className="relative h-55 overflow-hidden rounded-lg group" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+                        <img
+                          src={boss.image}
+                          alt={boss.name}
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-slate-800 to-transparent transition-all duration-500 group-hover:opacity-0 pointer-events-none" />
+                      </div>
+
+
+
+                      <div>
+                        <h3 className="text-xl font-bold text-purple-300 mb-1">{boss.name}</h3>
+                        <p className="text-purple-500 text-sm mb-2">{boss.type}</p>
+                        <p className={`font-semibold ${getDifficultyColor(boss.difficulty)}`}>
+                          Difficulty: {boss.difficulty}
+                        </p>
+                        <p className="text-slate-400 text-sm">{boss.health}</p>
+                        <p className="text-slate-400 text-sm">Phases: {boss.phases}</p>
+                      </div>
+
+                      {/* Weaknesses and Resistances */}
+                      <div className="space-y-2">
+                        <div>
+                          <h4 className="text-green-400 font-semibold text-sm mb-1 flex items-center gap-1">
+                            <Shield className="h-3 w-3" />
+                            Weaknesses
+                          </h4>
+                          <div className="flex flex-wrap gap-1">
+                            {boss.weaknesses.map((weakness, idx) => (
+                              <span key={idx} className="bg-green-600/20 text-green-300 px-2 py-1 rounded text-xs border border-green-600/30">
+                                {weakness}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                        <div>
+                          <h4 className="text-red-400 font-semibold text-sm mb-1 flex items-center gap-1">
+                            <AlertTriangle className="h-3 w-3" />
+                            Resistances
+                          </h4>
+                          <div className="flex flex-wrap gap-1">
+                            {boss.resistances.map((resistance, idx) => (
+                              <span key={idx} className="bg-red-600/20 text-red-300 px-2 py-1 rounded text-xs border border-red-600/30">
+                                {resistance}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Moves */}
+                    <div className=" ">
+                      <h4 className=" text-purple-400 font-semibold mb-3 flex items-center gap-2">
+                        <Sword className="h-4 w-4" />
+                        Signature Moves
                       </h4>
-                      <div className="space-y-1">
-                        {boss.rewards.map((reward, idx) => (
-                          <div key={idx} className="flex items-center gap-2">
-                            <div className="w-1 h-1 bg-purple-400 rounded-full" />
-                            <span className="text-slate-300 text-sm">{reward}</span>
+                      <div className="space-y-3 ">
+                        {boss.moves.map((move, idx) => (
+                          <div key={idx} onMouseEnter={() => { HandleCurrentMove(idx) }} onMouseLeave={HandleCurrentMoveLeave} className={`p-3 cursor-pointer rounded border hover:scale-107 transition-transform duration-300  ${getDangerColor(move.danger)}`}>
+                            <div className="flex items-center justify-between mb-1">
+                              <h5 className="font-semibold text-sm">{move.name}</h5>
+                              <span className="text-xs px-2 py-1 rounded bg-slate-700/50">
+                                {move.danger}
+                              </span>
+                            </div>
+                            <p className="text-xs text-slate-300 leading-relaxed">
+                              {move.description}
+                            </p>
                           </div>
                         ))}
                       </div>
                     </div>
+
+                    {/* Strategy and Rewards */}
+                    <div className="space-y-4 flex flex-col-reverse justify-between lg-flex-col ">
+
+                      <div className="flex flex-col justify-between">
+
+                        <div className="  ">
+                          <h4 className="text-purple-400 font-semibold mb-2 flex items-center gap-2">
+                            <Zap className="h-4 w-4" />
+                            Strategy
+                          </h4>
+                          <p className="text-slate-300 text-sm leading-relaxed bg-slate-700/30 p-3 rounded">
+                            {boss.strategy}
+                          </p>
+                        </div>
+
+                        <div className=" ">
+                          <h4 className="text-purple-400 font-semibold mb-2 flex items-center gap-2">
+                            <Heart className="h-4 w-4" />
+                            Rewards
+                          </h4>
+                          <div className="space-y-1">
+                            {boss.rewards.map((reward, idx) => (
+                              <div key={idx} className="flex items-center gap-2">
+                                <div className="w-1 h-1 bg-purple-400 rounded-full" />
+                                <span className="text-slate-300 text-sm">{reward}</span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+
+                      {firstPlayback && <>
+                        <div>
+                          <h4 className={`text-purple-400  font-semibold mb-3 flex items-center gap-2 bg-none  ${getDangerMove(boss?.moves[0]?.danger)} `} >
+                            <Sword className="h-4 w-4" />
+                            <>{boss.moves[0]?.name}</>
+                          </h4>
+                          <div className=" relative transition-all duration-300 ease-in-out ">
+                            <video
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                              className="w-full h-full object-cover"
+
+                            >
+                              <source src={boss?.moves[0]?.playback} type="video/mp4" />
+
+                              Your browser does not support the video tag.
+                            </video>
+                            <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                            <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                          </div>
+                        </div>
+
+                      </>}
+                      {secondPlayback && <>
+                        <div>
+                          <h4 className={`text-purple-400  font-semibold mb-3 flex items-center gap-2 bg-none  ${getDangerMove(boss?.moves[1]?.danger)} `} >
+                            <Sword className="h-4 w-4" />
+                            <>{boss.moves[1]?.name}</>
+                          </h4>
+                          <div className=" relative  transition-all duration-300 ease-in-out">
+                            <video
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                              className="w-full h-full object-cover "
+
+                            >
+                              <source src={boss?.moves[1]?.playback} type="video/mp4" />
+
+                              Your browser does not support the video tag.
+                            </video>
+                            <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                            <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+
+                          </div>
+
+                        </div>
+
+                      </>}
+                      {thirdPlayback && <>
+                        <div>
+                          <h4 className={`text-purple-400  font-semibold mb-3 flex items-center gap-2 bg-none  ${getDangerMove(boss?.moves[2]?.danger)} `} >
+                            <Sword className="h-4 w-4" />
+                            <>{boss.moves[2]?.name}</>
+                          </h4>
+                          <div className=" relative  transition-all duration-300 ease-in-out">
+                            <video
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                              className="w-full h-full object-cover"
+
+                            >
+                              <source src={boss?.moves[2]?.playback} type="video/mp4" />
+                              Your browser does not support the video tag.
+                            </video>
+                            <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                            <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                          </div>
+                        </div>
+
+                      </>}
+                      {cutScene && <>
+                        <div>
+                          <h4 className=" text-purple-400 font-semibold mb-3 flex items-center gap-2">
+
+
+                          </h4>
+                          <div className="  relative  transition-all duration-300 ease-in-out">
+                            <video
+                              autoPlay
+                              muted
+                              loop
+                              playsInline
+                              className="w-full h-full object-cover"
+
+                            >
+                              <source src={boss?.cutScene} type="video/mp4" />
+                              Your browser does not support the video tag.
+                            </video>
+                            <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                            <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                          </div>
+                        </div>
+
+                      </>}
+
+
+                    </div>
                   </div>
-
-                  {firstPlayback && <>
-                    <div className=" relative transition-all duration-300 ease-in-out ">
-                      <video
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="w-full h-full object-cover"
-
-                      >
-                        <source src={boss?.moves[0]?.playback} type="video/mp4" />
-
-                        Your browser does not support the video tag.
-                      </video>
-                     <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
-                      <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" />
-                    </div>
-                  </>}
-                  {secondPlayback && <>
-                    <div className=" relative  transition-all duration-300 ease-in-out">
-                      <video
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="w-full h-full object-cover "
-
-                      >
-                        <source src={boss?.moves[1]?.playback} type="video/mp4" />
-
-                        Your browser does not support the video tag.
-                      </video>
-                      <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
-                      <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" />
-                      
-                    </div>
-                  </>}
-                  {thirdPlayback && <>
-                    <div className=" relative  transition-all duration-300 ease-in-out">
-                      <video
-                        autoPlay
-                        muted
-                        loop
-                        playsInline
-                        className="w-full h-full object-cover"
-
-                      >
-                        <source src={boss?.moves[2]?.playback} type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-                      <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
-                      <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" />
-                    </div>
-                  </>}
-
-
-
                 </div>
-              </div>
-            </div>
-          ))}
+              ))}
+            </>}
+
         </div>
       </div>
     </div>

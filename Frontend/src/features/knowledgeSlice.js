@@ -3,6 +3,7 @@ import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 export const getKnowledge = createAsyncThunk("getKnowledge", async () => {
   const response = await fetch(
     "https://lore-of-the-lands-between.onrender.com/api/knowledge"
+    // "http://localhost:3000/api/knowledge/"
   );
   return response.json();
 });
