@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import { Link } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import './ExploreNavigationCards.css'
 import { Sword, Crown, Shield, BookOpen, MapPin, Users, Skull, Star, Hammer, Wand2, Target, Zap, Eye, Clock, TrendingUp, Globe, Flame, Moon } from "lucide-react";
 
@@ -60,9 +60,9 @@ const ExploreNavigationCards = () => {
                                     <p>{item?.desc}</p>
                                 </div>
                                 <div className=''>
-                                    <a href={item?.link}>
+                                    <Link href={item?.link}>
                                         <button className={` ${item?.color}  border border-${item?.color}-400 ${hovereBg} hover:text-black `}>Discover</button>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         );

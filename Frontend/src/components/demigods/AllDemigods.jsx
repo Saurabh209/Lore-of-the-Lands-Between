@@ -85,7 +85,7 @@ const AllDemigods = () => {
       <div className="py-12 px-4  ">
         <div className="max-w-6xl mx-auto min-h-[100vh]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {!demiGodStatus?.loading ? <>
+            {demiGodStatus?.loading ? <>
               {[1, 2, 3, 4, 5, 6, 7, 8].map((character, index) => (
 
                 <div key={index} className="border bg-[#173632] border-gray-700/50 rounded-md overflow-hidden hover:border-gray-600   transition-all duration-300">

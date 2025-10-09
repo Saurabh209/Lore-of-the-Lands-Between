@@ -96,7 +96,7 @@ const Bosses = () => {
   const [cutScene, setCutScene] = useState(true)
 
   const HandleCurrentMove = (index) => {
-    playbackDisplayTimer.current = setTimeout(() => {
+
       if (index === 0) {
         console.log("clicked")
         setThirdPlayback(false)
@@ -116,20 +116,61 @@ const Bosses = () => {
         setCutScene(false)
         setThirdPlayback(true)
       }
-    }, 1000);
+  
   }
   const HandleCurrentMoveLeave = () => {
-    clearTimeout(playbackDisplayTimer.current);
 
-    playbackDisplayTimer.current = setTimeout(() => {
+
+
       setFirstPlayback(false);
       setSecondPlayback(false);
       setThirdPlayback(false);
       setCutScene(true);
 
       console.log("removed")
-    }, 1000);
+ 
   };
+
+  const [loaderContainer, setloadercontainer] = useState({
+    one: false,
+    two: false,
+    three: false,
+    four: false,
+    five: false,
+    six: false,
+    seven: false,
+    eight: false,
+    nine: false,
+    ten: false,
+    eleven: false,
+    thirteen: false,
+    fourteen: false,
+    fifteen: false,
+    sixteen: false
+  })
+
+  useEffect(() => {
+    {
+      bossesData?.loading &&
+        setTimeout(() => { setloadercontainer((prev) => ({ ...prev, one: true, })); }, 100);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, two: true, })); }, 300);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, three: true, })); }, 500);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, four: true, })); }, 700);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, five: true, })); }, 900);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, six: true, })); }, 1100);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, seven: true, })); }, 1300);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, eight: true, })); }, 1500);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, nine: true, })); }, 1700);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, ten: true, })); }, 1900);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, eleven: true, })); }, 2100);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, twelve: true, })); }, 2300);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, thirteen: true, })); }, 2500);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, fourteen: true, })); }, 2700);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, fifteen: true, })); }, 2900);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, sixteen: true, })); }, 3100);
+    }
+  })
+
 
 
   return (
@@ -161,11 +202,11 @@ const Bosses = () => {
         <div
           ref={container}
           className="max-w-6xl mx-auto space-y-16 ">
-          {!bossesData?.loading ? <>
-            {[1,2,3].map((boss, index) => (
+          {bossesData?.loading ? <>
+            {[1, 2, 3].map((boss, index) => (
               <div
 
-                className=" border   backdrop-blur-[5px]  bg-slate-800/97 border-gray-700/50 overflow-hidden hover:border-gray-600 transition-all duration-300">
+                className=" border   backdrop-blur-[10px] bg-[#0000006e]  border-gray-700/50 overflow-hidden hover:border-gray-600 transition-all duration-300">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
                   {/* Boss Image and Basic Info */}
                   <div className="space-y-4  ">
@@ -175,45 +216,45 @@ const Bosses = () => {
                         alt="default-image"
                         className="h-[70%] w-[70%] object-contain   animate-breath-opacity"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-slate-800 to-transparent transition-all duration-500 group-hover:opacity-0 pointer-events-none" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#6a6a6a1e] to-transparent transition-all duration-500  pointer-events-none" />
                     </div>
 
 
 
                     <div>
-                      <div className={`w-9/12 bg-[#1d1d1d] h-[20px] mb-[8px] `}> </div>
-                      <div className={`w-4/12 bg-[#1d1d1d] h-[10px] mb-[8px] `}> </div>
-                      <div className={`w-8/12 bg-[#1d1d1d] h-[15px] mb-[8px] `}> </div>
-                      <div className={`w-4/12 bg-[#1d1d1d] h-[12px] mb-[8px] `}> </div>
-                      <div className={`w-4/12 bg-[#1d1d1d] h-[12px] mb-[8px] `}> </div>
+                      <div className={`w-9/12 bg-[#1d1d1d] h-[20px] mb-[8px] ${loaderContainer?.five && "skltnLoader"}`}> </div>
+                      <div className={`w-4/12 bg-[#1d1d1d] h-[10px] mb-[8px] ${loaderContainer?.six && "skltnLoader"}`}> </div>
+                      <div className={`w-8/12 bg-[#1d1d1d] h-[15px] mb-[8px] ${loaderContainer?.seven && "skltnLoader"}`}> </div>
+                      <div className={`w-4/12 bg-[#1d1d1d] h-[12px] mb-[8px] ${loaderContainer?.eight && "skltnLoader"}`}> </div>
+                      <div className={`w-4/12 bg-[#1d1d1d] h-[12px] mb-[8px] ${loaderContainer?.nine && "skltnLoader"}`}> </div>
                     </div>
 
                     {/* Weaknesses and Resistances */}
                     <div className="space-y-2">
                       <div>
                         <div className="  mb-[4px] flex items-center gap-1 ">
-                          <div className={`h-[20px] w-[20px] rounded-full bg-[#1d1d1d]  `}></div>
-                          <div className={`w-4/12 bg-[#1d1d1d] h-[12px]  `}> </div>
+                          <div className={`h-[20px] w-[20px] rounded-full bg-[#1d1d1d] ${loaderContainer?.ten && "skltnLoader"} `}></div>
+                          <div className={`w-4/12 bg-[#1d1d1d] h-[12px] ${loaderContainer?.eleven && "skltnLoader"} `}> </div>
                         </div>
                         <div className="flex flex-wrap gap-3">
 
-                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
-                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]   `}> </div>
-                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px] ${loaderContainer?.twelve && "skltnLoader"} `}> </div>
+                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px] ${loaderContainer?.twelve && "skltnLoader"}  `}> </div>
+                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px] ${loaderContainer?.twelve && "skltnLoader"} `}> </div>
 
                         </div>
                       </div>
                       <div>
                         <div>
                           <div className="  mb-[4px] flex items-center gap-1 ">
-                            <div className={`h-[20px] w-[20px] rounded-full bg-[#1d1d1d]  `}></div>
-                            <div className={`w-4/12 bg-[#1d1d1d] h-[12px]  `}> </div>
+                            <div className={`h-[20px] w-[20px] rounded-full bg-[#1d1d1d] ${loaderContainer?.thirteen && "skltnLoader"} `}></div>
+                            <div className={`w-4/12 bg-[#1d1d1d] h-[12px] ${loaderContainer?.thirteen && "skltnLoader"} `}> </div>
                           </div>
                           <div className="flex flex-wrap gap-3">
 
-                            <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
-                            <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]   `}> </div>
-                            <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                            <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px] ${loaderContainer?.fourteen && "skltnLoader"} `}> </div>
+                            <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px] ${loaderContainer?.fourteen && "skltnLoader"}  `}> </div>
+                            <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px] ${loaderContainer?.fourteen && "skltnLoader"} `}> </div>
 
                           </div>
                         </div>
@@ -222,71 +263,71 @@ const Bosses = () => {
                   </div>
 
                   {/* Moves */}
-                  <div className=" ">
+                  <div className="hidden lg:block ">
                     <div className="  mb-[4px] flex items-center gap-1 pb-3">
-                      <div className={`h-[25px] w-[25px] rounded-full bg-[#1d1d1d]  `}></div>
-                      <div className={`w-4/12 bg-[#1d1d1d] h-[15px]  `}> </div>
+                      <div className={`h-[25px] w-[25px] rounded-full bg-[#1d1d1d] ${loaderContainer?.one && "skltnLoader"} `}></div>
+                      <div className={`w-4/12 bg-[#1d1d1d] h-[15px] ${loaderContainer?.one && "skltnLoader"} `}> </div>
                     </div>
                     <div className="space-y-3 ">
 
-                      <div className={`p-3 bg-slate-700/30 cursor-pointer rounded   `}>
+                      <div className={`p-3 bg-slate-700/30 cursor-pointer rounded    `}>
                         <div className="flex items-center justify-between mb-2">
-                          <div className={`w-6/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
-                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                          <div className={`w-6/12 bg-[#1d1d1d] rounded-sm h-[20px] ${loaderContainer?.two && "skltnLoader"} `}> </div>
+                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px] ${loaderContainer?.two && "skltnLoader"} `}> </div>
                         </div>
-                        <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
-                        <div className={`w-7/12 bg-[#1d1d1d] rounded-sm h-[15px]  `}> </div>
+                        <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2 ${loaderContainer?.three && "skltnLoader"} `}> </div>
+                        <div className={`w-7/12 bg-[#1d1d1d] rounded-sm h-[15px]  ${loaderContainer?.four && "skltnLoader"}`}> </div>
                       </div>
 
                       <div className={`p-3 bg-slate-700/30  cursor-pointer rounded   `}>
                         <div className="flex items-center justify-between mb-2">
-                          <div className={`w-6/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
-                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                          <div className={`w-6/12 bg-[#1d1d1d] rounded-sm h-[20px] ${loaderContainer?.five && "skltnLoader"} `}> </div>
+                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px] ${loaderContainer?.five && "skltnLoader"} `}> </div>
                         </div>
-                        <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
-                        <div className={`w-7/12 bg-[#1d1d1d] rounded-sm h-[15px]  `}> </div>
+                        <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2 ${loaderContainer?.six && "skltnLoader"} `}> </div>
+                        <div className={`w-7/12 bg-[#1d1d1d] rounded-sm h-[15px] ${loaderContainer?.seven && "skltnLoader"} `}> </div>
                       </div>
                       <div className={`p-3 bg-slate-700/30  cursor-pointer rounded  `}>
                         <div className="flex items-center justify-between mb-2">
-                          <div className={`w-6/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
-                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px]  `}> </div>
+                          <div className={`w-6/12 bg-[#1d1d1d] rounded-sm h-[20px] ${loaderContainer?.nine && "skltnLoader"} `}> </div>
+                          <div className={`w-2/12 bg-[#1d1d1d] rounded-sm h-[20px] ${loaderContainer?.nine && "skltnLoader"} `}> </div>
                         </div>
-                        <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
-                        <div className={`w-7/12 bg-[#1d1d1d] rounded-sm h-[15px]  `}> </div>
+                        <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  ${loaderContainer?.ten && "skltnLoader"}`}> </div>
+                        <div className={`w-7/12 bg-[#1d1d1d] rounded-sm h-[15px]  ${loaderContainer?.eleven && "skltnLoader"}`}> </div>
                       </div>
                     </div>
                   </div>
 
                   {/* Strategy and Rewards */}
-                  <div className="space-y-4 flex flex-col-reverse justify-between lg-flex-col ">
+                  <div className="hidden lg:flex space-y-4  flex-col-reverse justify-between lg-flex-col ">
 
                     <div className="flex flex-col justify-between">
 
-                      <div className="   pb-4 ">
+                      <div className="   mb-4 ">
                         <div className="   flex items-center gap-1 pb-3">
-                          <div className={`h-[25px] w-[25px] rounded-full bg-[#1d1d1d]  `}></div>
-                          <div className={`w-4/12 bg-[#1d1d1d] h-[15px]  `}> </div>
+                          <div className={`h-[25px] w-[25px] rounded-full bg-[#1d1d1d] ${loaderContainer?.seven && "skltnLoader"} `}></div>
+                          <div className={`w-4/12 bg-[#1d1d1d] h-[15px] ${loaderContainer?.seven && "skltnLoader"} `}> </div>
                         </div>
                         <div className="text-slate-300   text-sm leading-relaxed bg-slate-700/30 p-3 rounded">
-                          <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
+                          <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2 ${loaderContainer?.eight && "skltnLoader"} `}> </div>
 
-                          <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
+                          <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2 ${loaderContainer?.nine && "skltnLoader"} `}> </div>
 
-                          <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px]   `}> </div>
+                          <div className={`w-12/12 bg-[#1d1d1d] rounded-sm h-[15px]  ${loaderContainer?.ten && "skltnLoader"} `}> </div>
 
                         </div>
                       </div>
 
                       <div className=" ">
                         <div className="    flex items-center gap-1 pb-3  ">
-                          <div className={`h-[25px] w-[25px] rounded-full bg-[#1d1d1d]  `}></div>
-                          <div className={`w-4/12 bg-[#1d1d1d] h-[15px]  `}> </div>
+                          <div className={`h-[25px] w-[25px] rounded-full bg-[#1d1d1d] ${loaderContainer?.eleven && "skltnLoader"} `}></div>
+                          <div className={`w-4/12 bg-[#1d1d1d] h-[15px]  ${loaderContainer?.eleven && "skltnLoader"}`}> </div>
                         </div>
                         <div className="space-y-1">
 
-                          <div className={`w-8/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
-                          <div className={`w-6/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  `}> </div>
-                          <div className={`w-9/12 bg-[#1d1d1d] rounded-sm h-[15px]   `}> </div>
+                          <div className={`w-8/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2  ${loaderContainer?.twelve && "skltnLoader"}`}> </div>
+                          <div className={`w-6/12 bg-[#1d1d1d] rounded-sm h-[15px] mb-2 ${loaderContainer?.thirteen && "skltnLoader"} `}> </div>
+                          <div className={`w-9/12 bg-[#1d1d1d] rounded-sm h-[15px]  ${loaderContainer?.fourteen && "skltnLoader"} `}> </div>
 
 
                         </div>
@@ -294,15 +335,15 @@ const Bosses = () => {
                     </div>
 
 
-                    <div className=" ">
+                    <div className="  mb-4">
                       <div className="    flex items-center gap-1 pb-3  ">
-                        <div className={`h-[25px] w-[25px] rounded-full bg-[#1d1d1d]  `}></div>
-                        <div className={`w-4/12 bg-[#1d1d1d] h-[15px]  `}> </div>
+                        <div className={`h-[25px] w-[25px] rounded-full bg-[#1d1d1d] ${loaderContainer?.one && "skltnLoader"} `}></div>
+                        <div className={`w-4/12 bg-[#1d1d1d] h-[15px]  ${loaderContainer?.one && "skltnLoader"}`}> </div>
                       </div>
-                      <div className="bg-slate-700/30 min-h-[170px] relative transition-all duration-300 ease-in-out ">
+                      <div className={` backdrop-blur-[1px] bg-[#4848487e]  min-h-[170px]   rounded-xl  relative transition-all duration-300 ease-in-out ${loaderContainer?.two && "skltnLoader"} `}>
 
-                        <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
-                        <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                        {/* <div className=" absolute inset-0  bg-[linear-gradient(to_bottom,#1e293b,#00000000,#00000000,#1e293b)]   pointer-events-none" />
+                        <div className=" absolute inset-0  bg-[linear-gradient(to_right,#1e293b,#00000000,#00000000,#00000000,#1e293b)]   pointer-events-none" /> */}
                       </div>
                     </div>
 
