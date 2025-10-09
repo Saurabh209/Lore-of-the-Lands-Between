@@ -60,7 +60,7 @@ const ExploreNavigationCards = () => {
                                     <p>{item?.desc}</p>
                                 </div>
                                 <div className=''>
-                                    <Link href={item?.link}>
+                                    <Link to={item?.link}>
                                         <button className={` ${item?.color}  border border-${item?.color}-400 ${hovereBg} hover:text-black `}>Discover</button>
                                     </Link>
                                 </div>
