@@ -59,7 +59,7 @@ const KeyFeature = () => {
                 <div className=' flex justify-between gap-4 flex-col  sm:flex-row '>
 
                     <div className=' sm:w-[48%] flex flex-col gap-4'>
-                        <h3 className='text-black  text-nowrap  w-fit bg-amber-200 px-8 py-1    sm:text-xl' style={{
+                        <h3 className='text-black    w-fit bg-amber-200 px-8 py-1    sm:text-xl' style={{
                             transform: `translateY(${(scrollY - 3000) * -0.3}px)`,
                             boxShadow: "0 1px 3px rgba(0,0,0,0.12)"
                         }}>WORLD EXPLORATION IN THE LANDS BETWEEN</h3>

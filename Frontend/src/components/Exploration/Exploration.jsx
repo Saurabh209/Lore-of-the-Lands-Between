@@ -438,7 +438,7 @@ const Exploration = () => {
 
     useEffect(()=>{
         setExplorationData(exploration?.knowledge[0])
-        console.log(explorationData)
+        console.log("data",explorationData)
     },[exploration])
 
 
@@ -463,7 +463,7 @@ const Exploration = () => {
             {/* Regions */}
             <div className="py-12 px-4">
                 <div className="max-w-6xl mx-auto space-y-12">
-                    {regions.map((region, index) => (
+                    {explorationData?.exploration?.map((region, index) => (
                         <div key={index} className="bg-slate-800/90 border border-green-700/50 overflow-hidden hover:border-green-600 transition-all duration-300">
                             <div
                                 className=" grid grid-cols-1 lg:grid-cols-5   w-full h-full"

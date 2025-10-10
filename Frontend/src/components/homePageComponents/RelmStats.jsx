@@ -39,7 +39,7 @@ const RelmStats = () => {
 
 
         // </div>
-        <div className="   relative  bg-center bg-fixed bg-cover  mx-auto" style={{ backgroundImage: "url('/img/background1.webp')" }}>
+        <div className="   relative  bg-center bg-fixed bg-cover bg-black  mx-auto" style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1756592268/loreBg_tqrof5.webp ')" }}>
             <div className=' relm-stats  p-5 inset-0    ' >
                 <div className=' relm-stats-container  '>
                     <h3 className="text-3xl  text-amber-400 text-center font-crimson mb-12 animate-fade-in sm:text-4xl" style={{
