@@ -141,8 +141,25 @@ const Home = () => {
                         </video>
                     </div>
 
-                    <div className="absolute border   inset-0  bg-black/50" />
-                    <div className="absolute   inset-0 bg-gradient-to-t from-[rgb(2,3,12)] via-transparent to-transparent" />
+                    <div
+                        style={{
+                            position: "absolute",
+                            border: "1px solid black",
+                            inset: 0,
+                            backgroundColor: "rgba(0, 0, 0, 0.5)",
+                            willChange: "transform"
+                        }}
+                    />
+
+                    <div
+                        style={{
+                            position: "absolute",
+                            inset: 0,
+                            backgroundImage: "linear-gradient(to top, rgb(2,3,12), transparent, transparent)",
+                            willChange: "transform"
+                        }}
+                    />
+
 
 
 
@@ -155,7 +172,7 @@ const Home = () => {
                         {/* <h1 className="text-6xl md:text-8xl font-bold text-amber-400 mb-6 tracking-wider font-cinzel animate-scale-in">
             ELDEN RING
           </h1> */}
-                        <h2 className="text-2xl md:text-5xl text-amber-200 mb-8  font-crimson animate-fade-in" style={{ animationDelay: '0.3s' }}>
+                        <h2 className=" text-2xl md:text-5xl text-amber-200 mb-8  font-crimson animate-fade-in" style={{ animationDelay: '0.3s' }}>
                             The Lore of the Lands Between
                         </h2>
                         <p className="text-lg h-[56px] text-slate-300 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
@@ -171,14 +188,14 @@ const Home = () => {
             {/* further included section in home page */}
             {/* <RelmStats /> */}
             <ExploreNavigationCards />
-            <ScrollCard/>
-            
+            <ScrollCard />
+
             {/* <ScrollCard11/> */}
-            <EldenInfo/>
+            <EldenInfo />
             {/* <Testing/>
              */}
-      
- 
+
+
 
 
 

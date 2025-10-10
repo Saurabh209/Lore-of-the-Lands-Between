@@ -6,6 +6,13 @@
 /* *{
     border: 1px solid red;
 } */
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  /* Safari */
+  -ms-user-select: none;
+  /* old Edge/IE */
+}
 
 .skltnLoader {
   /* border: 1px solid rgb(29, 29, 29); */
@@ -56,6 +63,6 @@
 
   50% {
     transform: scale(1.85);
- 
+
   }
 }
