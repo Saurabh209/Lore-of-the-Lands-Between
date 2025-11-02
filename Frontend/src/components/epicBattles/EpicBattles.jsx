@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Swords, MapPin, Clock, Skull } from "lucide-react";
 import { useSelector } from 'react-redux';
 import HeaderTitle from '../Common/HeaderTitle';
+import ShinyText from '../../../ReactBitsComponents/ShinyText';
+import SpotlightCard from '../../../ReactBitsComponents/SpotlightCard/SpotlightCard';
+import BlurText from '../../../ReactBitsComponents/BlurText/BlurText';
 
 const EpicBattles = () => {
 
@@ -24,6 +27,9 @@ const EpicBattles = () => {
 
   const [battleKnowledge, setBattleKnowledge] = useState()
   const appState = useSelector((state) => state.app);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
 
@@ -55,17 +61,18 @@ const EpicBattles = () => {
   return (
     <div className="min-h-screen bg-fixed bg-center bg-cover " style={{ backgroundImage: "url(' https://res.cloudinary.com/doeiccxm7/image/upload/v1756592268/loreBg_tqrof5.webp')" }}>
 
-      <HeaderTitle 
-      heading="Legendary Battles"
-      description="Witness the conflicts that shaped the Lands Between. From the devastating Battle of Aeonia to the conspiracy of the Black Knives, these are the wars that changed everything."
-      videoLink=" https://res.cloudinary.com/doeiccxm7/video/upload/v1762063598/epciBattlesVid_m6qgb4.mp4"
+      <HeaderTitle
+        heading="Legendary Battles"
+        headingColor="#e83535"
+        description="Witness the conflicts that shaped the Lands Between. From the devastating Battle of Aeonia to the conspiracy of the Black Knives, these are the wars that changed everything."
+        videoLink=" https://res.cloudinary.com/doeiccxm7/video/upload/v1762063598/epciBattlesVid_m6qgb4.mp4"
       />
-     
+
       {/* Battles */}
-      <div className="py-12 px-4">
+      <div className="py-12 mx-auto my-0 w-[90%]">
         <div className="max-w-6xl mx-auto space-y-12 min-h-[100vh]">
           {appState?.loading ?
-
+            // Skeleton Loader
             <>
               {[1, 2, 3].map((battle, index) => (
                 <div key={index} className="bg-[#00000057] backdrop-blur-[20px] border border-gray-700/50 rounded-sm    overflow-hidden hover:border-gray-600 transition-all duration-300">
@@ -138,81 +145,132 @@ const EpicBattles = () => {
               ))}
             </> :
             <>
+              {/*Epic Battles Card  */}
               {battleKnowledge?.epicBattles.map((battle, index) => (
-                <div key={index} className="bg-slate-800/90 border border-red-700/50 rounded-sm    overflow-hidden hover:border-red-600 transition-all duration-300">
-                  <div className="grid grid-cols-1 lg:grid-cols-2">
-                    {/* Image */}
-                    <div className="relative h-64 lg:h-auto  ">
-                      <img
-                        src={battle.image}
-                        alt={battle.name}
-                        className=" h-[100%] w-[100%]   object-cover opacity-70  ease-in-out hover:scale-102   transition-all duration-500 "
-                      />
-                      {/* <div className="absolute inset-0 bg-gradient-to-r from-slate-800/80 to-transparent" /> */}
-                      <div className="absolute bottom-4 left-4">
-                        <Swords className="h-8 w-8 text-red-400" />
-                      </div>
-                    </div>
-
-                    {/* Content */}
-                    <div className="p-6 space-y-4">
-                      <div>
-                        <h3 className="text-2xl font-bold text-red-300 mb-1">
-                          {battle.name}
-                        </h3>
-                        <p className="text-red-500 font-medium mb-2">
-                          {battle.subtitle}
-                        </p>
-                        <p className="text-slate-400">
-                          {battle.description}
-                        </p>
-                      </div>
-
-                      {/* Battle Info */}
-                      <div className="grid grid-cols-2 gap-4 py-4 border-t border-slate-700">
-                        <div className="flex items-center gap-2">
-                          <MapPin className="h-4 w-4 text-red-400" />
-                          <span className="text-slate-300 text-sm">{battle.location}</span>
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <Skull className="h-4 w-4 text-red-400" />
-                          <span className="text-slate-300 text-sm">{battle.outcome}</span>
+                <SpotlightCard className="custom-spotlight-card rounded-lg" spotlightColor="#fb2c36b0">
+                  <div data-aos="zoom-in-up" key={index} className=" border border-red-700/50 rounded-lg backdrop-blur-[4px]  overflow-hidden hover:border-red-600 transition-all duration-300">
+                    <div className="grid grid-cols-1 lg:grid-cols-2">
+                      {/* Image */}
+                      <div className="relative h-64 lg:h-auto  ">
+                        <img
+                          src={battle.image}
+                          alt={battle.name}
+                          className=" h-[100%] w-[100%]   object-cover    ease-in-out hover:scale-102   transition-all duration-500 "
+                        />
+                        {/* <div className="absolute inset-0 bg-gradient-to-r from-slate-800/80 to-transparent" /> */}
+                        <div className="absolute bottom-4 left-4">
+                          <Swords className="h-8 w-8 text-red-400" />
                         </div>
                       </div>
 
-                      {/* Details */}
-                      <div>
-                        <p className="text-slate-300 text-sm leading-relaxed mb-4">
-                          {battle.details}
-                        </p>
-                      </div>
+                      {/* Content */}
+                      <div className="p-6 space-y-4">
+                        <div>
+                          <h3 className="text-2xl font-bold text-red-300 mb-1">
+                            <BlurText
+                              text={battle.name}
+                              delay={50}
+                              animateBy="words"
+                              direction="top"
+                              className="text-3xl "
+                            />
 
-                      {/* Key Moments */}
-                      <div>
-                        <h4 className="text-red-400 font-semibold mb-2">Key Moments</h4>
-                        <div className="space-y-1">
-                          {battle.keyMoments.map((moment, idx) => (
-                            <div key={idx} className="flex items-center gap-2">
-                              <div className="w-1 h-1 bg-red-400 rounded-full" />
-                              <span className="text-slate-400 text-sm">{moment}</span>
-                            </div>
-                          ))}
+                          </h3>
+                          <p className="text-red-500 font-medium mb-2">
+                            {battle.subtitle}
+                          </p>
+                          <p className="text-slate-400">
+                            {battle.description}
+                          </p>
                         </div>
-                      </div>
 
-                      {/* Aftermath */}
-                      <div className="bg-slate-700/30 p-3 rounded border-l-4 border-red-400">
-                        <h4 className="text-red-300 font-semibold text-sm mb-1">Aftermath</h4>
-                        <p className="text-slate-300 text-sm">{battle.aftermath}</p>
+                        {/* Battle Info */}
+                        <div className="grid grid-cols-2 gap-4 py-4 border-t border-slate-700">
+                          <div className="flex items-center gap-2">
+                            <MapPin className="h-4 w-4 text-red-400" />
+                            <span className="text-slate-300 text-sm">
+
+
+                              <ShinyText
+                                text={battle.location}
+                                disabled={false}
+                                speed={3}
+                                className='custom-class'
+                              />
+
+
+
+                            </span>
+                          </div>
+                          <div className="flex items-center gap-2">
+                            <Skull className="h-4 w-4 text-red-400" />
+                            <span className="text-slate-300 text-sm">
+                              <ShinyText
+                                text={battle.outcome}
+                                disabled={false}
+                                speed={3}
+                                className='custom-class'
+                              />
+                            </span>
+                          </div>
+                        </div>
+
+                        {/* Details */}
+                        <div>
+                          <p className="text-slate-300 text-sm leading-relaxed mb-4">
+                            <ShinyText
+                              text={battle.details}
+                              disabled={false}
+                              speed={3}
+                              className='custom-class'
+                            />
+
+                          </p>
+                        </div>
+
+                        {/* Key Moments */}
+                        <div>
+                          <h4 className="text-red-400 font-semibold mb-2">Key Moments</h4>
+                          <div className="space-y-1">
+                            {battle.keyMoments.map((moment, idx) => (
+                              <div key={idx} className="flex items-center gap-2">
+                                <div className="w-1 h-1 bg-red-400 rounded-full" />
+                                <span className="text-slate-400 text-sm">
+                                  <ShinyText
+                                    text={moment}
+                                    disabled={false}
+                                    speed={3}
+                                    className='custom-class'
+                                  />
+
+                                </span>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* Aftermath */}
+                        <div className="bg-slate-700/30 p-3 rounded border-l-4 border-red-400">
+                          <h4 className="text-red-300 font-semibold text-sm mb-1">Aftermath</h4>
+                          <p className="text-slate-300 text-sm">
+                            <ShinyText
+                              text={battle.aftermath}
+                              disabled={false}
+                              speed={3}
+                              className='custom-class'
+                            />
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </SpotlightCard>
               ))}
             </>}
 
         </div>
       </div>
+      {/*  */}
       <div className='relative min-h-[250px]'>
         <div className="bg-[linear-gradient(to_bottom,#00000000,#00000000,#00000000,#00000088,rgb(2,3,12))] absolute       inset-0  "></div>
       </div>

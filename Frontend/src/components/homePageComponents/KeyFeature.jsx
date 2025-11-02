@@ -11,7 +11,7 @@ const KeyFeature = () => {
     }, []);
 
     useEffect(() => {
-        console.log(scrollY)
+     
     }, [scrollY])
     return (
         <div className="flex  flex-col gap-12 key-feature   w-[80%] m-auto mb-30">

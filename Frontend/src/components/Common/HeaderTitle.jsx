@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import TextPressure from '../../../ReactBitsComponents/TextPressure/TextPressure'
 import ShinyText from '../../../ReactBitsComponents/ShinyText'
 import ScrambledText from '../../../ReactBitsComponents/ScrambledText/ScrambledText'
 
 // this includes a common component for all headers like epic battles , lore, demigods etc
-const HeaderTitle = ({ heading, description, videoLink }) => {
+const HeaderTitle = ({ heading, headingColor, description, videoLink }) => {
+
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => setScrollY(window.scrollY);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
 
     return (
@@ -16,7 +24,6 @@ const HeaderTitle = ({ heading, description, videoLink }) => {
                     loop
                     playsInline
                     className="w-full  pbject-contain"
-
                 >
                     <source src={videoLink} />
 
@@ -24,7 +31,12 @@ const HeaderTitle = ({ heading, description, videoLink }) => {
                 </video>
                 {/* Header */}
                 <div className=" absolute top-[0px] py-8 z-[5] px-34  ">
-                    <div className="relative max-w-6xl mx-auto">
+                    <div
+                        className="relative max-w-6xl mx-auto"
+                        style={{
+                            transform: `translateY(${scrollY * 0.6}px)`
+                        }}
+                    >
                         <TextPressure
                             text={heading}
                             flex={true}
@@ -33,7 +45,7 @@ const HeaderTitle = ({ heading, description, videoLink }) => {
                             width={true}
                             weight={false}
                             italic={true}
-                            textColor="#eb0f0f"
+                            textColor={headingColor}
                             strokeColor="#ff0000"
                             minFontSize={36}
                         />
@@ -71,8 +83,8 @@ const HeaderTitle = ({ heading, description, videoLink }) => {
                     style={{
                         position: "absolute",
                         inset: 0,
-                        backgroundImage: "linear-gradient(to top, rgb(2,3,12), transparent, transparent)",
-                        willChange: "transform"
+                        backgroundImage: "linear-gradient(to top, rgb(0,0,0), transparent, transparent)",
+
                     }}
                 />
 
@@ -81,12 +93,13 @@ const HeaderTitle = ({ heading, description, videoLink }) => {
                         position: "absolute",
                         border: "1px solid black",
                         inset: 0,
-                        backgroundColor: "rgba(0, 0, 0, 0.5)",
-                        willChange: "transform"
+                        backgroundImage: "linear-gradient(to top,#0009)",
+                        // backgroundColor: "rgba(0, 0, 0, 0.5)",
+
                     }}
                 />
             </div >
-            <div className='relative min-h-[180px] '>
+            <div className='relative min-h-[120px] '>
                 <div className="bg-[linear-gradient(to_top,#00000000,#00000000,#00000000,#00000088,rgb(0,0,0))] absolute       inset-0  "></div>
             </div>
         </>

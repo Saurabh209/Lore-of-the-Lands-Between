@@ -19,15 +19,15 @@ const Footer = () => {
 
                 {/* Blur overlay */}
                 <div className="absolute inset-0 bg-black/40 backdrop-blur-[5px]"></div>
-                <div className="bg-[linear-gradient(to_bottom,rgb(2,3,12),#0000007a,#0000007a,#00000088,#00000088,rgb(2,3,12))] absolute    bborder border-white    inset-0  "></div>
+                <div className="bg-[linear-gradient(to_bottom,rgb(2,3,12),#0000007a,#0000007a,#00000088,#00000088,rgb(2,3,12))] absolute        inset-0  "></div>
 
                 {/* Content goes here - example */}
-                <div className="absolute inset-0 flex items-center justify-center z-10">
+                {/* <div className="absolute inset-0 flex items-center justify-center z-10">
                     <div className="text-center text-white">
                         <h2 className="text-4xl font-bold mb-4">Your Content Here</h2>
                         <p className="text-lg opacity-90">This content will be visible over the blurred video</p>
                     </div>
-                </div>
+                </div> */}
             </div>
         </footer>
     );

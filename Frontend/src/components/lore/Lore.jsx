@@ -7,6 +7,10 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import HeaderTitle from '../Common/HeaderTitle';
+import ScrollReveal from '../../../ReactBitsComponents/ScrollReveal/ScrollReveal';
+import ShinyText from '../../../ReactBitsComponents/ShinyText';
+import SpotlightCard from '../../../ReactBitsComponents/SpotlightCard/SpotlightCard'
+
 
 const Lore = () => {
 
@@ -143,6 +147,10 @@ const Lore = () => {
     const [nine, setNine] = useState(false);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    useEffect(() => {
         {
             allLore?.loading &&
                 setTimeout(() => { setLogoTitle(true) }, 100);
@@ -172,12 +180,14 @@ const Lore = () => {
 
             <HeaderTitle
                 heading=" Lore Archivess"
+                headingColor="#8ec5ff"
                 description=" Delve into the deepest mysteries of the Lands Between. Uncover the truth behind the Golden Order, the Shattering, and the cosmic forces that shape reality itself."
-                videoLink=" https://res.cloudinary.com/doeiccxm7/video/upload/v1762074668/LoreVid_dwei9u.mp4"
+                videoLink="https://res.cloudinary.com/doeiccxm7/video/upload/v1762107434/LoreVid_tppcps.mp4"
 
             />
 
             {/* Core Lore Topics */}
+
             <div className="py-12 px-4 min-h-[90vh]">
                 <div className="max-w-6xl mx-auto space-y-8">
                     {/* <h2 className="text-3xl font-bold text-blue-400 mb-8">Core Concepts</h2> */}
@@ -189,68 +199,71 @@ const Lore = () => {
 
 
                                 return (
-                                    <div key={index} className="  border p-5 cursor-default rounded-lg border-gray-700/50 hover:border-gray-600 backdrop-blur-[2px]     transition-all duration-300">
+                                     <SpotlightCard className="custom-spotlight-card" spotlightColor="#1d1d1d">
+                                    <div data-aos="zoom-in" key={index} className="  border p-5 cursor-default rounded-lg border-gray-700/50 hover:border-gray-600 backdrop-blur-[2px]     transition-all duration-300">
                                         <div className='mb-8'>
                                             <div className="   flex items-center gap-3 mb-4">
                                                 <div className={`h-[40px] w-[40px] rounded-full bg-[#1d1d1d] ${logoTitle && "skltnLoader"}`}></div>
-                                                <div className={`w-6/12 bg-[#1d1d1d] h-[15px] ${logoTitle && "skltnLoader"}`}> </div>
+                                                <div className={`w-6/12 bg-[#1d1d1d] h-[24px] ${logoTitle && "skltnLoader"}`}> </div>
                                             </div>
                                             <div className=" flex flex-col gap-2   text-slate-400">
-                                                <p className={` bg-[#1d1d1d] w-12/12 h-[15px] ${descrip && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d] w-5/12 h-[15px] ${descrip && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d] w-12/12 h-[18px] ${descrip && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d] w-5/12 h-[18px] ${descrip && "skltnLoader"}`}></p>
 
                                             </div>
                                         </div>
                                         <div className='   '>
                                             <p className="text-slate-300 text-sm leading-[28px] flex flex-col gap-4 ">
-                                                <p className={`bg-[#1d1d1d] w-12/12 h-[20px] ${one && "skltnLoader"}`}></p>
-                                                <p className={`bg-[#1d1d1d]   w-11/12  h-[20px] ${two && "skltnLoader"} `}></p>
-                                                <p className={`bg-[#1d1d1d]    w-12/12 h-[20px] ${three && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]   w-10/12 h-[20px] ${four && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]   w-11/12 h-[20px] ${five && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]   w-12/12 h-[20px] ${six && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]    w-11/12 h-[20px] ${seven && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]    w-11/12 h-[20px] ${eight && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]   w-7/12 h-[20px] ${nine && "skltnLoader"}`}></p>
+                                                <p className={`bg-[#1d1d1d] w-12/12 h-[15px] ${one && "skltnLoader"}`}></p>
+                                                <p className={`bg-[#1d1d1d]   w-11/12  h-[15px] ${two && "skltnLoader"} `}></p>
+                                                <p className={`bg-[#1d1d1d]    w-12/12 h-[15px] ${three && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]   w-10/12 h-[15px] ${four && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]   w-11/12 h-[15px] ${five && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]   w-12/12 h-[15px] ${six && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]    w-11/12 h-[15px] ${seven && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]    w-11/12 h-[15px] ${eight && "skltnLoader"}`}></p>
+                                                <p className={` bg-[#1d1d1d]   w-7/12 h-[15px] ${nine && "skltnLoader"}`}></p>
                                             </p>
                                         </div>
                                     </div>
+                                    </SpotlightCard>
                                 )
                             })}
-
-
-
-
-
-
-
                         </> : <>
                             {loreData?.lore?.map((topic, index) => {
                                 const Icon = iconMap[topic?.icon]
-                                console.log(Icon)
                                 return (
-                                    <div key={index} className="border p-5 cursor-default rounded-lg border-blue-700/50 hover:border-blue-600 backdrop-blur-[2px]   hover:bg-slate-800/90 transition-all duration-300">
-                                        <div className='mb-8'>
-                                            <div className="   flex items-center gap-3 mb-4">
-                                                {Icon ? <Icon className="h-6 w-6 text-blue-400" /> : null}
-                                                <h2 className="text-blue-300 text-2xl">{topic.title}</h2>
+                                    <SpotlightCard className="custom-spotlight-card" spotlightColor="#0e1e4eb5">
+                                        <div data-aos="zoom-in" key={index} className="border p-5 h-[100%] cursor-default rounded-lg border-blue-700/50 hover:border-blue-600 backdrop-blur-[3px] hover:backdrop-blur-[8px]    transition-all duration-400">
+                                            <div className='mb-8'>
+                                                <div className="   flex items-center gap-3 mb-4">
+                                                    {Icon ? <Icon className="h-6 w-6 text-blue-400" /> : null}
+                                                    <h2 className="text-blue-300 text-2xl">{topic.title}</h2>
+                                                </div>
+                                                <div className=" min-h-[48px]   text-slate-400">
+
+                                                    {topic.description}
+                                                </div>
                                             </div>
-                                            <div className="    text-slate-400">
-                                                {topic.description}
+                                            <div className='   '>
+                                                <p className="text-slate-300 text-sm leading-[28px]">
+                                                    <ShinyText
+                                                        text={topic.content}
+                                                        disabled={false}
+                                                        speed={3}
+                                                        className='custom-class'
+                                                    />
+                                                </p>
                                             </div>
                                         </div>
-                                        <div className='   '>
-                                            <p className="text-slate-300 text-sm leading-[28px]">
-                                                {topic.content}
-                                            </p>
-                                        </div>
-                                    </div>
+                                    </SpotlightCard>
                                 )
                             })}
                         </>}
                     </div>
                 </div>
             </div>
+
             <div className='relative min-h-[250px]'>
                 <div className="bg-[linear-gradient(to_bottom,#00000000,#00000000,#00000000,#00000088,rgb(2,3,12))] absolute       inset-0  "></div>
             </div>
