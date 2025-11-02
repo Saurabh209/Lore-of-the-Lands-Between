@@ -6,6 +6,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import HeaderTitle from '../Common/HeaderTitle';
 
 const Lore = () => {
 
@@ -168,18 +169,13 @@ const Lore = () => {
         >
 
             {/* Header */}
-            <div className="py-8 px-4">
-                <div className="max-w-6xl mx-auto">
 
-                    <h1 className="text-4xl md:text-6xl font-bold text-blue-400 mb-4">
-                        Lore Archives
-                    </h1>
-                    <p className="text-xl text-slate-300 max-w-3xl">
-                        Delve into the deepest mysteries of the Lands Between. Uncover the truth behind
-                        the Golden Order, the Shattering, and the cosmic forces that shape reality itself.
-                    </p>
-                </div>
-            </div>
+            <HeaderTitle
+                heading=" Lore Archivess"
+                description=" Delve into the deepest mysteries of the Lands Between. Uncover the truth behind the Golden Order, the Shattering, and the cosmic forces that shape reality itself."
+                videoLink=" https://res.cloudinary.com/doeiccxm7/video/upload/v1762074668/LoreVid_dwei9u.mp4"
+
+            />
 
             {/* Core Lore Topics */}
             <div className="py-12 px-4 min-h-[90vh]">
