@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Swords, MapPin, Clock, Skull } from "lucide-react";
 import { useSelector } from 'react-redux';
+import HeaderTitle from '../Common/HeaderTitle';
 
 const EpicBattles = () => {
 
@@ -54,7 +55,8 @@ const EpicBattles = () => {
   return (
     <div className="min-h-screen bg-fixed bg-center bg-cover " style={{ backgroundImage: "url(' https://res.cloudinary.com/doeiccxm7/image/upload/v1756592268/loreBg_tqrof5.webp')" }}>
 
-      <div className=" relative max-h-[650px]   overflow-hidden ">
+      <HeaderTitle />
+      {/* <div className=" relative max-h-[650px]   overflow-hidden ">
         <video
           autoPlay
           muted
@@ -67,7 +69,7 @@ const EpicBattles = () => {
 
           Your browser does not support the video tag.
         </video>
-        {/* Header */}
+       
         <div className=" absolute top-[0px] py-8 z-[5] px-34 border border-white">
           <div className="max-w-6xl mx-auto">
 
@@ -99,7 +101,9 @@ const EpicBattles = () => {
             willChange: "transform"
           }}
         />
-      </div>
+      </div> */}
+
+
       <div className='relative min-h-[100px] '>
         <div className="bg-[linear-gradient(to_top,#00000000,#00000000,#00000000,#00000088,rgb(2,3,12))] absolute       inset-0  "></div>
       </div>
