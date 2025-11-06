@@ -32,7 +32,7 @@ const HeaderTitle = ({ heading, headingColor, description, videoLink }) => {
                 {/* Header */}
                 <div className=" absolute  top-[0px] w-[100%] h-[100%]  py-8 z-[5] pr-44 backdrop-blur-[0px]  " style={{backgroundColor:"#00000090"}}>
                     <div
-                        className="relative max-w-4xl mx-auto"
+                        className="relative w-[80%] max-w-4xl mx-auto"
                         style={{
                             transform: `translateY(${scrollY * 0.6}px)`
                         }}

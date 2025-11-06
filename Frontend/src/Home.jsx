@@ -142,7 +142,7 @@ const Home = () => {
                         </video>
                     </div>
 
-                    <div
+                    {/* <div
                         style={{
                             position: "absolute",
                             border: "1px solid black",
@@ -150,7 +150,7 @@ const Home = () => {
                             backgroundColor: "rgba(0, 0, 0, 0.5)",
                             willChange: "transform"
                         }}
-                    />
+                    /> */}
 
                     <div
                         style={{
@@ -161,38 +161,30 @@ const Home = () => {
                         }}
                     />
 
-
-
-
                     {/* Text container */}
-                    <div
-                        className="relative mt-80   z-10 text-center max-w-6xl mx-auto px-4 animate-fade-in"
-                        style={{ transform: `translateY(${scrollY * -0.8}px)` }}
-                    >
-
-                        {/* <h1 className="text-6xl md:text-8xl font-bold text-amber-400 mb-6 tracking-wider font-cinzel animate-scale-in">
-            ELDEN RING
-          </h1> */}
-                     
+                    <div className="relative border border-white    z-10 text-center  animate-fade-in backdrop-blur-[0px]" style={{ backgroundColor: "#00000080" }} >
+                        <div className='flex flex-col justify-end h-[100%]' style={{ transform: `translateY(${scrollY * -0.8}px)` }}>
                             <BlurText
                                 text="The Lore of the Lands Between"
                                 delay={150}
                                 animateBy="words"
                                 direction="top"
-                                className="text-5xl mb-8 justify-center text-amber-200"
+                                className="border border-white text-5xl mb-8 justify-center text-amber-200"
                             />
-                            
-                       
-                        <p className="text-lg h-[56px] text-slate-300 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
-                            {quote}
-                        </p>
-                        <img src={EldenRingLogo} alt="" />
-                        <div className="animate-fade-in" style={{ animationDelay: '0.9s' }}>
+                            <p className="text-lg h-[56px] text-slate-300 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
+                                {quote}
+                            </p>
+                            <img className='border border-pink-500 mx-[80px]' src={EldenRingLogo} alt="" />
+                            {/* <div className="border border-white animate-fade-in" style={{ animationDelay: '0.9s' }}>
 
+                            </div> */}
                         </div>
+
                     </div>
                 </div>
             </div>
+
+
             {/* further included section in home page */}
             {/* <RelmStats /> */}
             <ExploreNavigationCards />

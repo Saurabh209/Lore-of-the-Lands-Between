@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './ExploreNavigationCards.css'
 import { Sword, Crown, Shield, BookOpen, MapPin, Users, Skull, Star, Hammer, Wand2, Target, Zap, Eye, Clock, TrendingUp, Globe, Flame, Moon } from "lucide-react";
+import ShinyText from '../../../ReactBitsComponents/ShinyText';
+
 
 const exploreNavigationCard = [
     { icon: Sword, title: "Epic Battles", desc: "Witness the legendary conflicts that shaped the realm", link: "/battles", color: "text-red-400", baseBorderColor: 'border-red-300', hoveredColor: 'hover:border-red-500/50', hoveredBg: 'hover:bg-red-300' },
@@ -24,7 +26,7 @@ const exploreNavigationCard = [
 
 const ExploreNavigationCards = () => {
 
-   
+
 
     const [scrollY, setScrollY] = useState(0);
 
@@ -53,11 +55,18 @@ const ExploreNavigationCards = () => {
                         return (
                             <div key={index} className={`group border border-white/1  bg-[#16223e73] hover:bg-[#0f172ac2] backdrop-blur-[4px] ${hoverBorder} hover:scale-103     exploreNavigationSingleCard   `} style={{ animationDelay: `${index * 0.1}s` }}>
                                 <div >
-                                    <IconComponent className={`h-8 w-8  ${item?.color}  group-hover:scale-110 transition-transform duration-300`} />
-                                    <h3  className={` ${item?.color} `}>{item?.title}</h3>
-                                </div> 
+                                    <IconComponent className={`h-6 w-6  ${item?.color}  group-hover:scale-110 transition-transform duration-300`} />
+                                    <h3 className={` ${item?.color} `}>{item?.title}</h3>
+                                </div>
                                 <div>
-                                    <p>{item?.desc}</p>
+                                    <p>
+                                        <ShinyText
+                                            text=  {item?.desc}
+                                            disabled={false}
+                                            speed={3}
+                                            className='custom-class'
+                                        />
+                                      </p>
                                 </div>
                                 <div className=''>
                                     <Link to={item?.link}>

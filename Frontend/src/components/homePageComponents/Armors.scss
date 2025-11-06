@@ -1,0 +1,62 @@
+.ArmorMainContainer{
+    // max-height: 500px;
+    border: 1px solid white;
+    display: flex;
+     flex: 1;
+
+}
+.Armr_1{
+    overflow: hidden;
+    border: 1px solid red;
+    transition-duration: .4s;
+    button{
+        padding: 5px 10px ;
+        border: 1px solid white;
+    }
+    .Armr_1_imgContainer{
+        img{
+            height: 450px;
+        }
+    }
+}
+.Armr_2{
+    overflow: hidden;
+    border: 1px solid red;
+}
+.Armr_3{
+    overflow: hidden;
+    border: 1px solid red;
+}
+.Armr_4{
+    overflow: hidden;
+    border: 1px solid red;
+}
+.Armr_5{
+    overflow: hidden;
+    border: 1px solid red;
+}
+.Armr_6{
+    overflow: hidden;
+    border: 1px solid red;
+}
+.Armr_7{
+    overflow: hidden;
+    border: 1px solid red;
+}
+.Armr_8{
+    overflow: hidden;
+    border: 1px solid red;
+}
+.Armr_1_imgContainer{
+    border: 1px solid white;
+
+    img{
+            border: 1px solid red;
+        max-height: 100%;
+        width: auto;
+    }
+}
+
+.armr_expended{
+    flex: 2;
+}
