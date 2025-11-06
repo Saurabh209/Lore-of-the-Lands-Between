@@ -65,7 +65,7 @@ const EpicBattles = () => {
         heading="Legendary Battles"
         headingColor="#e83535"
         description="Witness the conflicts that shaped the Lands Between. From the devastating Battle of Aeonia to the conspiracy of the Black Knives, these are the wars that changed everything."
-        videoLink=" https://res.cloudinary.com/doeiccxm7/video/upload/v1762063598/epciBattlesVid_m6qgb4.mp4"
+        videoLink="https://res.cloudinary.com/doeiccxm7/video/upload/v1762430437/maleniaVsRadhan_jaxpvw.mp4"
       />
 
       {/* Battles */}

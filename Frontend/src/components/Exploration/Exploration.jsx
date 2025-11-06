@@ -1,7 +1,8 @@
-import React,{useEffect,useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { ArrowLeft, MapPin, Mountain, Castle, TreePine, Skull, Crown } from "lucide-react";
 import { Link } from "react-router-dom";
+import HeaderTitle from '../Common/HeaderTitle';
 
 const Exploration = () => {
 
@@ -432,14 +433,14 @@ const Exploration = () => {
         }
     };
 
-    const exploration = useSelector((state)=>state.app)
+    const exploration = useSelector((state) => state.app)
     const [explorationData, setExplorationData] = useState()
 
 
-    useEffect(()=>{
+    useEffect(() => {
         setExplorationData(exploration?.knowledge[0])
-        console.log("data",explorationData)
-    },[exploration])
+        console.log("data", explorationData)
+    }, [exploration])
 
 
 
@@ -447,7 +448,17 @@ const Exploration = () => {
     return (
         <div className="min-h-screen bg-gradient-to-b from-slate-900 via-slate-800 to-green-900">
             {/* Header */}
-            <div className="bg-slate-900/80 py-8 px-4">
+
+            <HeaderTitle
+                heading=" Exploration"
+                headingColor="#8ec5ff"
+                description="   Navigate the vast and dangerous world of the Lands Between. From the gentle hills of Limgrave
+                        to the frozen peaks of the Mountaintops, discover every secret these lands hold.
+            "
+                videoLink="https://res.cloudinary.com/doeiccxm7/video/upload/v1762429589/Exploration_vid_gzv6sb.mp4"
+
+            />
+            {/* <div className="bg-slate-900/80 py-8 px-4">
                 <div className="max-w-6xl mx-auto">
 
                     <h1 className="text-4xl md:text-6xl font-bold text-green-400 mb-4">
@@ -458,7 +469,7 @@ const Exploration = () => {
                         to the frozen peaks of the Mountaintops, discover every secret these lands hold.
                     </p>
                 </div>
-            </div>
+            </div> */}
 
             {/* Regions */}
             <div className="py-12 px-4">
@@ -469,9 +480,9 @@ const Exploration = () => {
                                 className=" grid grid-cols-1 lg:grid-cols-5   w-full h-full"
                                 style={{
                                     backgroundImage: `url(${region.image})`,
-                                    backgroundSize: "cover",      
-                                    backgroundPosition: "center",  
-                                    backgroundRepeat: "no-repeat"  
+                                    backgroundSize: "cover",
+                                    backgroundPosition: "center",
+                                    backgroundRepeat: "no-repeat"
                                 }}
 
 

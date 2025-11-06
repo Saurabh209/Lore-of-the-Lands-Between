@@ -30,9 +30,9 @@ const HeaderTitle = ({ heading, headingColor, description, videoLink }) => {
                     Your browser does not support the video tag.
                 </video>
                 {/* Header */}
-                <div className=" absolute top-[0px] py-8 z-[5] px-34  ">
+                <div className=" absolute  top-[0px] w-[100%] h-[100%]  py-8 z-[5] pr-44 backdrop-blur-[0px]  " style={{backgroundColor:"#00000090"}}>
                     <div
-                        className="relative max-w-6xl mx-auto"
+                        className="relative max-w-4xl mx-auto"
                         style={{
                             transform: `translateY(${scrollY * 0.6}px)`
                         }}
@@ -88,16 +88,17 @@ const HeaderTitle = ({ heading, headingColor, description, videoLink }) => {
                     }}
                 />
 
-                <div
+                {/* <div
                     style={{
                         position: "absolute",
                         border: "1px solid black",
                         inset: 0,
-                        backgroundImage: "linear-gradient(to top,#0009)",
+                        backgroundColor:"#0000007d"
+                        // backgroundImage: "linear-gradient(to top,#0009)",
                         // backgroundColor: "rgba(0, 0, 0, 0.5)",
 
                     }}
-                />
+                /> */}
             </div >
             <div className='relative min-h-[120px] '>
                 <div className="bg-[linear-gradient(to_top,#00000000,#00000000,#00000000,#00000088,rgb(0,0,0))] absolute       inset-0  "></div>
