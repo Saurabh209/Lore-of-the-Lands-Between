@@ -4,6 +4,14 @@
   max-width: 1600px;
   margin: 0 auto;
 }
+.ArmorHeading {
+  border: 1px solid red;
+  h1 {
+    font-size: 36px;
+    color: #c9b76b;
+    font-weight: 700;
+  }
+}
 .ArmorContainer {
   // max-height: 500px;
   position: relative;
@@ -29,6 +37,7 @@
   .Armr_1_imgContainer {
     img {
       max-width: 220px;
+      max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(255, 255, 255, 0.5));
     }
   }
@@ -39,7 +48,7 @@
     height: 200px;
     width: 100%;
     transform: translateY(0);
-    transition: transform 0.3s ease-out;
+    transition: transform 0.5s ease-out;
   }
 
   button {
@@ -60,6 +69,7 @@
   .Armr_2_imgContainer {
     img {
       max-width: 220px;
+      max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
   }
@@ -81,6 +91,7 @@
   .Armr_3_imgContainer {
     img {
       max-width: 220px;
+      max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
   }
@@ -93,7 +104,7 @@
 .Armr_4 {
   position: relative;
   width: 120px;
-  background-color: rgb(101, 19, 142);
+  background-color: rgb(174, 134, 24);
   border: 1px solid red;
   transition-duration: 0.4s;
   display: flex;
@@ -102,6 +113,7 @@
   .Armr_4_imgContainer {
     img {
       max-width: 220px;
+      max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
   }
@@ -114,7 +126,7 @@
 .Armr_5 {
   position: relative;
   width: 120px;
-  background-color: rgb(101, 19, 142);
+  background-color: rgb(19, 113, 142);
   border: 1px solid red;
   transition-duration: 0.4s;
   display: flex;
@@ -123,6 +135,7 @@
   .Armr_5_imgContainer {
     img {
       max-width: 220px;
+      max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
   }
@@ -135,7 +148,7 @@
 .Armr_6 {
   position: relative;
   width: 120px;
-  background-color: rgb(101, 19, 142);
+  background-color: rgb(142, 19, 85);
   border: 1px solid red;
   transition-duration: 0.4s;
   display: flex;
@@ -144,6 +157,7 @@
   .Armr_6_imgContainer {
     img {
       max-width: 220px;
+      max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
   }
@@ -156,7 +170,7 @@
 .Armr_7 {
   position: relative;
   width: 120px;
-  background-color: rgb(101, 19, 142);
+  background-color: rgb(175, 26, 26);
   border: 1px solid red;
   transition-duration: 0.4s;
   display: flex;
@@ -165,6 +179,7 @@
   .Armr_7_imgContainer {
     img {
       max-width: 220px;
+      max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
   }

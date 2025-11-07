@@ -1,11 +1,17 @@
 
+import TextPressure from '../../../ReactBitsComponents/TextPressure/TextPressure'
 import './Armors.scss'
+
 import ArmorOne from '../../../public/img/TestingArmors/crucible_knight_set.png'
 import ArmorTwo from '../../../public/img/TestingArmors/fia_set.png'
 import ArmorThree from '../../../public/img/TestingArmors/malenia_set.png'
 import ArmorFour from '../../../public/img/TestingArmors/malformed-dragon-set-elden-ring-wiki-guide.png'
 import ArmorFive from '../../../public/img/TestingArmors/maliketh_set.png'
-import ArmorSix from '../../../public/img/TestingArmors/nights_cavalry_set.png'
+import ArmorSix from '../../../public/img/TestingArmors/radahn_set.png'
+import ArmorSeven from '../../../public/img/TestingArmors/snowwitch-set-elden-ring-wiki-guide.png'
+
+
+
 
 import { useState } from 'react';
 
@@ -133,6 +139,9 @@ const Armors = () => {
     return (
 
         <main className='ArmorMainContainer'>
+            <div className='ArmorHeading '  >
+              <h1>Heading</h1>
+            </div>
             <div className='ArmorContainer' onMouseLeave={handleMouseLeave}>
 
                 {/* First armor */}
@@ -141,7 +150,7 @@ const Armors = () => {
                         <img onClick={() => handleClick("Armr_1")} src={ArmorOne} alt="" />
                     </div>
 
-                    <div className="Armr_1_Data"  style={{ transform: expended.armr_1 ? "translateY(-200px)" : "translateY(0)",}} >
+                    <div className="Armr_1_Data" style={{ transform: expended.armr_1 ? "translateY(-200px)" : "translateY(0)", }} >
 
                     </div>
 
@@ -152,7 +161,7 @@ const Armors = () => {
                     <div className='Armr_2_imgContainer'>
                         <img onClick={() => handleClick("Armr_2")} src={ArmorTwo} alt="" />
                     </div>
-                    
+
                 </div>
 
                 {/* Third Armor */}
@@ -186,7 +195,7 @@ const Armors = () => {
                 {/* Seventh armor */}
                 <div className={`Armr_7 ${expended.armr_7 && "armr_expended"}`}>
                     <div className='Armr_7_imgContainer'>
-                        <img onClick={() => handleClick("Armr_7")} src={ArmorOne} alt="" />
+                        <img onClick={() => handleClick("Armr_7")} src={ArmorSeven} alt="" />
                     </div>
                 </div>
                 {/* <div onClick={() => handleClick("Armr_8")} className={`Armr_8 ${expended.armr_7 && "armr_expended"}`}>

@@ -19,7 +19,7 @@ const KeyFeature = () => {
             <h2 className='flex text-2xl md:text-5xl text-amber-200  font-bold font-crimson animate-fade-in' style={{ animationDelay: '0.3s' }}>Key Features</h2>
             <div className='flex flex-col gap-20'>
                 <div className=' flex justify-between gap-4 flex-col   sm:flex-row '>
-                    <div className='  sm:w-[48%] '>
+                    <div data-aos="fade-right" className='  sm:w-[48%] '>
                         <video
                             autoPlay
                             muted
@@ -67,7 +67,7 @@ const KeyFeature = () => {
                             transform: `translateY(${(scrollY - 3200) * -0.2}px)`
                         }} className='text-white text-xs leading-tight sm:leading-relaxed sm:text-sm    '>Traverse the breathtaking world on foot or on horseback, alone or online with other players, and fully immerse yourself in the grassy plains, suffocating swamps, spiraling mountains, foreboding castles and other sites of grandeur on a scale never seen before in a FromSoftware title.</p>
                     </div>
-                    <div className='  sm:w-[48%] '>
+                    <div data-aos="fade-left" className='  sm:w-[48%] '>
                         <video
                             autoPlay
                             muted
@@ -90,7 +90,7 @@ const KeyFeature = () => {
 
 
                 <div className=' flex justify-between gap-4 flex-col  sm:flex-row '>
-                    <div className='   sm:w-[48%] '>
+                    <div data-aos="fade-right" className='   sm:w-[48%] '>
                         <video
                             autoPlay
                             muted
