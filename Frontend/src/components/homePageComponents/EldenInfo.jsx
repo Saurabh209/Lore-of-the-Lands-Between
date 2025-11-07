@@ -119,7 +119,6 @@ const EldenInfo = () => {
                         />
 
 
-
                     </p>
                     <p className='text-xs leading-tight sm:text-sm'>
                         <ShinyText
@@ -135,7 +134,7 @@ const EldenInfo = () => {
                     <img className='m-auto' src="https://res.cloudinary.com/doeiccxm7/image/upload/v1758017415/Elden-ring-ornament-icon-feather-two_p95p8d.png" />
                 </div>
             </div>
-            {/* <div className="eldenInfoOverlayBg  absolute    bg-black  inset-0  "></div> */}
+            <div className="eldenInfoOverlayBg  absolute    bg-black  inset-0  "></div>
         </div>
     );
 };
