@@ -56,7 +56,7 @@ export default function Navbar() {
         {/* Background with blur and gradient */}
         <div className="absolute inset-0 
         //bg-gradient-to-r from-black/90 via-gray-900/95 to-black/90 
-        backdrop-blur-[90px] border-b border-amber-400/20">
+        backdrop-blur-[90px] ">
           {/* Subtle glow effect */}
           <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-amber-400/50 to-transparent"></div>
           {/* Floating particles */}

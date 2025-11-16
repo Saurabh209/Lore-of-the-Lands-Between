@@ -84,7 +84,7 @@ const Home = () => {
         { era: "Current Era", event: "The Tarnished Returns", year: "Present" }
     ];
     const quotes = [
-        // `"I am Malenia, Blade of Miquella. And I have never known defeat."`,
+        `"I am Malenia, Blade of Miquella. And I have never known defeat."`,
         // `"Long ago, I was the lord of the battlefield, as Serosh." — Godrick the Grafted`,
         // `"A crown is warranted with strength." — Morgott, the Omen King`,
         // `"I command thee, kneel!" — Mohg, Lord of Blood`,
@@ -122,7 +122,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="   overflow-hidden">
+            <div className="overflow-hidden">
                 <div className="relative h-screen flex   justify-center">
                     {/* Parallax Background Layers */}
                     <div className="absolute inset-0 overflow-hidden bg-black">
@@ -186,14 +186,15 @@ const Home = () => {
 
 
             {/* further included section in home page */}
+
+
             {/* <RelmStats /> */}
             <ExploreNavigationCards />
             <ScrollCard />
 
             {/* <ScrollCard11/> */}
             <EldenInfo />
-            {/* <Testing/>
-             */}
+            {/* <Testing/>*/}
 
 
 

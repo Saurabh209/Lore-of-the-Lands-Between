@@ -46,7 +46,7 @@ const AllDemigods = () => {
   useEffect(() => {
     {
       demiGodStatus?.loading &&
-        setTimeout(() => { setloadercontainer((prev) => ({ ...prev, one: true, })); }, 100);
+      setTimeout(() => { setloadercontainer((prev) => ({ ...prev, one: true, })); }, 100);
       setTimeout(() => { setloadercontainer((prev) => ({ ...prev, two: true, })); }, 300);
       setTimeout(() => { setloadercontainer((prev) => ({ ...prev, three: true, })); }, 500);
       setTimeout(() => { setloadercontainer((prev) => ({ ...prev, four: true, })); }, 700);
@@ -59,9 +59,6 @@ const AllDemigods = () => {
 
     }
   })
-
-
-
 
 
 

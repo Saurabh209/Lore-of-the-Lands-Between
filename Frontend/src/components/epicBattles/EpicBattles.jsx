@@ -59,7 +59,7 @@ const EpicBattles = () => {
 
 
   return (
-    <div className="min-h-screen bg-fixed bg-center bg-cover " style={{ backgroundImage: "url(' https://res.cloudinary.com/doeiccxm7/image/upload/v1756592268/loreBg_tqrof5.webp')" }}>
+    <div className="min-h-screen bg-fixed bg-center bg-cover " style={{ backgroundImage: "url(' https://res.cloudinary.com/doeiccxm7/image/upload/v1756739634/jar_wymgrc.jpg')" }}>
 
       <HeaderTitle
         heading="Legendary Battles"
@@ -148,7 +148,7 @@ const EpicBattles = () => {
               {/*Epic Battles Card  */}
               {battleKnowledge?.epicBattles.map((battle, index) => (
                 <SpotlightCard className="custom-spotlight-card rounded-lg" spotlightColor="#fb2c36b0">
-                  <div data-aos="zoom-in-up" key={index} className=" border border-red-700/50 rounded-lg backdrop-blur-[4px]  overflow-hidden hover:border-red-600 transition-all duration-300">
+                  <div data-aos="zoom-in-up" key={index} className=" border border-red-700/50 rounded-lg backdrop-blur-[4px] bg-black/40  overflow-hidden hover:border-red-600 transition-all duration-300">
                     <div className="grid grid-cols-1 lg:grid-cols-2">
                       {/* Image */}
                       <div className="relative h-64 lg:h-auto  ">

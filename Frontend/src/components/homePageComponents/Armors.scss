@@ -23,6 +23,7 @@
   justify-content: center;
   justify-content: space-between;
 }
+
 .Armr_1 {
   position: relative;
   width: 120px;
@@ -40,15 +41,6 @@
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(255, 255, 255, 0.5));
     }
-  }
-  .Armr_1_Data {
-    position: absolute;
-    bottom: -202px;
-    background-color: white;
-    height: 200px;
-    width: 100%;
-    transform: translateY(0);
-    transition: transform 0.5s ease-out;
   }
 
   button {
@@ -73,10 +65,7 @@
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
   }
-  button {
-    padding: 5px 10px;
-    border: 1px solid white;
-  }
+ 
 }
 
 .Armr_3 {
@@ -95,10 +84,7 @@
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
   }
-  button {
-    padding: 5px 10px;
-    border: 1px solid white;
-  }
+ 
 }
 
 .Armr_4 {
@@ -116,10 +102,6 @@
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
-  }
-  button {
-    padding: 5px 10px;
-    border: 1px solid white;
   }
 }
 
@@ -139,10 +121,6 @@
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
   }
-  button {
-    padding: 5px 10px;
-    border: 1px solid white;
-  }
 }
 
 .Armr_6 {
@@ -161,10 +139,7 @@
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
   }
-  button {
-    padding: 5px 10px;
-    border: 1px solid white;
-  }
+
 }
 
 .Armr_7 {
@@ -183,10 +158,6 @@
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
   }
-  button {
-    padding: 5px 10px;
-    border: 1px solid white;
-  }
 }
 
 .Armr_8 {
@@ -204,18 +175,17 @@
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
     }
   }
-  button {
-    padding: 5px 10px;
-    border: 1px solid white;
-  }
 }
 
-.Armr_1_imgContainer {
-  //   img {
-  //     border: 1px solid red;
-  //     max-height: 100%;
-  //     width: auto;
-  //   }
+.ArmrData {
+  position: absolute;
+  bottom: -202px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgb(113, 113, 113);
+  height: 200px;
+  width: 100%;
+  transform: translateY(0);
+  transition: transform 0.5s ease-out;
 }
 
 .armr_expended {

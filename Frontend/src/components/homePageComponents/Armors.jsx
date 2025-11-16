@@ -121,17 +121,17 @@ const Armors = () => {
     // just for testing (delete me afterwards)
     const handleMouseLeave = () => {
         setTimeout(() => {
-            // setExpended(
-            //     {
-            //         armr_1: false,
-            //         armr_2: false,
-            //         armr_3: false,
-            //         armr_4: false,
-            //         armr_5: false,
-            //         armr_6: false,
-            //         armr_7: false,
-            //     }
-            // )
+            setExpended(
+                {
+                    armr_1: false,
+                    armr_2: false,
+                    armr_3: false,
+                    armr_4: false,
+                    armr_5: false,
+                    armr_6: false,
+                    armr_7: false,
+                }
+            )
         }, 1000);
     }
 
@@ -140,7 +140,7 @@ const Armors = () => {
 
         <main className='ArmorMainContainer'>
             <div className='ArmorHeading '  >
-              <h1>Heading</h1>
+                <h1>Heading</h1>
             </div>
             <div className='ArmorContainer' onMouseLeave={handleMouseLeave}>
 
@@ -150,7 +150,7 @@ const Armors = () => {
                         <img onClick={() => handleClick("Armr_1")} src={ArmorOne} alt="" />
                     </div>
 
-                    <div className="Armr_1_Data" style={{ transform: expended.armr_1 ? "translateY(-200px)" : "translateY(0)", }} >
+                    <div className=" ArmrData Armr_1_Data" style={{ transform: expended.armr_1 ? "translateY(-200px)" : "translateY(0)", }} >
 
                     </div>
 
@@ -161,6 +161,9 @@ const Armors = () => {
                     <div className='Armr_2_imgContainer'>
                         <img onClick={() => handleClick("Armr_2")} src={ArmorTwo} alt="" />
                     </div>
+                    <div className="ArmrData Armr_2_Data" style={{ transform: expended.armr_2 ? "translateY(-200px)" : "translateY(0)", }} >
+
+                    </div>
 
                 </div>
 
@@ -169,12 +172,18 @@ const Armors = () => {
                     <div className='Armr_3_imgContainer'>
                         <img onClick={() => handleClick("Armr_3")} src={ArmorThree} alt="" />
                     </div>
+                    <div className="ArmrData Armr_3_Data" style={{ transform: expended.armr_3 ? "translateY(-200px)" : "translateY(0)", }} >
+
+                    </div>
                 </div>
 
                 {/* Fourth armor */}
                 <div className={`Armr_4 ${expended.armr_4 && "armr_expended"}`}>
                     <div className='Armr_4_imgContainer'>
                         <img onClick={() => handleClick("Armr_4")} src={ArmorFour} alt="" />
+                    </div>
+                    <div className="ArmrData Armr_4_Data" style={{ transform: expended.armr_4 ? "translateY(-200px)" : "translateY(0)", }} >
+
                     </div>
                 </div>
 
@@ -183,6 +192,9 @@ const Armors = () => {
                     <div className='Armr_5_imgContainer'>
                         <img onClick={() => handleClick("Armr_5")} src={ArmorFive} alt="" />
                     </div>
+                    <div className="ArmrData Armr_5_Data" style={{ transform: expended.armr_5 ? "translateY(-200px)" : "translateY(0)", }} >
+
+                    </div>
                 </div>
 
                 {/* Six armor */}
@@ -190,12 +202,18 @@ const Armors = () => {
                     <div className='Armr_6_imgContainer'>
                         <img onClick={() => handleClick("Armr_6")} src={ArmorSix} alt="" />
                     </div>
+                    <div className="ArmrData Armr_6_Data" style={{ transform: expended.armr_6 ? "translateY(-200px)" : "translateY(0)", }} >
+
+                    </div>
                 </div>
 
                 {/* Seventh armor */}
                 <div className={`Armr_7 ${expended.armr_7 && "armr_expended"}`}>
                     <div className='Armr_7_imgContainer'>
                         <img onClick={() => handleClick("Armr_7")} src={ArmorSeven} alt="" />
+                    </div>
+                    <div className="ArmrData Armr_7_Data" style={{ transform: expended.armr_7 ? "translateY(-200px)" : "translateY(0)", }} >
+
                     </div>
                 </div>
                 {/* <div onClick={() => handleClick("Armr_8")} className={`Armr_8 ${expended.armr_7 && "armr_expended"}`}>
