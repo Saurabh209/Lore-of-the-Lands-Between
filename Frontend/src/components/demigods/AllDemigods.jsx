@@ -12,6 +12,7 @@ import Godwyn from '/img/Demigod/Godwyn.jpg'
 import Miqulla from '/img/Demigod/Miquella.jpg'
 import Mohg from '/img/Demigod/Mogh.jpg'
 import Morgott from '/img/Demigod/Morgot.png'
+import HeaderTitle from '../Common/HeaderTitle';
 const AllDemigods = () => {
 
 
@@ -66,7 +67,7 @@ const AllDemigods = () => {
     <div className="all-demigods bg-fixed bg-center bg-cover " style={{
       backgroundImage: `url("https://res.cloudinary.com/doeiccxm7/image/upload/v1756638263/bg2_cdwfjx.webp")`
     }}>
-      <div className="      py-8 px-4">
+      {/* <div className="      py-8 px-4">
         <div className="max-w-6xl mx-auto">
 
           <h1 className="text-4xl md:text-6xl font-bold text-amber-400 mb-4">
@@ -77,7 +78,15 @@ const AllDemigods = () => {
             Each demigod tells a tale of power, ambition, and tragedy.
           </p>
         </div>
-      </div>
+      </div> */}
+      
+      <HeaderTitle
+        heading="Demigods........"
+        headingColor="#ffd230"
+        description=" Children of Queen Marika, bearers of Great Runes, and architects of the Shattering.
+            Each demigod tells a tale of power, ambition, and tragedy."
+        videoLink="https://res.cloudinary.com/doeiccxm7/video/upload/v1762430437/maleniaVsRadhan_jaxpvw.mp4"
+      />
 
       <div className="py-12 px-4  ">
         <div className="max-w-6xl mx-auto min-h-[100vh]">
