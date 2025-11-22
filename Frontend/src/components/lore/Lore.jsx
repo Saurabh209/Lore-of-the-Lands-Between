@@ -179,7 +179,7 @@ const Lore = () => {
             {/* Header */}
 
             <HeaderTitle
-                heading=" Lore Archivess"
+                heading=" Lore Archivess..."
                 headingColor="#8ec5ff"
                 description=" Delve into the deepest mysteries of the Lands Between. Uncover the truth behind the Golden Order, the Shattering, and the cosmic forces that shape reality itself."
                 videoLink="https://res.cloudinary.com/doeiccxm7/video/upload/v1762107434/LoreVid_tppcps.mp4"
@@ -199,33 +199,33 @@ const Lore = () => {
 
 
                                 return (
-                                     <SpotlightCard className="custom-spotlight-card" spotlightColor="#1d1d1d">
-                                    <div data-aos="zoom-in" key={index} className="  border p-5 cursor-default rounded-lg border-gray-700/50 hover:border-gray-600 backdrop-blur-[2px]     transition-all duration-300">
-                                        <div className='mb-8'>
-                                            <div className="   flex items-center gap-3 mb-4">
-                                                <div className={`h-[40px] w-[40px] rounded-full bg-[#1d1d1d] ${logoTitle && "skltnLoader"}`}></div>
-                                                <div className={`w-6/12 bg-[#1d1d1d] h-[24px] ${logoTitle && "skltnLoader"}`}> </div>
-                                            </div>
-                                            <div className=" flex flex-col gap-2   text-slate-400">
-                                                <p className={` bg-[#1d1d1d] w-12/12 h-[18px] ${descrip && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d] w-5/12 h-[18px] ${descrip && "skltnLoader"}`}></p>
+                                    <SpotlightCard className="custom-spotlight-card" spotlightColor="#1d1d1d">
+                                        <div data-aos="zoom-in" key={index} className="  border p-5 cursor-default rounded-lg border-gray-700/50 hover:border-gray-600 backdrop-blur-[2px]     transition-all duration-300">
+                                            <div className='mb-8'>
+                                                <div className="   flex items-center gap-3 mb-4">
+                                                    <div className={`h-[40px] w-[40px] rounded-full bg-[#1d1d1d] ${logoTitle && "skltnLoader"}`}></div>
+                                                    <div className={`w-6/12 bg-[#1d1d1d] h-[24px] ${logoTitle && "skltnLoader"}`}> </div>
+                                                </div>
+                                                <div className=" flex flex-col gap-2   text-slate-400">
+                                                    <p className={` bg-[#1d1d1d] w-12/12 h-[18px] ${descrip && "skltnLoader"}`}></p>
+                                                    <p className={` bg-[#1d1d1d] w-5/12 h-[18px] ${descrip && "skltnLoader"}`}></p>
 
+                                                </div>
+                                            </div>
+                                            <div className='   '>
+                                                <p className="text-slate-300 text-sm leading-[28px] flex flex-col gap-4 ">
+                                                    <p className={`bg-[#1d1d1d] w-12/12 h-[15px] ${one && "skltnLoader"}`}></p>
+                                                    <p className={`bg-[#1d1d1d]   w-11/12  h-[15px] ${two && "skltnLoader"} `}></p>
+                                                    <p className={`bg-[#1d1d1d]    w-12/12 h-[15px] ${three && "skltnLoader"}`}></p>
+                                                    <p className={` bg-[#1d1d1d]   w-10/12 h-[15px] ${four && "skltnLoader"}`}></p>
+                                                    <p className={` bg-[#1d1d1d]   w-11/12 h-[15px] ${five && "skltnLoader"}`}></p>
+                                                    <p className={` bg-[#1d1d1d]   w-12/12 h-[15px] ${six && "skltnLoader"}`}></p>
+                                                    <p className={` bg-[#1d1d1d]    w-11/12 h-[15px] ${seven && "skltnLoader"}`}></p>
+                                                    <p className={` bg-[#1d1d1d]    w-11/12 h-[15px] ${eight && "skltnLoader"}`}></p>
+                                                    <p className={` bg-[#1d1d1d]   w-7/12 h-[15px] ${nine && "skltnLoader"}`}></p>
+                                                </p>
                                             </div>
                                         </div>
-                                        <div className='   '>
-                                            <p className="text-slate-300 text-sm leading-[28px] flex flex-col gap-4 ">
-                                                <p className={`bg-[#1d1d1d] w-12/12 h-[15px] ${one && "skltnLoader"}`}></p>
-                                                <p className={`bg-[#1d1d1d]   w-11/12  h-[15px] ${two && "skltnLoader"} `}></p>
-                                                <p className={`bg-[#1d1d1d]    w-12/12 h-[15px] ${three && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]   w-10/12 h-[15px] ${four && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]   w-11/12 h-[15px] ${five && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]   w-12/12 h-[15px] ${six && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]    w-11/12 h-[15px] ${seven && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]    w-11/12 h-[15px] ${eight && "skltnLoader"}`}></p>
-                                                <p className={` bg-[#1d1d1d]   w-7/12 h-[15px] ${nine && "skltnLoader"}`}></p>
-                                            </p>
-                                        </div>
-                                    </div>
                                     </SpotlightCard>
                                 )
                             })}

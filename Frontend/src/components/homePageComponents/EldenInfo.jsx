@@ -58,7 +58,7 @@ const EldenInfo = () => {
                 </div>
 
                 {/* Armor component */}
-                <Armors />
+                {/* <Armors /> */}
 
 
                 <div className=' w-[90%] mt-8 mb-8  m-auto      md:w-[80%]  lg:w-[50%] '>

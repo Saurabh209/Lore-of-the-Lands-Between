@@ -19,7 +19,7 @@ const Footer = () => {
 
                 {/* Blur overlay */}
                 <div className="absolute inset-0 bg-black/70 backdrop-blur-[5px]"></div>
-                <div className="bg-[linear-gradient(to_bottom,rgb(2,3,12),#0000007a,#0000007a,#00000088,#00000088,rgb(2,3,12))] absolute        inset-0  "></div>
+                <div className="bg-[linear-gradient(to_bottom,rgb(0,0,0),#0000007a,#0000007a,#00000088,#00000088,rgb(0,0,0))] absolute        inset-0  "></div>
 
                 {/* Content goes here - example */}
                 {/* <div className="absolute inset-0 flex items-center justify-center z-10">

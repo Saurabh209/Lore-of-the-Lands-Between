@@ -20,6 +20,7 @@ import ScrollCard from './components/homePageComponents/ScrollCard';
 import EldenInfo from './components/homePageComponents/EldenInfo';
 import ScrollCard11 from './components/homePageComponents/ScrollCard11';
 import BlurText from '../ReactBitsComponents/BlurText/BlurText';
+import Armors from './components/homePageComponents/Armors';
 
 const Home = () => {
 
@@ -162,19 +163,19 @@ const Home = () => {
                     />
 
                     {/* Text container */}
-                    <div className="relative border border-white    z-10 text-center  animate-fade-in backdrop-blur-[0px]" style={{ backgroundColor: "#00000080" }} >
+                    <div className="relative    z-10 text-center  animate-fade-in backdrop-blur-[0px]" style={{ backgroundColor: "#00000080" }} >
                         <div className='flex flex-col justify-end h-[100%]' style={{ transform: `translateY(${scrollY * -0.8}px)` }}>
                             <BlurText
                                 text="The Lore of the Lands Between"
                                 delay={150}
                                 animateBy="words"
                                 direction="top"
-                                className="border border-white text-5xl mb-8 justify-center text-amber-200"
+                                className="   text-5xl mb-8 justify-center text-amber-200"
                             />
                             <p className="text-lg h-[56px] text-slate-300 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.6s' }}>
                                 {quote}
                             </p>
-                            <img className='border border-pink-500 mx-[80px]' src={EldenRingLogo} alt="" />
+                            <img className='  mx-[80px]' src={EldenRingLogo} alt="" />
                             {/* <div className="border border-white animate-fade-in" style={{ animationDelay: '0.9s' }}>
 
                             </div> */}
@@ -191,6 +192,7 @@ const Home = () => {
             {/* <RelmStats /> */}
             <ExploreNavigationCards />
             <ScrollCard />
+            <Armors/>
 
             {/* <ScrollCard11/> */}
             <EldenInfo />

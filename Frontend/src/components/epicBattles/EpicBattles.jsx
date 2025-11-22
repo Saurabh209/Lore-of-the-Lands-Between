@@ -5,6 +5,7 @@ import HeaderTitle from '../Common/HeaderTitle';
 import ShinyText from '../../../ReactBitsComponents/ShinyText';
 import SpotlightCard from '../../../ReactBitsComponents/SpotlightCard/SpotlightCard';
 import BlurText from '../../../ReactBitsComponents/BlurText/BlurText';
+import TextPressure from '../../../ReactBitsComponents/TextPressure/TextPressure';
 
 const EpicBattles = () => {
 
@@ -32,7 +33,6 @@ const EpicBattles = () => {
   }, []);
 
   useEffect(() => {
-
     setBattleKnowledge(appState?.knowledge[1]);
     console.log(battleKnowledge)
   }, [appState]);
@@ -59,36 +59,25 @@ const EpicBattles = () => {
 
 
   return (
-    <div className="min-h-screen bg-fixed bg-center bg-cover " style={{ backgroundImage: "url(' https://res.cloudinary.com/doeiccxm7/image/upload/v1756739634/jar_wymgrc.jpg')" }}>
+    <div className="min-h-screen bg-fixed bg-center bg-cover " style={{ backgroundImage: "url('https://res.cloudinary.com/doeiccxm7/image/upload/v1763397643/bg0_efvzk6.jpg')" }}>
 
       <HeaderTitle
         heading="Legendary Battles"
-        headingColor="#e83535"
+        headingColor="#fb2c36"
         description="Witness the conflicts that shaped the Lands Between. From the devastating Battle of Aeonia to the conspiracy of the Black Knives, these are the wars that changed everything."
         videoLink="https://res.cloudinary.com/doeiccxm7/video/upload/v1762430437/maleniaVsRadhan_jaxpvw.mp4"
       />
 
       {/* Battles */}
       <div className="py-12 mx-auto my-0 w-[90%]">
-        <div className="max-w-6xl mx-auto space-y-12 min-h-[100vh]">
+        <div className="max-w-6xl mx-auto space-y-12 min-h-[100vh] grid gap-[20px] grid-cols-1 lg:grid-cols-2">
           {appState?.loading ?
             // Skeleton Loader
             <>
               {[1, 2, 3].map((battle, index) => (
                 <div key={index} className="bg-[#00000057] backdrop-blur-[20px] border border-gray-700/50 rounded-sm    overflow-hidden hover:border-gray-600 transition-all duration-300">
-                  <div className="grid grid-cols-1 lg:grid-cols-2">
+                  <div className="">
                     {/* Image */}
-                    <div className="relative h-64 lg:h-auto flex items-center justify-center ">
-                      <img
-                        src="https://res.cloudinary.com/doeiccxm7/image/upload/v1759750608/eldenRing_logo_loader_jf17wg.png"
-                        alt="default-image"
-                        className="h-[70%] w-[70%] object-contain   animate-breath-opacity"
-                      />
-                      {/* <div className="absolute inset-0 bg-gradient-to-r from-slate-800/80 to-transparent" /> */}
-                      <div className="absolute bottom-4 left-4">
-                        <div className={`h-[40px] w-[40px] rounded-full bg-[#1d1d1d] animate-breath-opacity `}></div>
-                      </div>
-                    </div>
 
                     {/* Content */}
                     <div className="p-6 space-y-4">
@@ -147,21 +136,11 @@ const EpicBattles = () => {
             <>
               {/*Epic Battles Card  */}
               {battleKnowledge?.epicBattles.map((battle, index) => (
-                <SpotlightCard className="custom-spotlight-card rounded-lg" spotlightColor="#fb2c36b0">
-                  <div data-aos="zoom-in-up" key={index} className=" border border-red-700/50 rounded-lg backdrop-blur-[4px] bg-black/40  overflow-hidden hover:border-red-600 transition-all duration-300">
-                    <div className="grid grid-cols-1 lg:grid-cols-2">
+                <SpotlightCard className="custom-spotlight-card rounded-lg hover:scale-101 transition-all duration-300  " spotlightColor="#fb2c36b0" >
+                  <div data-aos="zoom-in-up" key={index} className=" border border-red-700/50 rounded-lg h-[100%] backdrop-blur-[10px] bg-black/50  overflow-hidden hover:border-red-600  transition-all duration-300">
+                    <div className="">
                       {/* Image */}
-                      <div className="relative h-64 lg:h-auto  ">
-                        <img
-                          src={battle.image}
-                          alt={battle.name}
-                          className=" h-[100%] w-[100%]   object-cover    ease-in-out hover:scale-102   transition-all duration-500 "
-                        />
-                        {/* <div className="absolute inset-0 bg-gradient-to-r from-slate-800/80 to-transparent" /> */}
-                        <div className="absolute bottom-4 left-4">
-                          <Swords className="h-8 w-8 text-red-400" />
-                        </div>
-                      </div>
+
 
                       {/* Content */}
                       <div className="p-6 space-y-4">
@@ -174,6 +153,18 @@ const EpicBattles = () => {
                               direction="top"
                               className="text-3xl "
                             />
+                            {/* <TextPressure
+                              text={battle.name}
+                              flex={true}
+                              alpha={false}
+                              stroke={false}
+                              width={true}
+                              weight={false}
+                              italic={true}
+                              textColor="#fb2c36"
+                              strokeColor="#ff0000"
+                              minFontSize={36}
+                            /> */}
 
                           </h3>
                           <p className="text-red-500 font-medium mb-2">
@@ -189,17 +180,12 @@ const EpicBattles = () => {
                           <div className="flex items-center gap-2">
                             <MapPin className="h-4 w-4 text-red-400" />
                             <span className="text-slate-300 text-sm">
-
-
                               <ShinyText
                                 text={battle.location}
                                 disabled={false}
                                 speed={3}
                                 className='custom-class'
                               />
-
-
-
                             </span>
                           </div>
                           <div className="flex items-center gap-2">
@@ -217,7 +203,7 @@ const EpicBattles = () => {
 
                         {/* Details */}
                         <div>
-                          <p className="text-slate-300 text-sm leading-relaxed mb-4">
+                          <p className="text-slate-300 text-sm leading-relaxed mb-4  ">
                             <ShinyText
                               text={battle.details}
                               disabled={false}

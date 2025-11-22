@@ -278,7 +278,7 @@ const ScrollCard = () => {
 
 
             </div>
-            <div className="absolute  flex items-center justify-center inset-0 bg-gradient-to-t from-[rgb(2,3,12)] via-[rgba(2,3,12,0.69)] to-[rgb(2,3,12)]" >
+            <div className="absolute  flex items-center justify-center inset-0 bg-gradient-to-t from-[rgb(0,0,0)] via-[rgba(0,0,0,0.57)] to-[rgb(0,0,0)]" >
                 {/* <button className='text-white px-10 py-2 border border-white'>Explore</button> */}
                 {/* <Stack spacing={2} direction="row">
                     <Button variant="outlined">Explore</Button>

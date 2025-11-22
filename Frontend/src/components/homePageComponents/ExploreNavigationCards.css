@@ -9,7 +9,7 @@
 }
 
 .overlayBackground {
-    background: linear-gradient(to bottom, rgb(2, 3, 12), #0000007a, #0000007a, #00000088, #00000088, rgb(2, 3, 12));
+    background: linear-gradient(to bottom, rgb(0, 0, 0), #0000007a, #0000007a, #00000088, #00000088, rgb(0, 0, 0));
 }
 
 .exploreNavigationTop {
