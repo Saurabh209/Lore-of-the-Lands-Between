@@ -123,7 +123,7 @@ const Home = () => {
 
     return (
         <>
-            <div className="overflow-hidden">
+            <div className="overflow-hidden mainHome">
                 <div className="relative h-screen flex   justify-center">
                     {/* Parallax Background Layers */}
                     <div className="absolute inset-0 overflow-hidden bg-black">

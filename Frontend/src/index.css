@@ -24,6 +24,8 @@
   animation: breath-opacity 2.8s ease-in-out infinite;
 }
 
+
+
 @keyframes greyPulse {
   0% {
     background-color: rgb(29, 29, 29);

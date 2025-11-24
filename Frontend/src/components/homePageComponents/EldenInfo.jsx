@@ -34,26 +34,26 @@ const EldenInfo = () => {
             }}>
                 <KeyFeature />
                 {/* upper golden leaf  */}
-                <div data-aos="fade-up" data-aos-easing="ease-in-sine" className=' w-[90%] mb-4 m-auto      md:w-[80%] md:mb-8 lg:w-[50%] '>
+                <div  data-aos-easing="ease-in-sine" className=' w-[90%] mb-4 m-auto      md:w-[80%] md:mb-8 lg:w-[50%] '>
                     <img src="https://res.cloudinary.com/doeiccxm7/image/upload/v1758017414/elden-ring-border-leaf_fend9k.png" alt="golden-leaf" />
                 </div>
 
-                <div data-aos="zoom-in-up" className=' eldenInfoHeadingContainer    mb-2  sm-mb-4   '>
+                <div className=' eldenInfoHeadingContainer    mb-2  sm-mb-4   '>
                     <h3 className='text-lg   font-medium  font-crimson    sm:text-2xl  md:text-3xl  lg:text-4xl  '>Tarnished of the Lands Between</h3>
 
                 </div>
                 <div className={` w-[95%] m-auto   exploreNavigationAllCardContainer  text-white text-center gap-6    sm:w-[70%] lg:w-[50%]`}>
 
-                    <p data-aos="fade-up" className='text-xs leading-tight sm:text-sm'>The Golden Order has been shattered. Throughout the Lands Between, Demigods holding shards of the <span> Elden Ring </span> squabble and make war over the ruins of a perfect realm, now abandoned by the golden guidance of the Greater Will.</p>
-                    <p data-aos="fade-up" className='text-xs leading-tight sm:text-sm'>As the echoes of this conflict thunder in the distance, an outcast arrives. Once, their ancestors called the Lands Between home, but the blessed light of grace was lost to their tribe long ago and they were expelled from the kingdom. They are the Tarnished, and they have returned to claim the Elden Lordship promised to them by legend.</p>
-                    <p data-aos="fade-up" className='text-xs leading-tight sm:text-sm'>This is the world of <span> ELDEN RING </span>. As a Tarnished, the Lands Between await your exploration. You will ride through the vast fields, gallop over rolling hills, and leap to the top of rocky crags on your ephemeral steed, revealing a world teeming with life and danger.</p>
-                    <p data-aos="fade-up" className='text-xs leading-tight sm:text-sm'>In the grand fields where your journey begins, mythic creatures prowl the veldts, ineffable horrors lurk in the bogs and marshes, and all manner of soldiers and itinerant warriors are waiting for those who wander unawares. Shy creatures nibble on sweet grasses or scuttle through the underbrush.</p>
-                    <p data-aos="fade-up" className='text-xs leading-tight sm:text-sm'>Those few inhabitants who are not mad or hostile linger near the broken remnants of cities left behind by the Shattering. They may have answers for you, if you help them. Above them all, ensconced in vast legacies bristling with traps, secrets, and guardians, the Demigods – warped Lords who began as members of a royal and noble family – rule their domains with the unyielding power granted by shards of the <span> Elden Ring</span> .</p>
+                    <p  className='text-xs leading-tight sm:text-sm'>The Golden Order has been shattered. Throughout the Lands Between, Demigods holding shards of the <span> Elden Ring </span> squabble and make war over the ruins of a perfect realm, now abandoned by the golden guidance of the Greater Will.</p>
+                    <p className='text-xs leading-tight sm:text-sm'>As the echoes of this conflict thunder in the distance, an outcast arrives. Once, their ancestors called the Lands Between home, but the blessed light of grace was lost to their tribe long ago and they were expelled from the kingdom. They are the Tarnished, and they have returned to claim the Elden Lordship promised to them by legend.</p>
+                    <p className='text-xs leading-tight sm:text-sm'>This is the world of <span> ELDEN RING </span>. As a Tarnished, the Lands Between await your exploration. You will ride through the vast fields, gallop over rolling hills, and leap to the top of rocky crags on your ephemeral steed, revealing a world teeming with life and danger.</p>
+                    <p className='text-xs leading-tight sm:text-sm'>In the grand fields where your journey begins, mythic creatures prowl the veldts, ineffable horrors lurk in the bogs and marshes, and all manner of soldiers and itinerant warriors are waiting for those who wander unawares. Shy creatures nibble on sweet grasses or scuttle through the underbrush.</p>
+                    <p className='text-xs leading-tight sm:text-sm'>Those few inhabitants who are not mad or hostile linger near the broken remnants of cities left behind by the Shattering. They may have answers for you, if you help them. Above them all, ensconced in vast legacies bristling with traps, secrets, and guardians, the Demigods – warped Lords who began as members of a royal and noble family – rule their domains with the unyielding power granted by shards of the <span> Elden Ring</span> .</p>
 
                 </div>
 
                 {/* lower golden leaf */}
-                <div data-aos="fade-up" data-aos-easing="ease-in-sine" className=' w-[90%] mt-4 mb-8  m-auto      md:w-[80%] md:mb-8  lg:w-[50%] '>
+                <div data-aos-easing="ease-in-sine" className=' w-[90%] mt-4 mb-8  m-auto      md:w-[80%] md:mb-8  lg:w-[50%] '>
                     <img src="https://res.cloudinary.com/doeiccxm7/image/upload/v1758017414/elden-ring-border-leaf_fend9k.png" alt="golden-leaf" />
                 </div>
 

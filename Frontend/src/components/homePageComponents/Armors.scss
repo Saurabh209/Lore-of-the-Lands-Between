@@ -1,3 +1,4 @@
+
 .ArmorMainContainer {
   // border: 1px solid pink;
   overflow: hidden;
@@ -32,7 +33,7 @@
   position: relative;
   width: 100px;
   // clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background: linear-gradient(135deg, #3e2b1c 0%, #8a5a2f 50%, #1a120d 100%);
+  background: linear-gradient(0deg, #000000 0%, #8a5a2f 50%, #000000 100%);
   // border-radius: 8px;
   transition-duration: 0.4s;
   display: flex;
@@ -40,11 +41,16 @@
   align-items: center;
   justify-content: center;
 
+
   .Armr_1_imgContainer {
     img {
       max-width: 220px;
       max-height: 381px;
-      filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
+      filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.786));
+      transition-duration: 0.3s;
+      &:hover {
+        filter: drop-shadow(0px 0px 10px #8a5a2f);
+      }
     }
   }
 
@@ -57,7 +63,7 @@
 .Armr_2 {
   position: relative;
   width: 100px;
-  background: linear-gradient(135deg, #151515 0%, #5a5a60 50%, #1a1a1d 100%);
+  background: linear-gradient(0deg, #000000 0%, #5a5a60 50%, #000000 100%);
   transition-duration: 0.4s;
   // border-radius: 8px;
   display: flex;
@@ -68,6 +74,10 @@
       max-width: 220px;
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
+      transition-duration: 0.3s;
+      &:hover {
+        filter: drop-shadow(0px 0px 10px #5a5a60);
+      }
     }
   }
 }
@@ -75,7 +85,7 @@
 .Armr_3 {
   position: relative;
   width: 100px;
-  background: linear-gradient(135deg, #1d1603 0%, #665949 50%, #1b1b14 100%);
+  background: linear-gradient(0deg, #000000 0%, #665949 50%, #000000 100%);
   // border-radius: 8px;
   transition-duration: 0.4s;
   display: flex;
@@ -86,6 +96,10 @@
       max-width: 220px;
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
+      transition-duration: 0.3s;
+      &:hover {
+        filter: drop-shadow(0px 0px 10px #665949);
+      }
     }
   }
 }
@@ -93,7 +107,7 @@
 .Armr_4 {
   position: relative;
   width: 100px;
-  background: linear-gradient(135deg, #271e0a 0%, #c3a449 50%, #131108 100%);
+  background: linear-gradient(0deg, #000000 0%, #c3a449 50%, #000000 100%);
   transition-duration: 0.4s;
   // border-radius: 8px;
   display: flex;
@@ -104,6 +118,10 @@
       max-width: 220px;
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
+      transition-duration: 0.3s;
+      &:hover {
+        filter: drop-shadow(0px 0px 10px #c3a449);
+      }
     }
   }
 }
@@ -111,7 +129,7 @@
 .Armr_5 {
   position: relative;
   width: 100px;
-  background: linear-gradient(135deg, #433d31 0%, #1c1a18 50%, #554227 100%);
+  background: linear-gradient(0deg, #000000 0%, #554636 50%, #000000 100%);
   transition-duration: 0.4s;
   // border-radius: 8px;
   display: flex;
@@ -122,6 +140,10 @@
       max-width: 220px;
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
+      transition-duration: 0.3s;
+      &:hover {
+        filter: drop-shadow(0px 0px 10px #554636);
+      }
     }
   }
 }
@@ -129,7 +151,7 @@
 .Armr_6 {
   position: relative;
   width: 100px;
-  background: linear-gradient(135deg, #5e1c16 0%, #655137 50%, #524739 100%);
+  background: linear-gradient(0deg, #000000 0%, #4a4333 50%, #000000 100%);
   transition-duration: 0.4s;
   // border-radius: 8px;
   display: flex;
@@ -140,6 +162,10 @@
       max-width: 220px;
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
+      transition-duration: 0.3s;
+      &:hover {
+        filter: drop-shadow(0px 0px 10px #4a4333);
+      }
     }
   }
 }
@@ -147,7 +173,7 @@
 .Armr_7 {
   position: relative;
   width: 100px;
-  background: linear-gradient(135deg, #3a3b3d 0%, #c7d7f2 50%, #2d3440 100%);
+  background: linear-gradient(0deg, #000000 0%, #c7d7f2 50%, #000000 100%);
   transition-duration: 0.4s;
   // border-radius: 8px;
   display: flex;
@@ -158,6 +184,10 @@
       max-width: 220px;
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
+      transition-duration: 0.3s;
+      &:hover {
+        filter: drop-shadow(0px 0px 10px #c7d7f2);
+      }
     }
   }
 }
@@ -182,17 +212,17 @@
 .ArmrData {
   padding: 15px 8px;
   position: absolute;
-  bottom: -202px;
+  bottom: -100%;
   border-radius: 10px 10px 0px 0px;
-  // backdrop-filter: blur(4px);
+  backdrop-filter: blur(1px);
   // background-color: rgba(0, 0, 0, 0.342);
-  background: linear-gradient(
-    to bottom,
-    #00000000,
-    #171717c9,
-    rgba(0, 0, 0, 0.904)
-  );
-  height: 200px;
+  // background: linear-gradient(
+  //   to bottom,
+  //   #00000000,
+  //   #171717c9,
+  //   rgba(0, 0, 0, 0.904)
+  // );
+  height: 100%;
   width: 100%;
   transform: translateY(0);
   transition: transform 0.5s ease-out;
@@ -215,6 +245,8 @@
 
 .armr_expended {
   flex: 1;
+  transition-duration: .3s;
+  z-index: -1;
   // border-radius: 0px !important;
   // align-items: center;
 
