@@ -33,14 +33,14 @@ const KeyFeature = () => {
                         </video>
                     </div>
                     <div className=' sm:w-[48%] flex flex-col gap-4'>
-                        <h3 className='text-black text-nowrap  w-fit bg-amber-200 ps-26 pe-8 py-2    sm:text-xl' style={{ transform: `translateY(${(scrollY - 2600) * -0.3}px) translateX(-100px)`, boxShadow: "0 1px 3px rgba(0,0,0,0.12)" }}>
+                        <h3 className='text-black text-nowrap  w-fit bg-amber-200 ps-26 pe-8 py-2    sm:text-xl' style={{ transform: `translateY(${(scrollY - 2800) * -0.3}px) translateX(-100px)`, boxShadow: "0 1px 3px rgba(0,0,0,0.12)" }}>
                             A New Fantasy World
                         </h3>
-                        <p style={{ transform: `translateY(${(scrollY - 2800) * -0.2}px)` }} className='text-white text-xs leading-tight sm:leading-relaxed  sm:text-sm  '>
+                        <p style={{ transform: `translateY(${(scrollY - 3000) * -0.2}px)` }} className='text-white text-xs leading-tight sm:leading-relaxed  sm:text-sm  '>
 
                             Journey through the Lands Between, a new fantasy world created by Hidetaka Miyazaki, creator of the influential DARK SOULS video game series, and George R. R. Martin, author of The New York Times best-selling fantasy series, A Song of Ice and Fire.
                         </p>
-                        <p style={{ transform: `translateY(${(scrollY - 2800) * -0.2}px)` }} className='text-white text-xs leading-tight sm:leading-relaxed sm:text-sm    '>
+                        <p style={{ transform: `translateY(${(scrollY - 3000) * -0.2}px)` }} className='text-white text-xs leading-tight sm:leading-relaxed sm:text-sm    '>
                             Unravel the mysteries of the Elden Ring’s power. Encounter adversaries with profound backgrounds, characters with their own unique motivations for helping or hindering your progress, and fearsome creatures.
                         </p>
                     </div>
@@ -55,16 +55,16 @@ const KeyFeature = () => {
 
                     <div className=' sm:w-[48%] flex flex-col gap-4'>
                         <h3 className='text-black    w-fit bg-amber-200 px-8 py-1    sm:text-xl' style={{
-                            transform: `translateY(${(scrollY - 3000) * -0.3}px)`,
+                            transform: `translateY(${(scrollY - 3200) * -0.3}px)`,
                             boxShadow: "0 1px 3px rgba(0,0,0,0.12)"
                         }}>WORLD EXPLORATION IN THE LANDS BETWEEN</h3>
 
 
                         <p style={{
-                            transform: `translateY(${(scrollY - 3200) * -0.2}px)`
+                            transform: `translateY(${(scrollY - 3400) * -0.2}px)`
                         }} className='text-white text-xs leading-tight sm:leading-relaxed  sm:text-sm  '>ELDEN RING features vast fantastical landscapes and shadowy, complex dungeons that are connected seamlessly.</p>
                         <p style={{
-                            transform: `translateY(${(scrollY - 3200) * -0.2}px)`
+                            transform: `translateY(${(scrollY - 3400) * -0.2}px)`
                         }} className='text-white text-xs leading-tight sm:leading-relaxed sm:text-sm    '>Traverse the breathtaking world on foot or on horseback, alone or online with other players, and fully immerse yourself in the grassy plains, suffocating swamps, spiraling mountains, foreboding castles and other sites of grandeur on a scale never seen before in a FromSoftware title.</p>
                     </div>
                     <div data-aos="fade-left" className='  sm:w-[48%] '>
@@ -108,14 +108,14 @@ const KeyFeature = () => {
                     </div>
                     <div className='  sm:w-[48%] flex flex-col gap-4'>
                         <h3 className='text-black text-nowrap   w-fit bg-amber-200 ps-16 pe-8 py-1    sm:text-xl' style={{
-                            transform: `translateY(${(scrollY - 3400) * -0.3}px) translateX(-100px)`,
+                            transform: `translateY(${(scrollY - 3600) * -0.3}px) translateX(-100px)`,
                             boxShadow: "0 1px 3px rgba(0,0,0,0.12)"
                         }}>Genre-Defining Gameplay</h3>
                         <p style={{
-                            transform: `translateY(${(scrollY - 3600) * -0.2}px)`
+                            transform: `translateY(${(scrollY - 3800) * -0.2}px)`
                         }} className='text-white text-xs leading-tight sm:leading-relaxed  sm:text-sm  '>Create your character in FromSoftware's refined action-RPG and define your playstyle by experimenting with a wide variety of weapons, magical abilities, and skills found throughout the world.</p>
                         <p style={{
-                            transform: `translateY(${(scrollY - 3600) * -0.2}px)`
+                            transform: `translateY(${(scrollY - 3900) * -0.2}px)`
                         }} className='text-white text-xs leading-tight sm:leading-relaxed sm:text-sm    '>Charge into battle, pick off enemies one-by-one using stealth, or even call upon allies for aid. Many options are at your disposal as you decide how to approach exploration and combat. </p>
                     </div>
 
