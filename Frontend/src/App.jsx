@@ -25,6 +25,7 @@ import Faq from './components/Faq/Faq';
 import Testing from './components/Testing/Testing';
 import Footer from './components/other/Footer';
 import Navbar from './components/other/Navbar';
+import ScrollCard from './components/homePageComponents/ScrollCard';
 //  images import section
 
 
@@ -65,6 +66,7 @@ function App() {
       </Routes>
 
       <Footer />
+      <ScrollCard />
 
       {loading &&
         <img className='pulse-image fixed bottom-[26px] left-[20px] h-[100px] w-auto z-100' src={isDataAvailable} alt="" />
