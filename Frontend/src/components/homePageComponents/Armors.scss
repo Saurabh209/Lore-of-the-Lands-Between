@@ -257,6 +257,19 @@
   button {
   }
 }
+.ViewArmorBtnContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: black;
+  border: 1px solid white;
+}
+.ViewArmorBtn{
+  color: white;
+  // text-decoration: none;A
+  padding: 10px 40px;
+  border: 1px solid red;
+}
 
 @media (max-width: 1200px) {
   .Armr_7 {

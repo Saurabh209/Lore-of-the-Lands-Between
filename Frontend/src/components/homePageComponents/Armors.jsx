@@ -139,21 +139,21 @@ const Armors = () => {
 
     console.log(expended)
     return (
+        <>
+            <main className='ArmorMainContainer'>
+                <div className='ArmorHeading '  >
+                    {/* <h2 className='flex text-2xl md:text-5xl text-amber-200  font-bold font-crimson animate-fade-in' style={{ animationDelay: '0.3s' }}>ARMORS</h2> */}
+                </div>
+                <div className='ArmorContainer' onMouseLeave={handleMouseLeave}>
 
-        <main className='ArmorMainContainer'>
-            <div className='ArmorHeading '  >
-                         {/* <h2 className='flex text-2xl md:text-5xl text-amber-200  font-bold font-crimson animate-fade-in' style={{ animationDelay: '0.3s' }}>ARMORS</h2> */}
-            </div>
-            <div className='ArmorContainer' onMouseLeave={handleMouseLeave}>
+                    {/* First armor */}
+                    <div className={`Armr_1  ${expended.armr_1 && "armr_expended "} `}>
+                        <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" className='Armr_1_imgContainer'>
+                            <img className='cursor-pointer' style={{ transform: expended.armr_1 ? "translateX(70px)" : "translateX(0)", }} onClick={() => handleClick("Armr_1")} src={ArmorOne} alt="" />
+                        </div>
 
-                {/* First armor */}
-                <div className={`Armr_1  ${expended.armr_1 && "armr_expended "} `}>
-                    <div data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" className='Armr_1_imgContainer'>
-                        <img    className='cursor-pointer'  style={{ transform: expended.armr_1 ? "translateX(70px)" : "translateX(0)", }}  onClick={() => handleClick("Armr_1")} src={ArmorOne} alt="" />
-                    </div>
-
-                    <div className=" ArmrData Armr_1_Data" style={{ transform: expended.armr_1 ? "translateY(-350px)" : "translateY(0)", }} >
-                        {/* <TextPressure
+                        <div className=" ArmrData Armr_1_Data" style={{ transform: expended.armr_1 ? "translateY(-350px)" : "translateY(0)", }} >
+                            {/* <TextPressure
                             text={"Crucible Axe Set"}
                             // flex={true}
                             alpha={false}
@@ -165,89 +165,92 @@ const Armors = () => {
                             strokeColor="#ff0000"
                             minFontSize={36}
                         /> */}
-                        <h2>Crucible Axe Set</h2>
-                        <ShinyText
-                            text={"The Crucible Axe Set is a heavy, high-defense armor built for Strength-focused fighters who like standing their ground. It offers strong physical and magical protection, giving reliable resistance to most incoming damage and status effects."}
-                            disabled={false}
-                            speed={3}
-                            className='custom-class'
-                        />
+                            <h2>Crucible Axe Set</h2>
+                            <ShinyText
+                                text={"The Crucible Axe Set is a heavy, high-defense armor built for Strength-focused fighters who like standing their ground. It offers strong physical and magical protection, giving reliable resistance to most incoming damage and status effects."}
+                                disabled={false}
+                                speed={3}
+                                className='custom-class'
+                            />
 
-                        {/* <p>The Crucible Axe Set is a heavy, high-defense armor built for Strength-focused fighters who like standing their ground. It offers strong physical and magical protection, giving reliable resistance to most incoming damage and status effects.</p> */}
+                            {/* <p>The Crucible Axe Set is a heavy, high-defense armor built for Strength-focused fighters who like standing their ground. It offers strong physical and magical protection, giving reliable resistance to most incoming damage and status effects.</p> */}
+                        </div>
                     </div>
+
+                    {/* Second armor */}
+                    <div className={`Armr_2 ${expended.armr_2 && "armr_expended"}`}>
+                        <div data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-duration="1000" className='Armr_2_imgContainer'>
+                            <img className='cursor-pointer' onClick={() => handleClick("Armr_2")} src={ArmorTwo} alt="" />
+                        </div>
+                        <div className="ArmrData Armr_2_Data" style={{ transform: expended.armr_2 ? "translateY(-200px)" : "translateY(0)", }} >
+                            <h2>Fia's Set</h2>
+                            <p> Fia’s Set is a light, soft black garment crafted from silk-like fabric. It comes with only two pieces—helm and chest armor—but still carries a distinct defensive charm suited for quiet, graceful playstyles.</p>
+                        </div>
+
+                    </div>
+
+                    {/* Third Armor */}
+                    <div className={`Armr_3 ${expended.armr_3 && "armr_expended"}`}>
+                        <div data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-duration="1000" className='Armr_3_imgContainer'>
+                            <img className='cursor-pointer' onClick={() => handleClick("Armr_3")} src={ArmorThree} alt="" />
+                        </div>
+                        <div className="ArmrData Armr_3_Data" style={{ transform: expended.armr_3 ? "translateY(-200px)" : "translateY(0)", }} >
+                            <h2>Malenia's set</h2>
+                            <p> Malenia’s Set is a light armor forged from unalloyed gold and worn by Malenia, Blade of Miquella. It includes four pieces—helm, chest, gauntlets, and legs—and offers nimble protection for agile, aggressive warriors.</p>
+                        </div>
+                    </div>
+
+                    {/* Fourth armor */}
+                    <div className={`Armr_4 ${expended.armr_4 && "armr_expended"}`}>
+                        <div data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-duration="1000" className='Armr_4_imgContainer'>
+                            <img className='cursor-pointer' onClick={() => handleClick("Armr_4")} src={ArmorFour} alt="" />
+                        </div>
+                        <div className="ArmrData Armr_4_Data" style={{ transform: expended.armr_4 ? "translateY(-200px)" : "translateY(0)", }} >
+                            <h2>Malformed Dragon Set</h2>
+                            <p>This malformed golden armor is engraved with dragon imagery and worn by the twisted Tree Sentinels. After Gransax’s ancient assault, they believed true protection of the Erdtree meant transforming into dragons themselves.</p>
+                        </div>
+                    </div>
+
+                    {/* Fifth armor */}
+                    <div className={`Armr_5 ${expended.armr_5 && "armr_expended"}`}>
+                        <div data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-duration="1000" className='Armr_5_imgContainer'>
+                            <img className='cursor-pointer' onClick={() => handleClick("Armr_5")} src={ArmorFive} alt="" />
+                        </div>
+                        <div className="ArmrData Armr_5_Data" style={{ transform: expended.armr_5 ? "translateY(-200px)" : "translateY(0)", }} >
+                            <h2>Maliketh's Set</h2>
+                            <p>Maliketh’s Set is a beastly armor of black iron trimmed with gold, worn by the Black Blade himself. It follows the classic four-piece structure and provides fierce protection suited for fast, relentless combat styles.</p>
+                        </div>
+                    </div>
+
+                    {/* Six armor */}
+                    <div className={`Armr_6 ${expended.armr_6 && "armr_expended"}`}>
+                        <div data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-duration="1000" className='Armr_6_imgContainer'>
+                            <img className='cursor-pointer' onClick={() => handleClick("Armr_6")} src={ArmorSix} alt="" />
+                        </div>
+                        <div className="ArmrData Armr_6_Data" style={{ transform: expended.armr_6 ? "translateY(-200px)" : "translateY(0)", }} >
+                            <h2>General Radahn Set</h2>
+                            <p>The General Radahn Set is a heavy armor known for exceptional robustness and stability. With four traditional armor pieces, it grants massive resistance and suits warriors who prefer overwhelming strength and endurance.</p>
+                        </div>
+                    </div>
+
+                    {/* Seventh armor */}
+                    <div className={`Armr_7 ${expended.armr_7 && "armr_expended"}`}>
+                        <div data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-duration="1000" className='Armr_7_imgContainer'>
+                            <img className='cursor-pointer' onClick={() => handleClick("Armr_7")} src={ArmorSeven} alt="" />
+                        </div>
+                        <div className="ArmrData Armr_7_Data" style={{ transform: expended.armr_7 ? "translateY(-200px)" : "translateY(0)", }} >
+                            <h2>Snow Witch Set</h2>
+                            <p>The Snow Witch Set is a mystical robe-style armor associated with cold sorcery. While most sets include four pieces, this one excludes gauntlets, offering three pieces that enhance magical presence and winter-themed aesthetics.</p>
+                        </div>
+                    </div>
+
+
                 </div>
-
-                {/* Second armor */}
-                <div className={`Armr_2 ${expended.armr_2 && "armr_expended"}`}>
-                    <div   data-aos-anchor-placement="center-bottom"  data-aos="fade-up"  data-aos-duration="1000" className='Armr_2_imgContainer'>
-                        <img className='cursor-pointer' onClick={() => handleClick("Armr_2")} src={ArmorTwo} alt="" />
-                    </div>
-                    <div className="ArmrData Armr_2_Data" style={{ transform: expended.armr_2 ? "translateY(-200px)" : "translateY(0)", }} >
-                        <h2>Fia's Set</h2>
-                        <p> Fia’s Set is a light, soft black garment crafted from silk-like fabric. It comes with only two pieces—helm and chest armor—but still carries a distinct defensive charm suited for quiet, graceful playstyles.</p>
-                    </div>
-
-                </div>
-
-                {/* Third Armor */}
-                <div className={`Armr_3 ${expended.armr_3 && "armr_expended"}`}>
-                    <div   data-aos-anchor-placement="center-bottom"  data-aos="fade-up"  data-aos-duration="1000" className='Armr_3_imgContainer'>
-                        <img className='cursor-pointer'  onClick={() => handleClick("Armr_3")} src={ArmorThree} alt="" />
-                    </div>
-                    <div className="ArmrData Armr_3_Data" style={{ transform: expended.armr_3 ? "translateY(-200px)" : "translateY(0)", }} >
-                        <h2>Malenia's set</h2>
-                        <p> Malenia’s Set is a light armor forged from unalloyed gold and worn by Malenia, Blade of Miquella. It includes four pieces—helm, chest, gauntlets, and legs—and offers nimble protection for agile, aggressive warriors.</p>
-                    </div>
-                </div>
-
-                {/* Fourth armor */}
-                <div className={`Armr_4 ${expended.armr_4 && "armr_expended"}`}>
-                    <div   data-aos-anchor-placement="center-bottom"  data-aos="fade-up" data-aos-duration="1000"  className='Armr_4_imgContainer'>
-                        <img className='cursor-pointer'  onClick={() => handleClick("Armr_4")} src={ArmorFour} alt="" />
-                    </div>
-                    <div className="ArmrData Armr_4_Data" style={{ transform: expended.armr_4 ? "translateY(-200px)" : "translateY(0)", }} >
-                        <h2>Malformed Dragon Set</h2>
-                        <p>This malformed golden armor is engraved with dragon imagery and worn by the twisted Tree Sentinels. After Gransax’s ancient assault, they believed true protection of the Erdtree meant transforming into dragons themselves.</p>
-                    </div>
-                </div>
-
-                {/* Fifth armor */}
-                <div className={`Armr_5 ${expended.armr_5 && "armr_expended"}`}>
-                    <div   data-aos-anchor-placement="center-bottom"  data-aos="fade-up"  data-aos-duration="1000" className='Armr_5_imgContainer'>
-                        <img className='cursor-pointer'  onClick={() => handleClick("Armr_5")} src={ArmorFive} alt="" />
-                    </div>
-                    <div className="ArmrData Armr_5_Data" style={{ transform: expended.armr_5 ? "translateY(-200px)" : "translateY(0)", }} >
-                        <h2>Maliketh's Set</h2>
-                        <p>Maliketh’s Set is a beastly armor of black iron trimmed with gold, worn by the Black Blade himself. It follows the classic four-piece structure and provides fierce protection suited for fast, relentless combat styles.</p>
-                    </div>
-                </div>
-
-                {/* Six armor */}
-                <div className={`Armr_6 ${expended.armr_6 && "armr_expended"}`}>
-                    <div   data-aos-anchor-placement="center-bottom"  data-aos="fade-up"  data-aos-duration="1000" className='Armr_6_imgContainer'>
-                        <img className='cursor-pointer'  onClick={() => handleClick("Armr_6")} src={ArmorSix} alt="" />
-                    </div>
-                    <div className="ArmrData Armr_6_Data" style={{ transform: expended.armr_6 ? "translateY(-200px)" : "translateY(0)", }} >
-                        <h2>General Radahn Set</h2>
-                        <p>The General Radahn Set is a heavy armor known for exceptional robustness and stability. With four traditional armor pieces, it grants massive resistance and suits warriors who prefer overwhelming strength and endurance.</p>
-                    </div>
-                </div>
-
-                {/* Seventh armor */}
-                <div className={`Armr_7 ${expended.armr_7 && "armr_expended"}`}>
-                    <div   data-aos-anchor-placement="center-bottom"  data-aos="fade-up"  data-aos-duration="1000" className='Armr_7_imgContainer'>
-                        <img className='cursor-pointer'  onClick={() => handleClick("Armr_7")} src={ArmorSeven} alt="" />
-                    </div>
-                    <div className="ArmrData Armr_7_Data" style={{ transform: expended.armr_7 ? "translateY(-200px)" : "translateY(0)", }} >
-                        <h2>Snow Witch Set</h2>
-                        <p>The Snow Witch Set is a mystical robe-style armor associated with cold sorcery. While most sets include four pieces, this one excludes gauntlets, offering three pieces that enhance magical presence and winter-themed aesthetics.</p>
-                    </div>
-                </div>
-
-
+            </main>
+            <div className='ViewArmorBtnContainer'>
+                <button className='ViewArmorBtn'>View All</button>
             </div>
-        </main>
-
+        </>
 
     );
 };
