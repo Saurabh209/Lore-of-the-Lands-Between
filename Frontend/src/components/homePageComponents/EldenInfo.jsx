@@ -34,7 +34,7 @@ const EldenInfo = () => {
             }}>
                 <KeyFeature />
                 {/* upper golden leaf  */}
-                <div  data-aos-easing="ease-in-sine" className=' w-[90%] mb-4 m-auto      md:w-[80%] md:mb-8 lg:w-[50%] '>
+                <div data-aos-easing="ease-in-sine" className=' w-[90%] mb-4 m-auto      md:w-[80%] md:mb-8 lg:w-[50%] '>
                     <img src="https://res.cloudinary.com/doeiccxm7/image/upload/v1758017414/elden-ring-border-leaf_fend9k.png" alt="golden-leaf" />
                 </div>
 
@@ -44,7 +44,7 @@ const EldenInfo = () => {
                 </div>
                 <div className={` w-[95%] m-auto   exploreNavigationAllCardContainer  text-white text-center gap-6    sm:w-[70%] lg:w-[50%]`}>
 
-                    <p  className='text-xs leading-tight sm:text-sm'>The Golden Order has been shattered. Throughout the Lands Between, Demigods holding shards of the <span> Elden Ring </span> squabble and make war over the ruins of a perfect realm, now abandoned by the golden guidance of the Greater Will.</p>
+                    <p className='text-xs leading-tight sm:text-sm'>The Golden Order has been shattered. Throughout the Lands Between, Demigods holding shards of the <span> Elden Ring </span> squabble and make war over the ruins of a perfect realm, now abandoned by the golden guidance of the Greater Will.</p>
                     <p className='text-xs leading-tight sm:text-sm'>As the echoes of this conflict thunder in the distance, an outcast arrives. Once, their ancestors called the Lands Between home, but the blessed light of grace was lost to their tribe long ago and they were expelled from the kingdom. They are the Tarnished, and they have returned to claim the Elden Lordship promised to them by legend.</p>
                     <p className='text-xs leading-tight sm:text-sm'>This is the world of <span> ELDEN RING </span>. As a Tarnished, the Lands Between await your exploration. You will ride through the vast fields, gallop over rolling hills, and leap to the top of rocky crags on your ephemeral steed, revealing a world teeming with life and danger.</p>
                     <p className='text-xs leading-tight sm:text-sm'>In the grand fields where your journey begins, mythic creatures prowl the veldts, ineffable horrors lurk in the bogs and marshes, and all manner of soldiers and itinerant warriors are waiting for those who wander unawares. Shy creatures nibble on sweet grasses or scuttle through the underbrush.</p>
@@ -59,6 +59,26 @@ const EldenInfo = () => {
 
                 {/* Armor component */}
                 {/* <Armors /> */}
+                 <div className='scrollwallpapercards  flex overflow-scroll z-2'>
+
+                    <div className=' rounded-lg  mr-4 bg-center bg-cover w-auto  flex justify-center items-center  '>
+                        <img src="https://res.cloudinary.com/doeiccxm7/image/upload/v1758017431/ER-Tarnished-Edition-Key-Feature-Screenshot-1_mtkng1.webp" alt="" />
+
+                    </div>
+                    <div className=' rounded-lg  mr-4 bg-center bg-cover w-auto  flex justify-center items-center  '>
+                        <img src="https://res.cloudinary.com/doeiccxm7/image/upload/v1758017432/ER-Tarnished-Edition-Key-Feature-Screenshot-2_ncsga8.webp" alt="" />
+
+                    </div>
+                    <div className=' rounded-lg  mr-4 bg-center bg-cover w-auto  flex justify-center items-center  '>
+                        <img src="https://res.cloudinary.com/doeiccxm7/image/upload/v1758017430/ER-Tarnished-Edition-Key-Feature-Screenshot-3_zo2u98.webp" alt="" />
+
+                    </div>
+
+
+
+
+                </div>
+
 
 
                 <div className=' w-[90%] mt-8 mb-8  m-auto      md:w-[80%]  lg:w-[50%] '>
@@ -68,65 +88,30 @@ const EldenInfo = () => {
 
                 <div className={` w-[95%] m-auto   exploreNavigationAllCardContainer    text-white text-center gap-6    sm:w-[70%] lg:w-[50%]`}>
                     <p className='text-xs leading-tight sm:text-sm'>
-                        <ShinyText
-                            text=" The guidance of lost graces – should you find them - will put you on a road to re-take these lands from the Demigods through might and magic, but you need not follow their path."
-                            disabled={false}
-                            speed={3}
-                            className='custom-class'
-                        />
+                        The guidance of lost graces – should you find them - will put you on a road to re-take these lands from the Demigods through might and magic, but you need not follow their path.
 
                     </p>
                     <p className='text-xs leading-tight sm:text-sm'>
-                        <ShinyText
-                            text=" The choice is yours. Do you crave power, or do you seek understanding? Decide for yourself, then build your character as you see fit."
-                            disabled={false}
-                            speed={3}
-                            className='custom-class'
-                        />
+                        The choice is yours. Do you crave power, or do you seek understanding? Decide for yourself, then build your character as you see fit.
                     </p>
                     <p className='text-xs leading-tight sm:text-sm'>
-                        <ShinyText
-                            text=" Try dozens of skills and find one to best suit your style. Practice stealth to avoid danger or catch enemies unaware. Use the environment, the weather, and the time of day to gain an advantage. Learn the art of combat , where you must read your enemy’s intentions and a well-timed dodge or parry could be the difference between life and death. Ride your steed into battle against mounted mercenaries and cut them from their horses. Master arcane spells from the masters that still linger among the ruins of the war. Summon familiar spirits to even the odds against you or call on your fellow Tarnished to fight at your side and share the burden as you explore. Or, delve into the complex, bloody history of the Shattering and discover the lost secrets of the Demigods and their kin. All these paths are possible, and more."
-                            disabled={false}
-                            speed={3}
-                            className='custom-class'
-                        />
+                        Try dozens of skills and find one to best suit your style. Practice stealth to avoid danger or catch enemies unaware. Use the environment, the weather, and the time of day to gain an advantage. Learn the art of combat , where you must read your enemy’s intentions and a well-timed dodge or parry could be the difference between life and death. Ride your steed into battle against mounted mercenaries and cut them from their horses. Master arcane spells from the masters that still linger among the ruins of the war. Summon familiar spirits to even the odds against you or call on your fellow Tarnished to fight at your side and share the burden as you explore. Or, delve into the complex, bloody history of the Shattering and discover the lost secrets of the Demigods and their kin. All these paths are possible, and more.
 
                     </p>
                     <p className='text-xs leading-tight sm:text-sm'>
-                        <ShinyText
-                            text="  Ultimately, your journey will be defined by the strength of your own ambition. The greater your goals, the greater the challenge will be. Should you choose to claim the Lands Between as your birthright then yes, you must fight."
-                            disabled={false}
-                            speed={3}
-                            className='custom-class'
-                        />
+                        Ultimately, your journey will be defined by the strength of your own ambition. The greater your goals, the greater the challenge will be. Should you choose to claim the Lands Between as your birthright then yes, you must fight.
                     </p>
                     <p className='text-xs leading-tight sm:text-sm'>
-                        <ShinyText
-                            text="  And yes, you may die."
-                            disabled={false}
-                            speed={3}
-                            className='custom-class'
-                        />
+                        And yes, you may die.
 
                     </p>
                     <p className='text-xs leading-tight sm:text-sm'>
-                        <ShinyText
-                            text=" But you will return to fight again."
-                            disabled={false}
-                            speed={3}
-                            className='custom-class'
-                        />
+                        But you will return to fight again.
 
 
                     </p>
                     <p className='text-xs leading-tight sm:text-sm'>
-                        <ShinyText
-                            text=" For that is how a champion – or a Lord – is born."
-                            disabled={false}
-                            speed={3}
-                            className='custom-class'
-                        />
+                        For that is how a champion – or a Lord – is born.
                     </p>
                 </div>
 
