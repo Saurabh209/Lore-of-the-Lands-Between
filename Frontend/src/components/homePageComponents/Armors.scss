@@ -19,7 +19,7 @@
 .ArmorContainer {
   // max-height: 500px;
   position: relative;
-  border: 1px solid white;
+  // border: 1px solid white;
   z-index: 30;
   width: 80%;
   margin: 0 auto;
@@ -46,21 +46,28 @@
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.786));
       transition-duration: 0.3s;
-      &:hover {
-        filter: drop-shadow(0px 0px 10px #8a5a2f);
-      }
+      // &:hover {
+      //   filter: drop-shadow(0px 0px 10px #8a5a2f);
+      // }
     }
   }
   .Armr_1_Data {
-    .Armr_1_aditional_data {
-      border: 1px solid red;
-      .Armr_1_left {
-        
-      }
-      .Armr_1_right {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-wrap: nowrap;
+    // .Armr_1_aditional_data {
+    //   display: flex;
+    //   justify-content: space-between;
+    //   border: 1px solid red;
+    //   .Armr_1_left {
 
-      }
-    }
+    //   }
+    //   .Armr_1_right {
+
+    //   }
+    // }
   }
 
   button {
@@ -84,9 +91,9 @@
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
       transition-duration: 0.3s;
-      &:hover {
-        filter: drop-shadow(0px 0px 10px #5a5a60);
-      }
+      // &:hover {
+      //   filter: drop-shadow(0px 0px 10px #5a5a60);
+      // }
     }
   }
 }
@@ -106,9 +113,9 @@
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
       transition-duration: 0.3s;
-      &:hover {
-        filter: drop-shadow(0px 0px 10px #665949);
-      }
+      // &:hover {
+      //   filter: drop-shadow(0px 0px 10px #665949);
+      // }
     }
   }
 }
@@ -128,9 +135,9 @@
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
       transition-duration: 0.3s;
-      &:hover {
-        filter: drop-shadow(0px 0px 10px #c3a449);
-      }
+      // &:hover {
+      //   filter: drop-shadow(0px 0px 10px #c3a449);
+      // }
     }
   }
 }
@@ -150,9 +157,9 @@
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
       transition-duration: 0.3s;
-      &:hover {
-        filter: drop-shadow(0px 0px 10px #554636);
-      }
+      // &:hover {
+      //   filter: drop-shadow(0px 0px 10px #554636);
+      // }
     }
   }
 }
@@ -172,9 +179,9 @@
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
       transition-duration: 0.3s;
-      &:hover {
-        filter: drop-shadow(0px 0px 10px #4a4333);
-      }
+      // &:hover {
+      //   filter: drop-shadow(0px 0px 10px #4a4333);
+      // }
     }
   }
 }
@@ -194,9 +201,9 @@
       max-height: 381px;
       filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.5));
       transition-duration: 0.3s;
-      &:hover {
-        filter: drop-shadow(0px 0px 10px #c7d7f2);
-      }
+      // &:hover {
+      //   filter: drop-shadow(0px 0px 10px #c7d7f2);
+      // }
     }
   }
 }
@@ -222,7 +229,7 @@
   padding: 45px 8px 15px 8px;
   position: absolute;
   bottom: -100%;
-  border: 1px solid white;
+  // border: 1px solid white;
   // border-radius: 10px 10px 0px 0px;
   backdrop-filter: blur(1px);
   // background-color: rgba(0, 0, 0, 0.342);
