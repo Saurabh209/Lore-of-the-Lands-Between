@@ -122,19 +122,19 @@ const Armors = () => {
 
     // just for testing (delete me afterwards)
     const handleMouseLeave = () => {
-        setTimeout(() => {
-            setExpended(
-                {
-                    armr_1: false,
-                    armr_2: false,
-                    armr_3: false,
-                    armr_4: false,
-                    armr_5: false,
-                    armr_6: false,
-                    armr_7: false,
-                }
-            )
-        }, 1000);
+        // setTimeout(() => {
+        //     setExpended(
+        //         {
+        //             armr_1: false,
+        //             armr_2: false,
+        //             armr_3: false,
+        //             armr_4: false,
+        //             armr_5: false,
+        //             armr_6: false,
+        //             armr_7: false,
+        //         }
+        //     )
+        // }, 1000);
     }
 
     console.log(expended)
@@ -142,17 +142,17 @@ const Armors = () => {
 
         <main className='ArmorMainContainer'>
             <div className='ArmorHeading '  >
-                         {/* <h2 className='flex text-2xl md:text-5xl text-amber-200  font-bold font-crimson animate-fade-in' style={{ animationDelay: '0.3s' }}>ARMORS</h2> */}
+                {/* <h2 className='flex text-2xl md:text-5xl text-amber-200  font-bold font-crimson animate-fade-in' style={{ animationDelay: '0.3s' }}>ARMORS</h2> */}
             </div>
             <div className='ArmorContainer' onMouseLeave={handleMouseLeave}>
 
                 {/* First armor */}
                 <div className={`Armr_1  ${expended.armr_1 && "armr_expended "} `}>
-                    <div data-aos="fade-up" data-aos-duration="1000"  data-aos-anchor-placement="center-bottom" className='Armr_1_imgContainer'>
-                        <img    className='cursor-pointer'  style={{ transform: expended.armr_1 ? "translateX(70px)" : "translateX(0)", }}  onClick={() => handleClick("Armr_1")} src={ArmorOne} alt="" />
+                    <div data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom" className='Armr_1_imgContainer'>
+                        <img className='cursor-pointer' style={{ transform: expended.armr_1 ? "translateX(70px)" : "translateX(0)", }} onClick={() => handleClick("Armr_1")} src={ArmorOne} alt="" />
                     </div>
 
-                    <div className=" ArmrData Armr_1_Data" style={{ transform: expended.armr_1 ? "translateY(-350px)" : "translateY(0)", }} >
+                    <div className=" ArmrData Armr_1_Data" style={{ transform: expended.armr_1 ? "translateY(-380px)" : "translateY(0)", }} >
                         {/* <TextPressure
                             text={"Crucible Axe Set"}
                             // flex={true}
@@ -172,6 +172,14 @@ const Armors = () => {
                             speed={3}
                             className='custom-class'
                         />
+                        <div className='Armr_1_aditional_data'>
+                            <div className='Armr_1_left'>
+                                one
+                            </div>
+                            <div className='Armr_1_right'>
+                                two
+                            </div>
+                        </div>
 
                         {/* <p>The Crucible Axe Set is a heavy, high-defense armor built for Strength-focused fighters who like standing their ground. It offers strong physical and magical protection, giving reliable resistance to most incoming damage and status effects.</p> */}
                     </div>
@@ -179,7 +187,7 @@ const Armors = () => {
 
                 {/* Second armor */}
                 <div className={`Armr_2 ${expended.armr_2 && "armr_expended"}`}>
-                    <div   data-aos-anchor-placement="center-bottom"  data-aos="fade-up"  data-aos-duration="1000" className='Armr_2_imgContainer'>
+                    <div data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-duration="1000" className='Armr_2_imgContainer'>
                         <img className='cursor-pointer' onClick={() => handleClick("Armr_2")} src={ArmorTwo} alt="" />
                     </div>
                     <div className="ArmrData Armr_2_Data" style={{ transform: expended.armr_2 ? "translateY(-200px)" : "translateY(0)", }} >
@@ -191,8 +199,8 @@ const Armors = () => {
 
                 {/* Third Armor */}
                 <div className={`Armr_3 ${expended.armr_3 && "armr_expended"}`}>
-                    <div   data-aos-anchor-placement="center-bottom"  data-aos="fade-up"  data-aos-duration="1000" className='Armr_3_imgContainer'>
-                        <img className='cursor-pointer'  onClick={() => handleClick("Armr_3")} src={ArmorThree} alt="" />
+                    <div data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-duration="1000" className='Armr_3_imgContainer'>
+                        <img className='cursor-pointer' onClick={() => handleClick("Armr_3")} src={ArmorThree} alt="" />
                     </div>
                     <div className="ArmrData Armr_3_Data" style={{ transform: expended.armr_3 ? "translateY(-200px)" : "translateY(0)", }} >
                         <h2>Malenia's set</h2>
@@ -202,8 +210,8 @@ const Armors = () => {
 
                 {/* Fourth armor */}
                 <div className={`Armr_4 ${expended.armr_4 && "armr_expended"}`}>
-                    <div   data-aos-anchor-placement="center-bottom"  data-aos="fade-up" data-aos-duration="1000"  className='Armr_4_imgContainer'>
-                        <img className='cursor-pointer'  onClick={() => handleClick("Armr_4")} src={ArmorFour} alt="" />
+                    <div data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-duration="1000" className='Armr_4_imgContainer'>
+                        <img className='cursor-pointer' onClick={() => handleClick("Armr_4")} src={ArmorFour} alt="" />
                     </div>
                     <div className="ArmrData Armr_4_Data" style={{ transform: expended.armr_4 ? "translateY(-200px)" : "translateY(0)", }} >
                         <h2>Malformed Dragon Set</h2>
@@ -213,8 +221,8 @@ const Armors = () => {
 
                 {/* Fifth armor */}
                 <div className={`Armr_5 ${expended.armr_5 && "armr_expended"}`}>
-                    <div   data-aos-anchor-placement="center-bottom"  data-aos="fade-up"  data-aos-duration="1000" className='Armr_5_imgContainer'>
-                        <img className='cursor-pointer'  onClick={() => handleClick("Armr_5")} src={ArmorFive} alt="" />
+                    <div data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-duration="1000" className='Armr_5_imgContainer'>
+                        <img className='cursor-pointer' onClick={() => handleClick("Armr_5")} src={ArmorFive} alt="" />
                     </div>
                     <div className="ArmrData Armr_5_Data" style={{ transform: expended.armr_5 ? "translateY(-200px)" : "translateY(0)", }} >
                         <h2>Maliketh's Set</h2>
@@ -224,8 +232,8 @@ const Armors = () => {
 
                 {/* Six armor */}
                 <div className={`Armr_6 ${expended.armr_6 && "armr_expended"}`}>
-                    <div   data-aos-anchor-placement="center-bottom"  data-aos="fade-up"  data-aos-duration="1000" className='Armr_6_imgContainer'>
-                        <img className='cursor-pointer'  onClick={() => handleClick("Armr_6")} src={ArmorSix} alt="" />
+                    <div data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-duration="1000" className='Armr_6_imgContainer'>
+                        <img className='cursor-pointer' onClick={() => handleClick("Armr_6")} src={ArmorSix} alt="" />
                     </div>
                     <div className="ArmrData Armr_6_Data" style={{ transform: expended.armr_6 ? "translateY(-200px)" : "translateY(0)", }} >
                         <h2>General Radahn Set</h2>
@@ -235,8 +243,8 @@ const Armors = () => {
 
                 {/* Seventh armor */}
                 <div className={`Armr_7 ${expended.armr_7 && "armr_expended"}`}>
-                    <div   data-aos-anchor-placement="center-bottom"  data-aos="fade-up"  data-aos-duration="1000" className='Armr_7_imgContainer'>
-                        <img className='cursor-pointer'  onClick={() => handleClick("Armr_7")} src={ArmorSeven} alt="" />
+                    <div data-aos-anchor-placement="center-bottom" data-aos="fade-up" data-aos-duration="1000" className='Armr_7_imgContainer'>
+                        <img className='cursor-pointer' onClick={() => handleClick("Armr_7")} src={ArmorSeven} alt="" />
                     </div>
                     <div className="ArmrData Armr_7_Data" style={{ transform: expended.armr_7 ? "translateY(-200px)" : "translateY(0)", }} >
                         <h2>Snow Witch Set</h2>

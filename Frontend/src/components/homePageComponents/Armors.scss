@@ -1,4 +1,3 @@
-
 .ArmorMainContainer {
   // border: 1px solid pink;
   overflow: hidden;
@@ -20,7 +19,7 @@
 .ArmorContainer {
   // max-height: 500px;
   position: relative;
-  // border: 1px solid white;
+  border: 1px solid white;
   z-index: 30;
   width: 80%;
   margin: 0 auto;
@@ -41,7 +40,6 @@
   align-items: center;
   justify-content: center;
 
-
   .Armr_1_imgContainer {
     img {
       max-width: 220px;
@@ -50,6 +48,17 @@
       transition-duration: 0.3s;
       &:hover {
         filter: drop-shadow(0px 0px 10px #8a5a2f);
+      }
+    }
+  }
+  .Armr_1_Data {
+    .Armr_1_aditional_data {
+      border: 1px solid red;
+      .Armr_1_left {
+        
+      }
+      .Armr_1_right {
+
       }
     }
   }
@@ -210,10 +219,11 @@
 }
 
 .ArmrData {
-  padding: 15px 8px;
+  padding: 45px 8px 15px 8px;
   position: absolute;
   bottom: -100%;
-  border-radius: 10px 10px 0px 0px;
+  border: 1px solid white;
+  // border-radius: 10px 10px 0px 0px;
   backdrop-filter: blur(1px);
   // background-color: rgba(0, 0, 0, 0.342);
   // background: linear-gradient(
@@ -245,7 +255,7 @@
 
 .armr_expended {
   flex: 1;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   z-index: -1;
   // border-radius: 0px !important;
   // align-items: center;
